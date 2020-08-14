@@ -2,6 +2,7 @@ package main
 
 import (
 	"image"
+	"image/color"
 	_ "image/jpeg"
 	"log"
 	"os"
@@ -15,7 +16,7 @@ func main () {
 	var i int
 	err := filepath.Walk(IMAGES_PATH, func(path string, info os.FileInfo, err error) error {
 		i++
-		if i > 3 {
+		if i > 4 {
 			return nil
 		}
 		log.Println(info)
@@ -30,7 +31,7 @@ func main () {
 		}
 
 		if matched {
-			processJPG(path, info)
+			processJPG(path)
 		}
 
 		return nil
@@ -40,7 +41,12 @@ func main () {
 	}
 }
 
-func processJPG (path string, info os.FileInfo) {
+type ProcessedImage struct {
+    Avg color.RGBA
+    Frame Frame
+}
+
+func processJPG (path string) ProcessedImage {
 	log.Println(path)
 	imgfile, openErr := os.Open(path)
 	if openErr != nil {
@@ -51,15 +57,48 @@ func processJPG (path string, info os.FileInfo) {
 	if decodeErr != nil {
 		log.Fatal(decodeErr, " file ", path)
 	}
-	log.Println(img.Bounds().Dy())
+	frame := frameFromRect(img.Bounds())
+	avg := computeAvg(frame, img)
+	log.Println(avg)
+	return ProcessedImage{
+		Avg:avg,
+		Frame: frame,
+	}
 }
 
-func fromRect (rectangle image.Rectangle) Frame {
+func computeAvg (frame Frame, img image.Image) color.RGBA {
+	var isSet bool
+	var r, g, b uint64
+	for x := frame.MinX; x < frame.MaxX; x++ {
+		for y := frame.MinY; y < frame.MaxY; y++ {
+			pixel := img.At(x, y)
+			r1, g1, b1, _ := pixel.RGBA()
+			if !isSet {
+				r = uint64(r1)
+				g = uint64(g1)
+				b = uint64(b1)
+				isSet = true
+			} else {
+				r += uint64(r1)
+				g += uint64(g1)
+				b += uint64(b1)
+			}
+		}
+	}
+
+
+	r /= uint64((frame.MaxY - frame.MinY)*(frame.MaxX - frame.MinX) * 257)
+	g /= uint64((frame.MaxY - frame.MinY)*(frame.MaxX - frame.MinX) * 257)
+	b /= uint64((frame.MaxY - frame.MinY)*(frame.MaxX - frame.MinX) * 257)
+	return color.RGBA{R: uint8(r), G: uint8(g), B: uint8(b)}
+}
+
+func frameFromRect(rectangle image.Rectangle) Frame {
 	size := minInt(rectangle.Dx(), rectangle.Dy())
 	minX := rectangle.Min.X + (rectangle.Dx() - size) / 2
-	maxX := rectangle.Max.X - (rectangle.Dx() - size) / 2
+	maxX := rectangle.Min.X + (rectangle.Dx() - size) / 2 + size
 	minY := rectangle.Min.Y + (rectangle.Dy() - size) / 2
-	maxY := rectangle.Max.Y - (rectangle.Dy() - size) / 2
+	maxY := rectangle.Min.Y + (rectangle.Dy() - size) / 2 + size
 	return Frame{MinX: minX, MinY: minY, MaxX: maxX, MaxY: maxY}
 }
 
