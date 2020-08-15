@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"image"
 	"image/color"
 	_ "image/jpeg"
@@ -8,19 +9,21 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"strings"
 )
 
 const IMAGES_PATH = "../scrape/downloaded"
+const OUTPUT_PATH = "output.json"
 
 func main () {
 	var i int
-	err := filepath.Walk(IMAGES_PATH, func(path string, info os.FileInfo, err error) error {
+	exportedImages := []ExportedImage{}
+	walkError := filepath.Walk(IMAGES_PATH, func(path string, info os.FileInfo, err error) error {
 		i++
-		if i > 4 {
-			return nil
+		if i % 100 == 0 {
+			log.Println(i, "th file")
+			log.Println("Name ", info.Name(), i)
 		}
-		log.Println(info)
-		log.Println("Name ", info.Name(), i)
 		if err != nil {
 			return err
 		}
@@ -29,16 +32,28 @@ func main () {
 		if regexErr != nil {
 			return regexErr
 		}
-
 		if matched {
-			processJPG(path)
+			jpg := processJPG(path)
+			exportedImage := ExportedImage{
+				Avg:   jpg.Avg,
+				Frame: jpg.Frame,
+				Name:  strings.ReplaceAll(info.Name(), "_", "/"),
+			}
+			exportedImages = append(exportedImages, exportedImage)
 		}
-
 		return nil
 	})
-	if err != nil {
-		log.Fatal(err)
+	if walkError != nil {
+		log.Fatal(walkError)
 	}
+	outputFile, errOutput := os.Create(OUTPUT_PATH)
+	if errOutput != nil {
+		log.Fatal(errOutput)
+	}
+	defer outputFile.Close()
+	encoder := json.NewEncoder(outputFile)
+	encoder.Encode(exportedImages)
+
 }
 
 type ProcessedImage struct {
@@ -46,8 +61,13 @@ type ProcessedImage struct {
     Frame Frame
 }
 
+type ExportedImage struct {
+	Avg   color.RGBA `json:"avg"`
+	Frame Frame `json:"frame"`
+	Name  string `json:"name"`
+}
+
 func processJPG (path string) ProcessedImage {
-	log.Println(path)
 	imgfile, openErr := os.Open(path)
 	if openErr != nil {
 		log.Fatal(openErr)
@@ -59,7 +79,6 @@ func processJPG (path string) ProcessedImage {
 	}
 	frame := frameFromRect(img.Bounds())
 	avg := computeAvg(frame, img)
-	log.Println(avg)
 	return ProcessedImage{
 		Avg:avg,
 		Frame: frame,
@@ -110,8 +129,8 @@ func minInt (a, b int) int {
 }
 
 type Frame struct {
-	MinX int
-	MinY int
-	MaxX int
-	MaxY int
+	MinX int `json:"minX"`
+	MinY int `json:"minY"`
+	MaxX int `json:"maxX"`
+	MaxY int `json:"maxY"`
 }
