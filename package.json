@@ -5,9 +5,10 @@
   "author": "Gabriel <furstenheim@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "process-watch": "nodemon process/main.js"
+    "watch": "parcel index.html"
   },
   "dependencies": {
+    "@types/leaflet": "^1.5.17",
     "@types/puppeteer": "^3.0.1",
     "leaflet": "^1.6.0",
     "nodemon": "^2.0.4",

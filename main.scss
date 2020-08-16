@@ -1,9 +1,14 @@
 body  {
-  padding: 0;
+  // padding: 0;
+  height: 100%;
   margin: 0;
 }
+$mosaic-size:1000px;
+
 #mosaic-holder{
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
+  // overflow: hidden;
+  position: relative;
+  height: $mosaic-size;
+  width: $mosaic-size;
 }
+
