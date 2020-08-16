@@ -8,7 +8,7 @@ import 'regenerator-runtime/runtime'
 const MOSAIC_ID = 'mosaic-holder'
 const LOADING_CONTENT = 'loading-content'
 const MAP_SIZE = 1000
-const TILE_SIZE = 10
+const TILE_SIZE = 100
 const CANVAS_SIZE = MAP_SIZE / TILE_SIZE
 const DOWNLOADED_IMAGE_SIZE = 400
 main()
@@ -40,11 +40,13 @@ async function main () {
     }
   })
 
- //  document.body.appendChild(placeholderCanvas)
+  document.body.appendChild(placeholderCanvas)
   document.getElementById(LOADING_CONTENT).remove()
   const map = L.map(MOSAIC_ID, {
     minZoom: -2,
-    maxZoom: 20
+    maxZoom: 20,
+    zoomControl: false,
+    crs: L.CRS.Simple
   })
   map.setView([0, 0], 4)
   let i = 0
@@ -65,6 +67,7 @@ async function main () {
     zoom: 0
   })
   layer.addTo(map)
+  window.map = map
 }
 
 function getRandomColor () {
