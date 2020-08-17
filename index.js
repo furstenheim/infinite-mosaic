@@ -12,7 +12,7 @@ const MOSAIC_ID = 'mosaic-holder'
 const LOADING_CONTENT = 'loading-content'
 const MAP_SIZE = 1000
 // const TILE_SIZE = 10
-const TILE_SIZE = 10
+const TILE_SIZE = 20
 const CANVAS_SIZE = MAP_SIZE / TILE_SIZE
 const DOWNLOADED_IMAGE_SIZE = 400
 main()
@@ -56,15 +56,37 @@ async function main () {
   const xMin = map.getCenter().lng - CANVAS_SIZE / 2
   const yMin = map.getCenter().lat - CANVAS_SIZE / 2
   const BaseContextLayer = L.GridLayer.extend({
-    createTile: function (coords) {
+    createTile: function (coords, done) {
       // return debugCoords(coords)
-      const tile = L.DomUtil.create('img', `leaflet-tile tile-${coords.x}-${coords.y}`)
+      const tile = L.DomUtil.create('canvas', `leaflet-tile tile-${coords.x}-${coords.y}`)
+      tile.height = TILE_SIZE
+      tile.width = TILE_SIZE
       const baseCoord = (coords.x - xMin + (coords.y - yMin) * CANVAS_SIZE) * 4
       const r = imageData.data[baseCoord]
       const g = imageData.data[baseCoord + 1]
       const b = imageData.data[baseCoord + 2]
       const minImage = findMin(r, g, b)
-      tile.src = minImage.name.replace('full/400', `full/${TILE_SIZE}`)
+      const tileImage = new window.Image()
+      // tileImage.src = `scrape/downloaded/${img.name.replace(/\//g, '_')}`
+      if (minImage.frame.minX === 0) {
+        // img is vertical
+        tileImage.src = minImage.name.replace('full/400', `full/${TILE_SIZE}`)
+      } else {
+        tileImage.src = minImage.name.replace('full/400', `full/${parseInt(400 * TILE_SIZE / (minImage.frame.maxX - minImage.frame.minX))}`)
+      }
+
+      tileImage.onload = function () {
+        // debugger
+        const context = tile.getContext('2d')
+        context.height = tile.height
+        context.width = tile.width
+        context.drawImage(tileImage, parseInt(minImage.frame.minX * TILE_SIZE / 400), parseInt(minImage.frame.minY * TILE_SIZE / 400), TILE_SIZE, TILE_SIZE, 0, 0, TILE_SIZE, TILE_SIZE)
+
+        // context.drawImage(tileImage, parseInt(minImage.frame.minX * TILE_SIZE / 400), parseInt(minImage.frame.minY * TILE_SIZE / 400), parseInt((minImage.frame.maxX - minImage.frame.minX) * TILE_SIZE / 400), parseInt((minImage.frame.maxY - minImage.frame.minY)* TILE_SIZE / 400), 0, 0, tile.width, tile.height)
+        done()
+      }
+      // TODO set offset
+      // tile.src =
 /*
       const size = this.getTileSize()
       // console.log(i++, coords.x, coords.y)
