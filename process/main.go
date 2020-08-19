@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"image"
 	"image/color"
+	"image/jpeg"
 	_ "image/jpeg"
 	"log"
 	"os"
@@ -14,12 +15,16 @@ import (
 
 const IMAGES_PATH = "../scrape/downloaded"
 const OUTPUT_PATH = "output.json"
+var idRegex = regexp.MustCompile(`iif_2_(.*)_full`)
 
 func main () {
 	var i int
 	exportedImages := []ExportedImage{}
 	walkError := filepath.Walk(IMAGES_PATH, func(path string, info os.FileInfo, err error) error {
 		i++
+		if i > 4 {
+			return nil
+		}
 		if i % 100 == 0 {
 			log.Println(i, "th file")
 			log.Println("Name ", info.Name(), i)
@@ -78,6 +83,19 @@ func processJPG (path string) ProcessedImage {
 		log.Fatal(decodeErr, " file ", path)
 	}
 	frame := frameFromRect(img.Bounds())
+	subImage := img.(interface {
+		SubImage(r image.Rectangle) image.Image
+	}).SubImage(image.Rect(frame.MinX, frame.MinY, frame.MaxX, frame.MaxY))
+
+	log.Println(path)
+	matchString := idRegex.FindSubmatch([]byte(path))
+
+	outputFile, openOutputErr := os.Create("../squared-images/" + string(matchString[1]) + ".jpeg")
+	if openOutputErr != nil {
+		log.Fatal(openOutputErr)
+	}
+	defer outputFile.Close()
+	jpeg.Encode(outputFile, subImage, nil)
 	avg := computeAvg(frame, img)
 	return ProcessedImage{
 		Avg:avg,
