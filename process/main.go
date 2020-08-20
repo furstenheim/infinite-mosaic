@@ -2,12 +2,14 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"golang.org/x/image/draw"
 	"image"
 	"image/color"
 	"image/jpeg"
 	_ "image/jpeg"
 	"log"
+	"math"
 	"os"
 	"path/filepath"
 	"regexp"
@@ -16,10 +18,10 @@ import (
 
 const IMAGES_PATH = "../scrape/downloaded"
 const OUTPUT_PATH = "output.json"
-const SIZE_1 = 10
-const SIZE_2 = 20
 var idRegex = regexp.MustCompile(`iif_2_(.*)_full`)
-var sprite1, sprite2 draw.Image
+var sizes = []int{10, 20, 40, 80, 160, 320}
+var sprites = make([]draw.Image, len(sizes))
+var side int
 func main () {
 	var i int
 	var j int
@@ -40,14 +42,18 @@ func main () {
 		return nil
 	})
 
-	j = 4
-	sprite1 = image.NewRGBA(image.Rect(0, 0, SIZE_1 * j, SIZE_1))
-	sprite2 = image.NewRGBA(image.Rect(0, 0, SIZE_2 * j, SIZE_2))
+	//j = 1000
+	side = int(math.Ceil(math.Sqrt(float64(j))))
+	for i, size := range(sizes) {
+		sprites[i] = image.NewRGBA(image.Rect(0, 0, size* side, size * side))
+	}
 
 	walkError := filepath.Walk(IMAGES_PATH, func(path string, info os.FileInfo, err error) error {
-		if i > 4 {
+		/*if i > 1000 {
 			return nil
 		}
+*/
+
 		if i % 100 == 0 {
 			log.Println(i, "th file")
 			log.Println("Name ", info.Name(), i)
@@ -66,6 +72,7 @@ func main () {
 				Avg:   jpg.Avg,
 				Frame: jpg.Frame,
 				Name:  strings.ReplaceAll(info.Name(), "_", "/"),
+				Id: jpg.Id,
 			}
 			exportedImages = append(exportedImages, exportedImage)
 			i++
@@ -81,12 +88,19 @@ func main () {
 	}
 	defer outputFile.Close()
 	encoder := json.NewEncoder(outputFile)
-	encoder.Encode(exportedImages)
+	encoder.Encode(Export{
+		ExportedImages: exportedImages,
+		Side:           side,
+	})
 
-	writeImage(sprite1, "../squared-images/sprite1.jpeg")
+	for i, sprite := range sprites {
+		writeImage(sprite, fmt.Sprintf("../squared-images/sprite%d.jpeg", i))
+	}
+}
 
-	writeImage(sprite2, "../squared-images/sprite2.jpeg")
-
+type Export struct {
+	ExportedImages []ExportedImage
+	Side int
 }
 
 func writeImage (img image.Image, path string) {
@@ -102,12 +116,14 @@ func writeImage (img image.Image, path string) {
 type ProcessedImage struct {
     Avg color.RGBA
     Frame Frame
+    Id string
 }
 
 type ExportedImage struct {
 	Avg   color.RGBA `json:"avg"`
 	Frame Frame `json:"frame"`
 	Name  string `json:"name"`
+	Id string `json:"id"`
 }
 
 func processJPG (path string, i int) ProcessedImage {
@@ -125,22 +141,20 @@ func processJPG (path string, i int) ProcessedImage {
 		SubImage(r image.Rectangle) image.Image
 	}).SubImage(image.Rect(frame.MinX, frame.MinY, frame.MaxX, frame.MaxY))
 
-	log.Println(path)
 	matchString := idRegex.FindSubmatch([]byte(path))
 	imgId := string(matchString[1])
-	outputFile, openOutputErr := os.Create("../squared-images/" + imgId + ".jpeg")
-	if openOutputErr != nil {
-		log.Fatal(openOutputErr)
-	}
-	defer outputFile.Close()
-	jpeg.Encode(outputFile, subImage, nil)
 
-	draw.BiLinear.Scale(sprite1, image.Rect(i * SIZE_1, 0, (i + 1) * SIZE_1, SIZE_1), subImage, subImage.Bounds(), draw.Over, nil)
-	draw.BiLinear.Scale(sprite2, image.Rect(i * SIZE_2, 0, (i + 1) * SIZE_2, SIZE_2), subImage, subImage.Bounds(), draw.Over, nil)
+	// writeImage(subImage, "../squared-images/" + imgId + ".jpeg")
+
+
+	for nSize, size := range sizes {
+		draw.CatmullRom.Scale(sprites[nSize], image.Rect((i % side) * size, (i / side) * size, (i % side) * size + size, (i / side) * size + size), subImage, subImage.Bounds(), draw.Over, nil)
+	}
 
 	avg := computeAvg(frame, img)
 	return ProcessedImage{
 		Avg:avg,
+		Id: imgId,
 		Frame: frame,
 	}
 }
