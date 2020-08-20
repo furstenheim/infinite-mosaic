@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"golang.org/x/image/draw"
 	"image"
 	"image/color"
 	"image/jpeg"
@@ -15,13 +16,35 @@ import (
 
 const IMAGES_PATH = "../scrape/downloaded"
 const OUTPUT_PATH = "output.json"
+const SIZE_1 = 10
+const SIZE_2 = 20
 var idRegex = regexp.MustCompile(`iif_2_(.*)_full`)
-
+var sprite1, sprite2 draw.Image
 func main () {
 	var i int
+	var j int
 	exportedImages := []ExportedImage{}
+	filepath.Walk(IMAGES_PATH, func(path string, info os.FileInfo, err error) error {
+		j++
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		matched, err := regexp.MatchString(`.jpg$`, path)
+		if err != nil {
+			log.Fatal(err)
+		}
+		if matched {
+			j++
+		}
+		return nil
+	})
+
+	j = 4
+	sprite1 = image.NewRGBA(image.Rect(0, 0, SIZE_1 * j, SIZE_1))
+	sprite2 = image.NewRGBA(image.Rect(0, 0, SIZE_2 * j, SIZE_2))
+
 	walkError := filepath.Walk(IMAGES_PATH, func(path string, info os.FileInfo, err error) error {
-		i++
 		if i > 4 {
 			return nil
 		}
@@ -38,13 +61,14 @@ func main () {
 			return regexErr
 		}
 		if matched {
-			jpg := processJPG(path)
+			jpg := processJPG(path, i)
 			exportedImage := ExportedImage{
 				Avg:   jpg.Avg,
 				Frame: jpg.Frame,
 				Name:  strings.ReplaceAll(info.Name(), "_", "/"),
 			}
 			exportedImages = append(exportedImages, exportedImage)
+			i++
 		}
 		return nil
 	})
@@ -59,7 +83,21 @@ func main () {
 	encoder := json.NewEncoder(outputFile)
 	encoder.Encode(exportedImages)
 
+	writeImage(sprite1, "../squared-images/sprite1.jpeg")
+
+	writeImage(sprite2, "../squared-images/sprite2.jpeg")
+
 }
+
+func writeImage (img image.Image, path string) {
+	outputFile1, openOutputErr1 := os.Create(path)
+	if openOutputErr1 != nil {
+		log.Fatal(openOutputErr1)
+	}
+	defer outputFile1.Close()
+	jpeg.Encode(outputFile1, img, nil)
+}
+
 
 type ProcessedImage struct {
     Avg color.RGBA
@@ -72,7 +110,7 @@ type ExportedImage struct {
 	Name  string `json:"name"`
 }
 
-func processJPG (path string) ProcessedImage {
+func processJPG (path string, i int) ProcessedImage {
 	imgfile, openErr := os.Open(path)
 	if openErr != nil {
 		log.Fatal(openErr)
@@ -89,13 +127,17 @@ func processJPG (path string) ProcessedImage {
 
 	log.Println(path)
 	matchString := idRegex.FindSubmatch([]byte(path))
-
-	outputFile, openOutputErr := os.Create("../squared-images/" + string(matchString[1]) + ".jpeg")
+	imgId := string(matchString[1])
+	outputFile, openOutputErr := os.Create("../squared-images/" + imgId + ".jpeg")
 	if openOutputErr != nil {
 		log.Fatal(openOutputErr)
 	}
 	defer outputFile.Close()
 	jpeg.Encode(outputFile, subImage, nil)
+
+	draw.BiLinear.Scale(sprite1, image.Rect(i * SIZE_1, 0, (i + 1) * SIZE_1, SIZE_1), subImage, subImage.Bounds(), draw.Over, nil)
+	draw.BiLinear.Scale(sprite2, image.Rect(i * SIZE_2, 0, (i + 1) * SIZE_2, SIZE_2), subImage, subImage.Bounds(), draw.Over, nil)
+
 	avg := computeAvg(frame, img)
 	return ProcessedImage{
 		Avg:avg,
