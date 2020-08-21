@@ -1,5 +1,5 @@
 import './main.scss'
-import L, {bounds} from 'leaflet'
+import L, {bounds, LatLng, LatLngBounds} from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import './CanvasLayer'
 import _ from 'lodash'
@@ -29,6 +29,7 @@ const tile2Sprite = {
   320: {type: DIRECT},
   640: {type: DIRECT}
 }
+let currentZoom = 0
 /**
  * @typedef {
  * {avg: {R: number, G: number, B: number, A: number},
@@ -36,8 +37,9 @@ const tile2Sprite = {
  * name: string, id: string}} ProcessedImage
  */
 async function main () {
+  processed.ExportedImages.unshift(null)
   // const img = processed.ExportedImages[0]
-  const img = {"avg":{"R":90,"G":85,"B":70,"A":0},"frame":{"minX":0,"minY":40,"maxX":400,"maxY":440},"name":"https://www.artic.edu/iiif/2/0c8fb799-31bb-fb44-b863-080a614966f1/full/400,/0/default.jpg","id":"0b0e79d8-b6f0-0235-2486-3464dc73d695"}
+  const img = processed.ExportedImages[getRandomNumber(1, processed.ExportedImages.length)]
   const placeholderCanvas = document.createElement('canvas')
   const context = placeholderCanvas.getContext('2d')
 
@@ -66,12 +68,13 @@ async function main () {
   document.body.appendChild(placeholderCanvas)
   document.getElementById(LOADING_CONTENT).remove()
   const map = L.map(MOSAIC_ID, {
-    minZoom: -2,
+    minZoom: 0,
     maxZoom: 20,
     zoomControl: false,
-    crs: L.CRS.Simple
+    crs: L.CRS.Simple,
+    maxBounds: new L.LatLngBounds(new L.LatLng(MAP_SIZE / 2, -MAP_SIZE / 2), new L.LatLng(-MAP_SIZE / 2, MAP_SIZE / 2))
   })
-  map.setView([0, 0], 0)
+  map.setView([0, 0], currentZoom)
   const imageData = context.getImageData(0, 0, CANVAS_SIZE, CANVAS_SIZE)
   const layer = new (L.CanvasLayer.extend({
     /**
@@ -83,12 +86,13 @@ async function main () {
      *   zoom: number}} canvasOverlay
      */
     onDrawLayer (canvasOverlay) {
-      const tileSize = getTileSize(canvasOverlay.zoom)
+      const drawZoom = canvasOverlay.zoom
+      currentZoom = drawZoom
+      const tileSize = getTileSize(drawZoom)
       const spriteConfig = tile2Sprite[tileSize]
       const width = canvasOverlay.size.x
       const height = canvasOverlay.size.y
       const northWest = canvasOverlay.bounds.getNorthWest()
-      const southEast = canvasOverlay.bounds.getSouthEast()
       // const baseCoord = (coords.x - xMin + (coords.y - yMin) * CANVAS_SIZE) * 4
       let canvasIndex = (parseInt(northWest.lng / MIN_TILE_SIZE + CANVAS_SIZE / 2) + parseInt((CANVAS_SIZE / 2 - northWest.lat / MIN_TILE_SIZE )) * CANVAS_SIZE) * 4
       // canvasIndex -= canvasIndex % 4
@@ -112,7 +116,10 @@ async function main () {
             // baseImage.src = `scrape/downloaded/${img.name.replace(/\//g, '_')}`
             tileImage.src = `squared-images/${minImage.id}.jpeg`
             tileImage.onload = function () {
-              context.drawImage(tileImage, 0, 0, tileImage.width, tileImage.height, i * tileSize, j * tileSize, tileSize, tileSize)
+              if (drawZoom === currentZoom) {
+                context.drawImage(tileImage, 0, 0, tileImage.width, tileImage.height, i * tileSize, j * tileSize, tileSize, tileSize)
+                // Prevent drawing after double zoom
+              }
             }
           }
         }
@@ -124,14 +131,8 @@ async function main () {
   window.layer = layer
   window.map = map
 }
-
-function getRandomColor () {
-  var letters = '0123456789ABCDEF'
-  var color = '#'
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)]
-  }
-  return color
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 /**
@@ -146,7 +147,7 @@ function findMin (r, g, b) {
   let minPicture
   let processedImage
   let minIndex = -1
-  for (let i = 0; i < processed.ExportedImages.length; i++) {
+  for (let i = 1; i < processed.ExportedImages.length; i++) {
     processedImage = processed.ExportedImages[i]
     const distance = (processedImage.avg.R - r) ** 2 + (processedImage.avg.G - g) ** 2 + (processedImage.avg.B - b) ** 2
     if (distance < minDistance) {
@@ -155,14 +156,7 @@ function findMin (r, g, b) {
       minIndex = i
     }
   }
-  return { index: minIndex, image: minPicture }
-}
-
-function debugCoords (coords) {
-  var tile = document.createElement('div')
-  tile.innerHTML = [coords.x, coords.y, coords.z].join(', ')
-  tile.style.outline = '1px solid red'
-  return tile
+  return { index: minIndex - 1, image: minPicture }
 }
 
 function getTileSize (zoom) {
