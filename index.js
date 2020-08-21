@@ -10,12 +10,11 @@ import processed from './process/output.json'
 import 'regenerator-runtime/runtime'
 const MOSAIC_ID = 'mosaic-holder'
 const LOADING_CONTENT = 'loading-content'
-const MAP_SIZE = 1000
+const MAP_SIZE = 1280
 // const TILE_SIZE = 10
 const TILE_SIZE = 10
 const MIN_TILE_SIZE = 10
 const CANVAS_SIZE = MAP_SIZE / TILE_SIZE
-const DOWNLOADED_IMAGE_SIZE = 400
 main()
 let sprites = []
 const SIDE = processed.Side
@@ -25,9 +24,10 @@ const tile2Sprite = {
   10: {type: SPRITE, index: 0, size: 10},
   20: {type: SPRITE, index: 1, size: 20},
   40: {type: SPRITE, index: 2, size: 40},
-  100: {type: DIRECT},
-  200: {type: DIRECT},
-  500: {type: DIRECT}
+  80: {type: DIRECT},
+  160: {type: DIRECT},
+  320: {type: DIRECT},
+  640: {type: DIRECT}
 }
 /**
  * @typedef {
@@ -166,6 +166,6 @@ function debugCoords (coords) {
 }
 
 function getTileSize (zoom) {
-  const sizes = [10, 20, 40, 100, 200, 500]
-  return sizes[zoom % 6]
+  const sizes = [10, 20, 40, 80, 160, 320, 640]
+  return sizes[zoom % 7]
 }
