@@ -5,7 +5,8 @@
   "author": "Gabriel <furstenheim@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "watch": "parcel index.html"
+    "watch": "parcel index.html",
+    "link":  "ln -s ../squared-images/ dist/ -f"
   },
   "dependencies": {
     "@types/leaflet": "^1.5.17",
@@ -17,8 +18,5 @@
     "puppeteer": "^5.2.1",
     "puppeteer-autoscroll-down": "^0.1.6",
     "sass": "^1.26.10"
-  },
-  "staticFiles": {
-    "staticPath": ["scrape/downloaded/a.jpg"]
   }
 }
