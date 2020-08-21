@@ -124,7 +124,7 @@ async function main () {
           if (cachedBestImages[depth][canvasIndex]) {
             imageIndex = cachedBestImages[depth][canvasIndex]
           } else {
-            imageIndex = await computeAndMemoize(xInGrid, yInGrid, depth)
+            imageIndex = await computeAndMemoize(xInGrid + i, yInGrid + j, depth)
           }
           const adaptedIndex = imageIndex - 1
           canvasIndex++
