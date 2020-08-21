@@ -1,5 +1,5 @@
 import './main.scss'
-import L from 'leaflet'
+import L, {bounds} from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import './CanvasLayer'
 import _ from 'lodash'
@@ -13,6 +13,7 @@ const LOADING_CONTENT = 'loading-content'
 const MAP_SIZE = 1000
 // const TILE_SIZE = 10
 const TILE_SIZE = 10
+const MIN_TILE_SIZE = 10
 const CANVAS_SIZE = MAP_SIZE / TILE_SIZE
 const DOWNLOADED_IMAGE_SIZE = 400
 main()
@@ -20,7 +21,8 @@ let sprites = []
 const SIDE = processed.Side
 const tile2Sprite = {
   10: {index: 0, size: 10},
-  20: {index: 1, size: 20}
+  20: {index: 1, size: 20},
+  40: {index: 2, size: 40}
 }
 /**
  * @typedef {
@@ -30,7 +32,7 @@ const tile2Sprite = {
  */
 async function main () {
   // const img = processed.ExportedImages[0]
-  const img = {"avg":{"R":90,"G":85,"B":70,"A":0},"frame":{"minX":0,"minY":40,"maxX":400,"maxY":440},"name":"https://www.artic.edu/iiif/2/0c8fb799-31bb-fb44-b863-080a614966f1/full/400,/0/default.jpg","id":"0034a3d9-f1c0-a599-ebcf-f80af63b730a"}
+  const img = {"avg":{"R":90,"G":85,"B":70,"A":0},"frame":{"minX":0,"minY":40,"maxX":400,"maxY":440},"name":"https://www.artic.edu/iiif/2/0c8fb799-31bb-fb44-b863-080a614966f1/full/400,/0/default.jpg","id":"0b0e79d8-b6f0-0235-2486-3464dc73d695"}
   const placeholderCanvas = document.createElement('canvas')
   const context = placeholderCanvas.getContext('2d')
 
@@ -72,25 +74,34 @@ async function main () {
      * @param {{bounds: LatLngBounds, canvas: canvas, center: {x: number, y: number},
      * corner: {x: number, y: number}
      *   layer: Layer,
-     * size: Point,
+     *   size: Point,
      *   zoom: number}} canvasOverlay
      */
     onDrawLayer (canvasOverlay) {
-      const spriteConfig = tile2Sprite[TILE_SIZE]
+      const tileSize = getTileSize(canvasOverlay.zoom)
+      const spriteConfig = tile2Sprite[tileSize]
       const width = canvasOverlay.size.x
       const height = canvasOverlay.size.y
-      let canvasIndex = 0
+      const northWest = canvasOverlay.bounds.getNorthWest()
+      const southEast = canvasOverlay.bounds.getSouthEast()
+      // const baseCoord = (coords.x - xMin + (coords.y - yMin) * CANVAS_SIZE) * 4
+      let canvasIndex = parseInt(((northWest.lng / MIN_TILE_SIZE + CANVAS_SIZE / 2) + (CANVAS_SIZE / 2 - northWest.lat / MIN_TILE_SIZE ) * CANVAS_SIZE) * 4)
+      canvasIndex -= canvasIndex % 4
+      const deltaYBase = parseInt((CANVAS_SIZE - (southEast.lng - northWest.lng) / MIN_TILE_SIZE) * 4)
+      const deltaY = deltaYBase - deltaYBase % 4
+      // let canvasIndex = 0
       const context = canvasOverlay.canvas.getContext('2d')
-      for (let j = 0; j < height / TILE_SIZE; j++) {
-        for (let i = 0; i < width / TILE_SIZE; i++) {
+      for (let j = 0; j < height / tileSize; j++) {
+        for (let i = 0; i < width / tileSize; i++) {
           const r = imageData.data[canvasIndex]
           const g = imageData.data[canvasIndex + 1]
           const b = imageData.data[canvasIndex + 2]
           canvasIndex += 4
           const { image: minImage, index: imageIndex} = findMin(r, g, b)
           const sprite = sprites[spriteConfig.index]
-          context.drawImage(sprite, (imageIndex % SIDE) * spriteConfig.size, parseInt(imageIndex / SIDE) * spriteConfig.size, spriteConfig.size, spriteConfig.size, i * TILE_SIZE, j * TILE_SIZE, TILE_SIZE, TILE_SIZE)
+          context.drawImage(sprite, (imageIndex % SIDE) * spriteConfig.size, parseInt(imageIndex / SIDE) * spriteConfig.size, spriteConfig.size, spriteConfig.size, i * tileSize, j * tileSize, tileSize, tileSize)
         }
+        canvasIndex += deltaY
       }
     }
   }))()
@@ -139,3 +150,7 @@ function debugCoords (coords) {
   return tile
 }
 
+function getTileSize (zoom) {
+  const sizes = [10, 20, 40]
+  return sizes[zoom % 3]
+}
