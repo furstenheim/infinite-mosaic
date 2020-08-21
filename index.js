@@ -19,10 +19,15 @@ const DOWNLOADED_IMAGE_SIZE = 400
 main()
 let sprites = []
 const SIDE = processed.Side
+const SPRITE = 'sprite'
+const DIRECT = 'direct'
 const tile2Sprite = {
-  10: {index: 0, size: 10},
-  20: {index: 1, size: 20},
-  40: {index: 2, size: 40}
+  10: {type: SPRITE, index: 0, size: 10},
+  20: {type: SPRITE, index: 1, size: 20},
+  40: {type: SPRITE, index: 2, size: 40},
+  100: {type: DIRECT},
+  200: {type: DIRECT},
+  500: {type: DIRECT}
 }
 /**
  * @typedef {
@@ -85,10 +90,11 @@ async function main () {
       const northWest = canvasOverlay.bounds.getNorthWest()
       const southEast = canvasOverlay.bounds.getSouthEast()
       // const baseCoord = (coords.x - xMin + (coords.y - yMin) * CANVAS_SIZE) * 4
-      let canvasIndex = parseInt(((northWest.lng / MIN_TILE_SIZE + CANVAS_SIZE / 2) + (CANVAS_SIZE / 2 - northWest.lat / MIN_TILE_SIZE ) * CANVAS_SIZE) * 4)
-      canvasIndex -= canvasIndex % 4
-      const deltaYBase = parseInt((CANVAS_SIZE - (southEast.lng - northWest.lng) / MIN_TILE_SIZE) * 4)
-      const deltaY = deltaYBase - deltaYBase % 4
+      let canvasIndex = (parseInt(northWest.lng / MIN_TILE_SIZE + CANVAS_SIZE / 2) + parseInt((CANVAS_SIZE / 2 - northWest.lat / MIN_TILE_SIZE )) * CANVAS_SIZE) * 4
+      // canvasIndex -= canvasIndex % 4
+      const deltaY = 4 * CANVAS_SIZE - parseInt(CANVAS_SIZE / tileSize * 4 * MIN_TILE_SIZE) // canvas size - width
+
+      // const deltaY = deltaYBase - deltaYBase % 4
       // let canvasIndex = 0
       const context = canvasOverlay.canvas.getContext('2d')
       for (let j = 0; j < height / tileSize; j++) {
@@ -98,8 +104,17 @@ async function main () {
           const b = imageData.data[canvasIndex + 2]
           canvasIndex += 4
           const { image: minImage, index: imageIndex} = findMin(r, g, b)
-          const sprite = sprites[spriteConfig.index]
-          context.drawImage(sprite, (imageIndex % SIDE) * spriteConfig.size, parseInt(imageIndex / SIDE) * spriteConfig.size, spriteConfig.size, spriteConfig.size, i * tileSize, j * tileSize, tileSize, tileSize)
+          if (spriteConfig.type === SPRITE) {
+            const sprite = sprites[spriteConfig.index]
+            context.drawImage(sprite, (imageIndex % SIDE) * spriteConfig.size, parseInt(imageIndex / SIDE) * spriteConfig.size, spriteConfig.size, spriteConfig.size, i * tileSize, j * tileSize, tileSize, tileSize)
+          } else {
+            const tileImage = new window.Image()
+            // baseImage.src = `scrape/downloaded/${img.name.replace(/\//g, '_')}`
+            tileImage.src = `squared-images/${minImage.id}.jpeg`
+            tileImage.onload = function () {
+              context.drawImage(tileImage, 0, 0, tileImage.width, tileImage.height, i * tileSize, j * tileSize, tileSize, tileSize)
+            }
+          }
         }
         canvasIndex += deltaY
       }
@@ -151,6 +166,6 @@ function debugCoords (coords) {
 }
 
 function getTileSize (zoom) {
-  const sizes = [10, 20, 40]
-  return sizes[zoom % 3]
+  const sizes = [10, 20, 40, 100, 200, 500]
+  return sizes[zoom % 6]
 }
