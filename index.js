@@ -10,6 +10,7 @@ import processed from './process/output.json'
 import 'regenerator-runtime/runtime'
 const MOSAIC_ID = 'mosaic-holder'
 const LOADING_CONTENT = 'loading-content'
+const d3 = require('d3')
 const MAP_SIZE = 1280
 // const TILE_SIZE = 10
 const TILE_SIZE = 10
@@ -40,23 +41,7 @@ let currentExecution = 0
  */
 async function main () {
   processed.ExportedImages.unshift(null)
-/*  // const img = processed.ExportedImages[0]
-  const img = processed.ExportedImages[getRandomNumber(1, processed.ExportedImages.length)]
-  const placeholderCanvas = document.createElement('canvas')
-  const context = placeholderCanvas.getContext('2d')
 
-  placeholderCanvas.height = CANVAS_SIZE
-  placeholderCanvas.width = CANVAS_SIZE
-  await new Promise(function (resolve, reject) {
-    const baseImage = new window.Image()
-    // baseImage.src = `scrape/downloaded/${img.name.replace(/\//g, '_')}`
-    baseImage.src = `squared-images/${img.id}.jpeg`
-    baseImage.crossOrigin = 'Anonymous'
-    baseImage.onload = function () {
-      context.drawImage(baseImage, 0, 0, CANVAS_SIZE, CANVAS_SIZE)
-      resolve()
-    }
-  })*/
   sprites = await Promise.all(_.times(3, function (i) {
     return new Promise(function (resolve) {
       const sprite = new window.Image()
@@ -67,10 +52,21 @@ async function main () {
     })
   }))
 
-/*
-  document.body.appendChild(placeholderCanvas)
-*/
   document.getElementById(LOADING_CONTENT).remove()
+
+  const canvas = d3.select('canvas')
+  const context = canvas.node().getContext('2d')
+  const width = canvas.property('width')
+  const height = canvas.property('height')
+  const transform = d3.zoomIdentity
+  canvas
+    .call(d3.zoom().on('zoom', render))
+}
+
+function render (event) {
+  console.log('render', event, d3.zoomTransform(this))
+}
+function leafletMosaic () {
   const map = L.map(MOSAIC_ID, {
     minZoom: 0,
     maxZoom: 20,
@@ -79,9 +75,7 @@ async function main () {
     maxBounds: new L.LatLngBounds(new L.LatLng(MAP_SIZE / 2, -MAP_SIZE / 2), new L.LatLng(-MAP_SIZE / 2, MAP_SIZE / 2))
   })
   map.setView([0, 0], 0)
-/*
-  const imageData = context.getImageData(0, 0, CANVAS_SIZE, CANVAS_SIZE)
-*/
+
   const layer = new (L.CanvasLayer.extend({
     /**
      *
