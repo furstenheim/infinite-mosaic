@@ -4,6 +4,12 @@ body  {
   margin: 0;
 }
 $mosaic-size:1280px;
+#app{
+  // overflow: hidden;
+  position: relative;
+  height: $mosaic-size;
+  width: $mosaic-size;
+}
 
 #mosaic-holder{
   // overflow: hidden;

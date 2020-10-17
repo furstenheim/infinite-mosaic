@@ -53,19 +53,104 @@ async function main () {
   }))
 
   document.getElementById(LOADING_CONTENT).remove()
-
   const canvas = d3.select('canvas')
+  var cs = window.getComputedStyle(document.getElementById('app'))
+  var w = parseInt(cs.getPropertyValue('width'), 10)
+  var h = parseInt(cs.getPropertyValue('height'), 10)
+
+  canvas.property('width', w)
+  canvas.property('height', h)
   const context = canvas.node().getContext('2d')
   const width = canvas.property('width')
   const height = canvas.property('height')
   const transform = d3.zoomIdentity
+  const zoomBehaviour = d3.zoom().scaleExtent([1, 150]).on('zoom', render)
   canvas
-    .call(d3.zoom().on('zoom', render))
+    .call(zoomBehaviour)
+
+  zoomBehaviour
+
+  function getVisibleArea (t) {
+    var l = t.invert([0, 0])
+    var r = t.invert([width, height])
+
+    return { w: Math.trunc(l[0]), n: Math.trunc(l[1]), e: Math.trunc(r[0]), s: Math.trunc(r[1]) }
+  }
+  function render (event) {
+    console.log('render', event, d3.zoomTransform(this))
+    console.log('Visible area', getVisibleArea(event.transform))
+    console.log(width, height)
+    const transform = d3.zoomTransform(canvas)
+    const drawZoom = parseInt(transform.k) - 1
+    console.log('drawZoom', drawZoom)
+    const depth = (drawZoom - drawZoom % tile2Sprite.length) / tile2Sprite.length
+    const boundCoordinates = getVisibleArea(event.transform)
+    d3Mosaic(depth, drawZoom, boundCoordinates)
+  }
+
+  const initialDepth = 0
+  const initialZoom = 0
+  const initialCoordinates = {
+    w: 0, n: 0, s: h, e: w
+  }
+
+  d3Mosaic(initialDepth, initialZoom, initialCoordinates)
+
+  async function d3Mosaic (depth, drawZoom, boundCoordinates) {
+    if (!cachedBestImages[depth]) {
+      cachedBestImages[depth] = new Uint16Array(getSide(depth) * getSide(depth))
+    }
+
+    const spriteConfig = tile2Sprite[drawZoom % (tile2Sprite.length)]
+    const tileSize = spriteConfig.size
+
+    const xInGrid = parseInt((boundCoordinates.w / MIN_TILE_SIZE) * getSide(depth - 1))
+    const yInGrid = parseInt((boundCoordinates.n / MIN_TILE_SIZE) * getSide(depth - 1))
+
+    console.log('depth', depth)
+    console.log('xInGrid', xInGrid, 'yInGrid', yInGrid)
+    if (xInGrid < 0 || yInGrid < 0) {
+      // TODO prevent this
+      return
+    }
+    let canvasIndex = xInGrid + yInGrid * getSide(depth)
+    // canvasIndex -= canvasIndex % 4
+    const deltaY = getSide(depth) - parseInt(CANVAS_SIZE / tileSize * MIN_TILE_SIZE) // canvas size - width
+
+    // const deltaY = deltaYBase - deltaYBase % 4
+    // let canvasIndex = 0
+    // const context = canvas.getContext('2d')
+    for (let j = 0; j < height / tileSize; j++) {
+      for (let i = 0; i < width / tileSize; i++) {
+        let imageIndex
+        if (cachedBestImages[depth][canvasIndex]) {
+          imageIndex = cachedBestImages[depth][canvasIndex]
+        } else {
+          imageIndex = await computeAndMemoize(xInGrid + i, yInGrid + j, depth)
+        }
+        const adaptedIndex = imageIndex - 1
+        canvasIndex++
+        const minImage = processed.ExportedImages[imageIndex]
+        if (spriteConfig.type === SPRITE) {
+          const sprite = sprites[spriteConfig.index]
+          context.drawImage(sprite, (adaptedIndex % SIDE) * spriteConfig.size, parseInt(adaptedIndex / SIDE) * spriteConfig.size, spriteConfig.size, spriteConfig.size, i * tileSize, j * tileSize, tileSize, tileSize)
+        } else {
+          const tileImage = new window.Image()
+          // baseImage.src = `scrape/downloaded/${img.name.replace(/\//g, '_')}`
+          tileImage.src = `squared-images/${minImage.id}.jpeg`
+          tileImage.onload = function () {
+            // if (thisExecution === currentExecution) {
+              context.drawImage(tileImage, 0, 0, tileImage.width, tileImage.height, i * tileSize, j * tileSize, tileSize, tileSize)
+              // Prevent drawing after double zoom
+            // }
+          }
+        }
+      }
+      canvasIndex += deltaY
+    }
+  }
 }
 
-function render (event) {
-  console.log('render', event, d3.zoomTransform(this))
-}
 function leafletMosaic () {
   const map = L.map(MOSAIC_ID, {
     minZoom: 0,
