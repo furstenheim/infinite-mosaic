@@ -3,6 +3,7 @@ import L, { bounds, LatLng, LatLngBounds } from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import './CanvasLayer'
 import _ from 'lodash'
+import LRU from 'lru-cache'
 /**
  * @type {{ExportedImages: Array<ProcessedImage>}}
  */
@@ -30,6 +31,7 @@ const tile2Sprite = [
   { type: DIRECT, size: 320 },
   { type: DIRECT, size: 640 }
 ]
+const imagesCache = new LRU(200)
 
 const cachedBestImages = []
 let currentExecution = 0
@@ -153,19 +155,25 @@ async function main () {
           const sprite = sprites[spriteConfig.index]
           context.drawImage(sprite, (adaptedIndex % SIDE) * spriteConfig.size, parseInt(adaptedIndex / SIDE) * spriteConfig.size, spriteConfig.size, spriteConfig.size, i * tileSize, j * tileSize, tileSize, tileSize)
         } else {
-          const tileImage = new window.Image()
-          // baseImage.src = `scrape/downloaded/${img.name.replace(/\//g, '_')}`
-          tileImage.src = `squared-images/${minImage.id}.jpeg`
-          remainingImages++
-          tileImage.onload = function () {
-            remainingImages--
+          const cachedImage = imagesCache.get(minImage.id)
+          if (cachedImage) {
+            context.drawImage(cachedImage, 0, 0, cachedImage.width, cachedImage.height, i * tileSize, j * tileSize, tileSize, tileSize)
+          } else {
+            const tileImage = new window.Image()
+            // baseImage.src = `scrape/downloaded/${img.name.replace(/\//g, '_')}`
+            tileImage.src = `squared-images/${minImage.id}.jpeg`
+            remainingImages++
+            tileImage.onload = function () {
+              remainingImages--
 
-            if (thisExecution === currentExecution) {
-              // Prevent drawing after double zoom
-              context.drawImage(tileImage, 0, 0, tileImage.width, tileImage.height, i * tileSize, j * tileSize, tileSize, tileSize)
-            }
-            if (remainingImages === 0) {
-              renderingDone()
+              if (thisExecution === currentExecution) {
+                // Prevent drawing after double zoom
+                context.drawImage(tileImage, 0, 0, tileImage.width, tileImage.height, i * tileSize, j * tileSize, tileSize, tileSize)
+                imagesCache.set(minImage.id, tileImage)
+              }
+              if (remainingImages === 0) {
+                renderingDone()
+              }
             }
           }
         }
