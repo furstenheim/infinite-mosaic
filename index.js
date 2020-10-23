@@ -135,7 +135,7 @@ async function main () {
     })
     const thisExecution = currentExecution
     for (let j = 0; j < height / tileSize + 1; j++) {
-      for (let i = 0; i < width / tileSize + 1; i++ && canvasIndex++) {
+      for (let i = 0; i < width / tileSize + 1; i++, canvasIndex++) {
         const currentXInGrid = xInGrid + i
         const currentYInGrid = yInGrid + j
         if (currentXInGrid >= maxXInGrid || currentYInGrid >= maxYInGrid || currentXInGrid < 0 || currentYInGrid < 0) {
@@ -178,7 +178,7 @@ async function main () {
           }
         }
       }
-      canvasIndex += deltaY
+      canvasIndex += deltaY - 1
     }
     if (remainingImages !== 0) {
       await finishedRenderingPromise
