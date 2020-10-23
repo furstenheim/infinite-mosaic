@@ -62,8 +62,9 @@ async function main () {
   canvas.property('height', h)
   const displayedContext = canvas.node().getContext('2d')
   const hiddenCanvas = document.createElement('canvas')
-  hiddenCanvas.width = w
-  hiddenCanvas.height = h
+  // Make hidden canvas bigger since we might need to get a subportion
+  hiddenCanvas.width = w * 2
+  hiddenCanvas.height = h * 2
   const context = hiddenCanvas.getContext('2d')
   const width = canvas.property('width')
   const height = canvas.property('height')
@@ -88,6 +89,7 @@ async function main () {
     console.log('drawZoom', drawZoom, 'k', transform.k)
     const depth = (drawZoom - drawZoom % tile2Sprite.length) / tile2Sprite.length
     const boundCoordinates = getVisibleArea(event.transform)
+    currentExecution++
     d3Mosaic(depth, drawZoom, transform.k - drawZoom, boundCoordinates)
   }
 
@@ -129,8 +131,9 @@ async function main () {
     const finishedRenderingPromise = new Promise(function (resolve) {
       renderingDone = resolve
     })
-    for (let j = 0; j < height / tileSize; j++) {
-      for (let i = 0; i < width / tileSize; i++ && canvasIndex++) {
+    const thisExecution = currentExecution
+    for (let j = 0; j < height / tileSize + 1; j++) {
+      for (let i = 0; i < width / tileSize + 1; i++ && canvasIndex++) {
         const currentXInGrid = xInGrid + i
         const currentYInGrid = yInGrid + j
         if (currentXInGrid >= maxXInGrid || currentYInGrid >= maxYInGrid || currentXInGrid < 0 || currentYInGrid < 0) {
@@ -157,23 +160,24 @@ async function main () {
           tileImage.onload = function () {
             remainingImages--
 
-            // if (thisExecution === currentExecution) {
-            context.drawImage(tileImage, 0, 0, tileImage.width, tileImage.height, i * tileSize, j * tileSize, tileSize, tileSize)
-
-            // Prevent drawing after double zoom
-            // }
+            if (thisExecution === currentExecution) {
+              // Prevent drawing after double zoom
+              context.drawImage(tileImage, 0, 0, tileImage.width, tileImage.height, i * tileSize, j * tileSize, tileSize, tileSize)
+            }
             if (remainingImages === 0) {
               renderingDone()
             }
           }
         }
       }
-      canvasIndex += deltaY + 1
+      canvasIndex += deltaY
     }
     if (remainingImages !== 0) {
       await finishedRenderingPromise
     }
-    displayedContext.drawImage(context.canvas, parseInt((floatXCoordinateInGrid - xInGrid) * tileSize), parseInt((floatYCoordinateInGrid - yInGrid) * tileSize), width / scaleFactor, height / scaleFactor, 0, 0, width, height)
+    if (thisExecution === currentExecution) {
+      displayedContext.drawImage(context.canvas, parseInt((floatXCoordinateInGrid - xInGrid) * tileSize), parseInt((floatYCoordinateInGrid - yInGrid) * tileSize), width / scaleFactor, height / scaleFactor, 0, 0, width, height)
+    }
   }
 }
 
