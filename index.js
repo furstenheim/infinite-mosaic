@@ -60,7 +60,11 @@ async function main () {
 
   canvas.property('width', w)
   canvas.property('height', h)
-  const context = canvas.node().getContext('2d')
+  const displayedContext = canvas.node().getContext('2d')
+  const hiddenCanvas = document.createElement('canvas')
+  hiddenCanvas.width = w
+  hiddenCanvas.height = h
+  const context = hiddenCanvas.getContext('2d')
   const width = canvas.property('width')
   const height = canvas.property('height')
   const transform = d3.zoomIdentity
@@ -84,7 +88,7 @@ async function main () {
     console.log('drawZoom', drawZoom, 'k', transform.k)
     const depth = (drawZoom - drawZoom % tile2Sprite.length) / tile2Sprite.length
     const boundCoordinates = getVisibleArea(event.transform)
-    d3Mosaic(depth, drawZoom, boundCoordinates)
+    d3Mosaic(depth, drawZoom, transform.k - drawZoom, boundCoordinates)
   }
 
   const initialDepth = 0
@@ -93,29 +97,26 @@ async function main () {
     w: 0, n: 0, s: h, e: w
   }
 
-  d3Mosaic(initialDepth, initialZoom, initialCoordinates)
+  d3Mosaic(initialDepth, initialZoom, 1, initialCoordinates)
 
-  async function d3Mosaic (depth, drawZoom, boundCoordinates) {
+  async function d3Mosaic (depth, drawZoom, scaleFactor, boundCoordinates) {
     if (!cachedBestImages[depth]) {
       cachedBestImages[depth] = new Uint16Array(getSide(depth) * getSide(depth))
     }
 
-
     const spriteConfig = tile2Sprite[drawZoom % (tile2Sprite.length)]
     const tileSize = spriteConfig.size
 
-    const xInGrid = parseInt((boundCoordinates.w / MIN_TILE_SIZE) * getSide(depth - 1))
-    const yInGrid = parseInt((boundCoordinates.n / MIN_TILE_SIZE) * getSide(depth - 1))
+    const floatXCoordinateInGrid = (boundCoordinates.w / MIN_TILE_SIZE) * getSide(depth - 1)
+    const floatYCoordinateInGrid = (boundCoordinates.n / MIN_TILE_SIZE) * getSide(depth - 1)
+    const xInGrid = parseInt(floatXCoordinateInGrid)
+    const yInGrid = parseInt(floatYCoordinateInGrid)
 
     const maxXInGrid = parseInt((width / MIN_TILE_SIZE) * getSide(depth - 1))
     const maxYInGrid = parseInt((height / MIN_TILE_SIZE) * getSide(depth - 1))
 
     console.log('depth', depth)
     console.log('xInGrid', xInGrid, 'yInGrid', yInGrid)
-    if (xInGrid < 0 || yInGrid < 0) {
-      // TODO prevent this
-      return
-    }
     let canvasIndex = xInGrid + yInGrid * getSide(depth)
     // canvasIndex -= canvasIndex % 4
     const deltaY = getSide(depth) - parseInt(CANVAS_SIZE / tileSize * MIN_TILE_SIZE) // canvas size - width
@@ -157,6 +158,7 @@ async function main () {
       }
       canvasIndex += deltaY + 1
     }
+    displayedContext.drawImage(context.canvas, parseInt((floatXCoordinateInGrid - xInGrid) * tileSize), parseInt((floatYCoordinateInGrid - yInGrid) * tileSize), width / scaleFactor, height / scaleFactor, 0, 0, width, height)
   }
 }
 
