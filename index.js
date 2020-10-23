@@ -68,7 +68,6 @@ async function main () {
   canvas
     .call(zoomBehaviour)
 
-  zoomBehaviour
 
   function getVisibleArea (t) {
     var l = t.invert([0, 0])
@@ -77,12 +76,12 @@ async function main () {
     return { w: Math.trunc(l[0]), n: Math.trunc(l[1]), e: Math.trunc(r[0]), s: Math.trunc(r[1]) }
   }
   function render (event) {
-    console.log('render', event, d3.zoomTransform(this))
+    const transform = d3.zoomTransform(this)
+    console.log('render', event, transform)
     console.log('Visible area', getVisibleArea(event.transform))
     console.log(width, height)
-    const transform = d3.zoomTransform(canvas)
     const drawZoom = parseInt(transform.k) - 1
-    console.log('drawZoom', drawZoom)
+    console.log('drawZoom', drawZoom, 'k', transform.k)
     const depth = (drawZoom - drawZoom % tile2Sprite.length) / tile2Sprite.length
     const boundCoordinates = getVisibleArea(event.transform)
     d3Mosaic(depth, drawZoom, boundCoordinates)
@@ -101,11 +100,15 @@ async function main () {
       cachedBestImages[depth] = new Uint16Array(getSide(depth) * getSide(depth))
     }
 
+
     const spriteConfig = tile2Sprite[drawZoom % (tile2Sprite.length)]
     const tileSize = spriteConfig.size
 
     const xInGrid = parseInt((boundCoordinates.w / MIN_TILE_SIZE) * getSide(depth - 1))
     const yInGrid = parseInt((boundCoordinates.n / MIN_TILE_SIZE) * getSide(depth - 1))
+
+    const maxXInGrid = parseInt((width / MIN_TILE_SIZE) * getSide(depth - 1))
+    const maxYInGrid = parseInt((height / MIN_TILE_SIZE) * getSide(depth - 1))
 
     console.log('depth', depth)
     console.log('xInGrid', xInGrid, 'yInGrid', yInGrid)
@@ -121,15 +124,21 @@ async function main () {
     // let canvasIndex = 0
     // const context = canvas.getContext('2d')
     for (let j = 0; j < height / tileSize; j++) {
-      for (let i = 0; i < width / tileSize; i++) {
+      for (let i = 0; i < width / tileSize; i++ && canvasIndex++) {
+        const currentXInGrid = xInGrid + i
+        const currentYInGrid = yInGrid + j
+        if (currentXInGrid >= maxXInGrid || currentYInGrid >= maxYInGrid || currentXInGrid < 0 || currentYInGrid < 0) {
+          context.fillStyle = 'black'
+          context.fillRect(i * tileSize, j * tileSize, tileSize, tileSize)
+          continue
+        }
         let imageIndex
         if (cachedBestImages[depth][canvasIndex]) {
           imageIndex = cachedBestImages[depth][canvasIndex]
         } else {
-          imageIndex = await computeAndMemoize(xInGrid + i, yInGrid + j, depth)
+          imageIndex = await computeAndMemoize(currentXInGrid, currentYInGrid, depth)
         }
         const adaptedIndex = imageIndex - 1
-        canvasIndex++
         const minImage = processed.ExportedImages[imageIndex]
         if (spriteConfig.type === SPRITE) {
           const sprite = sprites[spriteConfig.index]
@@ -146,7 +155,7 @@ async function main () {
           }
         }
       }
-      canvasIndex += deltaY
+      canvasIndex += deltaY + 1
     }
   }
 }
