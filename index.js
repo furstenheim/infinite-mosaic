@@ -87,12 +87,12 @@ async function main () {
     console.log('render', event, transform)
     console.log('Visible area', getVisibleArea(event.transform))
     console.log(width, height)
-    const drawZoom = parseInt(Math.log(transform.k))
+    const drawZoom = parseInt(Math.log2(transform.k))
     console.log('drawZoom', drawZoom, 'k', transform.k)
     const depth = (drawZoom - drawZoom % tile2Sprite.length) / tile2Sprite.length
     const boundCoordinates = getVisibleArea(event.transform)
     currentExecution++
-    d3Mosaic(depth, drawZoom, Math.log(transform.k) - drawZoom + 1, boundCoordinates)
+    d3Mosaic(depth, drawZoom, Math.log2(transform.k) - drawZoom + 1, boundCoordinates)
   }
 
   const initialDepth = 0
