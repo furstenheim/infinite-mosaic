@@ -71,7 +71,7 @@ async function main () {
   const width = canvas.property('width')
   const height = canvas.property('height')
   const transform = d3.zoomIdentity
-  const zoomBehaviour = d3.zoom().scaleExtent([1, 150]).on('zoom', render)
+  const zoomBehaviour = d3.zoom().scaleExtent([1, Infinity]).on('zoom', render)
   canvas
     .call(zoomBehaviour)
 
@@ -87,12 +87,12 @@ async function main () {
     console.log('render', event, transform)
     console.log('Visible area', getVisibleArea(event.transform))
     console.log(width, height)
-    const drawZoom = parseInt(transform.k) - 1
+    const drawZoom = parseInt(Math.log(transform.k))
     console.log('drawZoom', drawZoom, 'k', transform.k)
     const depth = (drawZoom - drawZoom % tile2Sprite.length) / tile2Sprite.length
     const boundCoordinates = getVisibleArea(event.transform)
     currentExecution++
-    d3Mosaic(depth, drawZoom, transform.k - drawZoom, boundCoordinates)
+    d3Mosaic(depth, drawZoom, Math.log(transform.k) - drawZoom + 1, boundCoordinates)
   }
 
   const initialDepth = 0
