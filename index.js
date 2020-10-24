@@ -80,7 +80,7 @@ async function main () {
     var l = t.invert([0, 0])
     var r = t.invert([width, height])
 
-    return { w: Math.trunc(l[0]), n: Math.trunc(l[1]), e: Math.trunc(r[0]), s: Math.trunc(r[1]) }
+    return { w: l[0], n: l[1], e: r[0], s: r[1] }
   }
   function render (event) {
     const transform = d3.zoomTransform(this)
@@ -224,7 +224,7 @@ async function main () {
       await finishedRenderingPromise
     }
     if (thisExecution === currentExecution) {
-      displayedContext.drawImage(context.canvas, parseInt((floatXCoordinateInAbsoluteGrid - xInAbsoluteGrid) * tileSize), parseInt((floatYCoordinateInAbsoluteGrid - yInAbsoluteGrid) * tileSize), width / scaleFactor, height / scaleFactor, 0, 0, width, height)
+      displayedContext.drawImage(context.canvas, (floatXCoordinateInAbsoluteGrid - xInAbsoluteGrid) * tileSize, (floatYCoordinateInAbsoluteGrid - yInAbsoluteGrid) * tileSize, width / scaleFactor, height / scaleFactor, 0, 0, width, height)
     }
   }
 }
