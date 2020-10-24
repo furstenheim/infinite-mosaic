@@ -104,10 +104,6 @@ async function main () {
   d3Mosaic(initialDepth, initialZoom, 1, initialCoordinates)
 
   async function d3Mosaic (depth, drawZoom, scaleFactor, boundCoordinates) {
-/*    if (!cachedBestImages[depth]) {
-      cachedBestImages[depth] = {}
-    }*/
-
     const spriteConfig = tile2Sprite[drawZoom % (tile2Sprite.length)]
     const tileSize = spriteConfig.size
 
@@ -120,7 +116,6 @@ async function main () {
     const xInAbsoluteGrid = parseInt(floatXCoordinateInAbsoluteGrid)
     const yInAbsoluteGrid = parseInt(floatYCoordinateInAbsoluteGrid)
 
-    const relativeGridSize = CANVAS_SIZE / MIN_TILE_SIZE
 
     // Prevent errors on the negative coordinates
     let xInRelativeGrid = (xInAbsoluteGrid + CANVAS_SIZE) % CANVAS_SIZE
@@ -157,22 +152,8 @@ async function main () {
           context.fillStyle = 'black'
           context.fillRect(i * tileSize, j * tileSize, tileSize, tileSize)
           toAvoidPaiting = true
-          continue
         }
 
-        xInRelativeGrid = (currentXInGrid + CANVAS_SIZE) % CANVAS_SIZE
-        yInRelativeGrid = (currentYInGrid + CANVAS_SIZE) % CANVAS_SIZE
-
-        const newXInParentGrid = (currentXInGrid - xInRelativeGrid) / CANVAS_SIZE
-        const newYInParentGrid = (currentYInGrid - yInRelativeGrid) / CANVAS_SIZE
-
-        if (newXInParentGrid !== xInParentGrid || newYInParentGrid !== yInParentGrid) {
-          changeGrid = true
-          xInParentGrid = newXInParentGrid
-          yInParentGrid = newYInParentGrid
-        }
-
-        /*
         if (yInRelativeGrid >= CANVAS_SIZE) {
           changeGrid = true
           yInRelativeGrid = yInRelativeGrid % CANVAS_SIZE
@@ -190,7 +171,13 @@ async function main () {
           xInRelativeGrid = xInRelativeGrid % CANVAS_SIZE
           xInParentGrid++
         }
-*/
+
+        if (toAvoidPaiting) {
+          toAvoidPaiting = false
+          changeGrid = false
+          continue
+        }
+
         if (changeGrid) {
           const candidateGrid = cachedBestImages[getCacheKey(depth - 1, xInParentGrid, yInParentGrid)]
           if (candidateGrid) {
@@ -201,12 +188,6 @@ async function main () {
           changeGrid = false
         }
 
-        /*let imageIndex
-        if (cachedBestImages[depth][canvasIndex]) {
-          imageIndex = cachedBestImages[depth][canvasIndex]
-        } else {
-          imageIndex = await computeAndMemoize(currentXInGrid, currentYInGrid, depth)
-        }*/
         const imageIndex = currentGrid[xInRelativeGrid + yInRelativeGrid * CANVAS_SIZE]
         const adaptedIndex = imageIndex - 1
         const minImage = processed.ExportedImages[imageIndex]
@@ -214,7 +195,6 @@ async function main () {
           const sprite = sprites[spriteConfig.index]
           context.drawImage(sprite, (adaptedIndex % SIDE) * spriteConfig.size, parseInt(adaptedIndex / SIDE) * spriteConfig.size, spriteConfig.size, spriteConfig.size, i * tileSize, j * tileSize, tileSize, tileSize)
         } else {
-          currentGrid = currentGrid
           const cachedImage = imagesCache.get(minImage.id)
           if (cachedImage) {
             context.drawImage(cachedImage, 0, 0, cachedImage.width, cachedImage.height, i * tileSize, j * tileSize, tileSize, tileSize)
@@ -238,7 +218,7 @@ async function main () {
           }
         }
       }
-      xInRelativeGrid -= width / tileSize - 1
+      xInRelativeGrid -= width / tileSize + 1
     }
     if (remainingImages !== 0) {
       await finishedRenderingPromise
@@ -249,10 +229,6 @@ async function main () {
   }
 }
 
-
-function getRandomNumber (min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
 
 async function computeAndMemoize (x, y, d) {
   const key = getCacheKey(d, x, y)
