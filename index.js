@@ -32,8 +32,9 @@ const tile2Sprite = [
   { type: DIRECT, size: 640 }
 ]
 const imagesCache = new LRU(200)
+const tilesCache = new LRU(200)
 
-const cachedBestImages = []
+const cachedBestImages = {}
 let currentExecution = 0
 /**
  * @typedef {
@@ -75,7 +76,6 @@ async function main () {
   canvas
     .call(zoomBehaviour)
 
-
   function getVisibleArea (t) {
     var l = t.invert([0, 0])
     var r = t.invert([width, height])
@@ -104,26 +104,40 @@ async function main () {
   d3Mosaic(initialDepth, initialZoom, 1, initialCoordinates)
 
   async function d3Mosaic (depth, drawZoom, scaleFactor, boundCoordinates) {
-    if (!cachedBestImages[depth]) {
-      cachedBestImages[depth] = new Uint16Array(getSide(depth) * getSide(depth))
-    }
+/*    if (!cachedBestImages[depth]) {
+      cachedBestImages[depth] = {}
+    }*/
 
     const spriteConfig = tile2Sprite[drawZoom % (tile2Sprite.length)]
     const tileSize = spriteConfig.size
 
-    const floatXCoordinateInGrid = (boundCoordinates.w / MIN_TILE_SIZE) * getSide(depth - 1)
-    const floatYCoordinateInGrid = (boundCoordinates.n / MIN_TILE_SIZE) * getSide(depth - 1)
-    const xInGrid = parseInt(floatXCoordinateInGrid)
-    const yInGrid = parseInt(floatYCoordinateInGrid)
+    /*
+     * The absolute grid would be if the indexes of all the images for our depth where laid together in the same
+     * grid
+     */
+    const floatXCoordinateInAbsoluteGrid = (boundCoordinates.w / MIN_TILE_SIZE) * getSide(depth - 1)
+    const floatYCoordinateInAbsoluteGrid = (boundCoordinates.n / MIN_TILE_SIZE) * getSide(depth - 1)
+    const xInAbsoluteGrid = parseInt(floatXCoordinateInAbsoluteGrid)
+    const yInAbsoluteGrid = parseInt(floatYCoordinateInAbsoluteGrid)
+
+    const relativeGridSize = CANVAS_SIZE / MIN_TILE_SIZE
+
+    // Prevent errors on the negative coordinates
+    let xInRelativeGrid = (xInAbsoluteGrid + CANVAS_SIZE) % CANVAS_SIZE
+    let yInRelativeGrid = (yInAbsoluteGrid + CANVAS_SIZE) % CANVAS_SIZE
+
+    let xInParentGrid = (xInAbsoluteGrid - xInRelativeGrid) / CANVAS_SIZE
+    let yInParentGrid = (yInAbsoluteGrid - yInRelativeGrid) / CANVAS_SIZE
+
+    let currentGrid = null
+    let changeGrid = true
+    let toAvoidPaiting = false
 
     const maxXInGrid = parseInt((width / MIN_TILE_SIZE) * getSide(depth - 1))
     const maxYInGrid = parseInt((height / MIN_TILE_SIZE) * getSide(depth - 1))
 
     console.log('depth', depth)
-    console.log('xInGrid', xInGrid, 'yInGrid', yInGrid)
-    let canvasIndex = xInGrid + yInGrid * getSide(depth)
-    // canvasIndex -= canvasIndex % 4
-    const deltaY = getSide(depth) - parseInt(CANVAS_SIZE / tileSize * MIN_TILE_SIZE) // canvas size - width
+    console.log('xInGrid', xInAbsoluteGrid, 'yInGrid', yInAbsoluteGrid)
 
     // const deltaY = deltaYBase - deltaYBase % 4
     // let canvasIndex = 0
@@ -134,27 +148,73 @@ async function main () {
       renderingDone = resolve
     })
     const thisExecution = currentExecution
-    for (let j = 0; j < height / tileSize + 1; j++) {
-      for (let i = 0; i < width / tileSize + 1; i++, canvasIndex++) {
-        const currentXInGrid = xInGrid + i
-        const currentYInGrid = yInGrid + j
+    for (let j = 0; j < height / tileSize + 1; j++, yInRelativeGrid++) {
+      for (let i = 0; i < width / tileSize + 1; i++, xInRelativeGrid++) {
+        const currentXInGrid = xInAbsoluteGrid + i
+        const currentYInGrid = yInAbsoluteGrid + j
+
         if (currentXInGrid >= maxXInGrid || currentYInGrid >= maxYInGrid || currentXInGrid < 0 || currentYInGrid < 0) {
           context.fillStyle = 'black'
           context.fillRect(i * tileSize, j * tileSize, tileSize, tileSize)
+          toAvoidPaiting = true
           continue
         }
-        let imageIndex
+
+        xInRelativeGrid = (currentXInGrid + CANVAS_SIZE) % CANVAS_SIZE
+        yInRelativeGrid = (currentYInGrid + CANVAS_SIZE) % CANVAS_SIZE
+
+        const newXInParentGrid = (currentXInGrid - xInRelativeGrid) / CANVAS_SIZE
+        const newYInParentGrid = (currentYInGrid - yInRelativeGrid) / CANVAS_SIZE
+
+        if (newXInParentGrid !== xInParentGrid || newYInParentGrid !== yInParentGrid) {
+          changeGrid = true
+          xInParentGrid = newXInParentGrid
+          yInParentGrid = newYInParentGrid
+        }
+
+        /*
+        if (yInRelativeGrid >= CANVAS_SIZE) {
+          changeGrid = true
+          yInRelativeGrid = yInRelativeGrid % CANVAS_SIZE
+          yInParentGrid++
+        }
+
+        if (xInRelativeGrid < 0) {
+          changeGrid = true
+          xInRelativeGrid += CANVAS_SIZE
+          xInParentGrid--
+        }
+
+        if (xInRelativeGrid >= CANVAS_SIZE) {
+          changeGrid = true
+          xInRelativeGrid = xInRelativeGrid % CANVAS_SIZE
+          xInParentGrid++
+        }
+*/
+        if (changeGrid) {
+          const candidateGrid = cachedBestImages[getCacheKey(depth - 1, xInParentGrid, yInParentGrid)]
+          if (candidateGrid) {
+            currentGrid = candidateGrid
+          } else {
+            currentGrid = await computeAndMemoize(xInParentGrid, yInParentGrid, depth - 1)
+          }
+          changeGrid = false
+        }
+
+        /*let imageIndex
         if (cachedBestImages[depth][canvasIndex]) {
           imageIndex = cachedBestImages[depth][canvasIndex]
         } else {
           imageIndex = await computeAndMemoize(currentXInGrid, currentYInGrid, depth)
-        }
+        }*/
+        const imageIndex = currentGrid[xInRelativeGrid + yInRelativeGrid * CANVAS_SIZE]
         const adaptedIndex = imageIndex - 1
         const minImage = processed.ExportedImages[imageIndex]
         if (spriteConfig.type === SPRITE) {
           const sprite = sprites[spriteConfig.index]
           context.drawImage(sprite, (adaptedIndex % SIDE) * spriteConfig.size, parseInt(adaptedIndex / SIDE) * spriteConfig.size, spriteConfig.size, spriteConfig.size, i * tileSize, j * tileSize, tileSize, tileSize)
         } else {
+          currentGrid = currentGrid
           const cachedImage = imagesCache.get(minImage.id)
           if (cachedImage) {
             context.drawImage(cachedImage, 0, 0, cachedImage.width, cachedImage.height, i * tileSize, j * tileSize, tileSize, tileSize)
@@ -178,49 +238,64 @@ async function main () {
           }
         }
       }
-      canvasIndex += deltaY - 1
+      xInRelativeGrid -= width / tileSize - 1
     }
     if (remainingImages !== 0) {
       await finishedRenderingPromise
     }
     if (thisExecution === currentExecution) {
-      displayedContext.drawImage(context.canvas, parseInt((floatXCoordinateInGrid - xInGrid) * tileSize), parseInt((floatYCoordinateInGrid - yInGrid) * tileSize), width / scaleFactor, height / scaleFactor, 0, 0, width, height)
+      displayedContext.drawImage(context.canvas, parseInt((floatXCoordinateInAbsoluteGrid - xInAbsoluteGrid) * tileSize), parseInt((floatYCoordinateInAbsoluteGrid - yInAbsoluteGrid) * tileSize), width / scaleFactor, height / scaleFactor, 0, 0, width, height)
     }
   }
 }
+
 
 function getRandomNumber (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
 async function computeAndMemoize (x, y, d) {
+  const key = getCacheKey(d, x, y)
+  // TODO should compute the grid
+  if (cachedBestImages[key]) {
+    return cachedBestImages[key]
+  }
   if (d === -1) {
-    return getRandomNumber(1, processed.ExportedImages.length)
+    const id = '0b0e79d8-b6f0-0235-2486-3464dc73d695'
+    const grid = await computeImageGrid(id)
+    cachedBestImages[key] = grid
+    return grid
+    // return _.findIndex(processed.ExportedImages, {id: '0b0e79d8-b6f0-0235-2486-3464dc73d695'})
+//     return getRandomNumber(1, processed.ExportedImages.length)
   }
-  if (cachedBestImages[d][x + getSide(d) * y]) {
-    return cachedBestImages[d][x + getSide(d) * y]
-  }
+
   const clippedX = x - x % CANVAS_SIZE
   const x0 = (clippedX) / CANVAS_SIZE
   const clippedY = (y - y % CANVAS_SIZE)
   const y0 = clippedY / CANVAS_SIZE
-  const imageIndex = await computeAndMemoize(x0, y0, d - 1)
+  const parentGrid = await computeAndMemoize(x0, y0, d - 1)
+  const grid = await computeImageGrid(processed.ExportedImages[parentGrid[x % CANVAS_SIZE + CANVAS_SIZE * (y % CANVAS_SIZE)]].id)
+  cachedBestImages[key] = grid
+  return grid
+}
+
+function computeImageGrid (id) {
   const placeholderCanvas = document.createElement('canvas')
   const context = placeholderCanvas.getContext('2d')
 
   placeholderCanvas.height = CANVAS_SIZE
   placeholderCanvas.width = CANVAS_SIZE
-  await new Promise(function (resolve, reject) {
+  return new Promise(function (resolve, reject) {
     const baseImage = new window.Image()
     // baseImage.src = `scrape/downloaded/${img.name.replace(/\//g, '_')}`
-    baseImage.src = `squared-images/${processed.ExportedImages[imageIndex].id}.jpeg`
+    baseImage.src = `squared-images/${id}.jpeg`
     baseImage.crossOrigin = 'Anonymous'
     baseImage.onload = function () {
       context.drawImage(baseImage, 0, 0, CANVAS_SIZE, CANVAS_SIZE)
       const imageData = context.getImageData(0, 0, CANVAS_SIZE, CANVAS_SIZE)
       let canvasIndex = 0
-      const deltaY = getSide(d) - CANVAS_SIZE
-      let runningIndex = clippedX + getSide(d) * clippedY
+      let runningIndex = 0
+      const resultingGrid = new Uint16Array(CANVAS_SIZE * CANVAS_SIZE)
       for (let i = 0; i < CANVAS_SIZE; i++) {
         for (let j = 0; j < CANVAS_SIZE; j++) {
           const r = imageData.data[canvasIndex]
@@ -228,15 +303,19 @@ async function computeAndMemoize (x, y, d) {
           const b = imageData.data[canvasIndex + 2]
           canvasIndex += 4
           const { index: imageIndex } = findMin(r, g, b)
-          cachedBestImages[d][runningIndex] = imageIndex
+          resultingGrid[runningIndex] = imageIndex
           runningIndex++
         }
-        runningIndex += deltaY
       }
-      resolve()
+
+      placeholderCanvas.remove()
+      resolve(resultingGrid)
     }
   })
-  return cachedBestImages[d][x + getSide(d) * y]
+}
+
+function getCacheKey (d, x, y) {
+  return `${d},${x},${y}`
 }
 
 function getSide (depth) {
