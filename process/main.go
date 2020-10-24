@@ -19,7 +19,7 @@ import (
 const IMAGES_PATH = "../scrape/downloaded"
 const OUTPUT_PATH = "output.json"
 var idRegex = regexp.MustCompile(`iif_2_(.*)_full`)
-var sizes = []int{10, 20, 40, 80, 160, 320}
+var sizes = []int{5, 10, 20, 40, 80, 160, 320}
 var sprites = make([]draw.Image, len(sizes))
 var side int
 func main () {

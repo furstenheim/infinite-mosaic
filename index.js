@@ -14,8 +14,8 @@ const LOADING_CONTENT = 'loading-content'
 const d3 = require('d3')
 const MAP_SIZE = 1280
 // const TILE_SIZE = 10
-const TILE_SIZE = 10
-const MIN_TILE_SIZE = 10
+const TILE_SIZE = 5
+const MIN_TILE_SIZE = 5
 const CANVAS_SIZE = MAP_SIZE / TILE_SIZE
 main()
 let sprites = []
@@ -23,9 +23,10 @@ const SIDE = processed.Side
 const SPRITE = 'sprite'
 const DIRECT = 'direct'
 const tile2Sprite = [
-  { type: SPRITE, index: 0, size: 10 },
-  { type: SPRITE, index: 1, size: 20 },
-  { type: SPRITE, index: 2, size: 40 },
+  { type: SPRITE, index: 0, size: 5 },
+  { type: SPRITE, index: 1, size: 10 },
+  { type: SPRITE, index: 2, size: 20 },
+  { type: SPRITE, index: 3, size: 40 },
   { type: DIRECT, size: 80 },
   { type: DIRECT, size: 160 },
   { type: DIRECT, size: 320 },
@@ -45,7 +46,7 @@ let currentExecution = 0
 async function main () {
   processed.ExportedImages.unshift(null)
 
-  sprites = await Promise.all(_.times(3, function (i) {
+  sprites = await Promise.all(_.times(4, function (i) {
     return new Promise(function (resolve) {
       const sprite = new window.Image()
       sprite.src = `squared-images/sprite${i}.jpeg`
