@@ -5,16 +5,17 @@ body  {
 }
 $mosaic-size:1280px;
 #app{
-  // overflow: hidden;
+  overflow: hidden;
   position: relative;
-  height: $mosaic-size;
-  width: $mosaic-size;
+  height: 100vh;
+  width: 100vw;
 }
 
 #mosaic-holder{
-  // overflow: hidden;
+  display: block;
+  margin: auto;
   position: relative;
-  height: $mosaic-size;
-  width: $mosaic-size;
+  height: min(100vh, 100vw);
+  width: min(100vh, 100vw);
 }
 

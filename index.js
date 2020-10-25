@@ -13,6 +13,7 @@ const MAP_SIZE = 1280
 const TILE_SIZE = 5
 const MIN_TILE_SIZE = 5
 const CANVAS_SIZE = MAP_SIZE / TILE_SIZE
+console.log = () => {}
 main()
 let sprites = []
 const SIDE = processed.Side
@@ -54,9 +55,8 @@ async function main () {
 
   document.getElementById(LOADING_CONTENT).remove()
   const canvas = d3.select('canvas')
-  var cs = window.getComputedStyle(document.getElementById('app'))
-  var w = parseInt(cs.getPropertyValue('width'), 10)
-  var h = parseInt(cs.getPropertyValue('height'), 10)
+  var w = MAP_SIZE
+  var h = MAP_SIZE
 
   canvas.property('width', w)
   canvas.property('height', h)
