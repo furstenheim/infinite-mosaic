@@ -184,9 +184,17 @@ async function main () {
           if (candidateGrid) {
             currentGrid = candidateGrid
           } else {
+            console.log('accessing', xInParentGrid, yInParentGrid, depth - 1)
             currentGrid = await computeAndMemoize(xInParentGrid, yInParentGrid, depth - 1)
           }
           changeGrid = false
+          if (drawZoom === tile2Sprite.length - 1) {
+            console.log('preocomputing', currentXInGrid, currentYInGrid)
+            computeAndMemoize(currentXInGrid, currentYInGrid, depth)
+            computeAndMemoize(currentXInGrid + 1, currentYInGrid, depth)
+            computeAndMemoize(currentXInGrid, currentYInGrid + 1, depth)
+            computeAndMemoize(currentXInGrid + 1, currentYInGrid + 1, depth)
+          }
         }
 
         const imageIndex = currentGrid[xInRelativeGrid + yInRelativeGrid * CANVAS_SIZE]
@@ -256,13 +264,16 @@ async function computeAndMemoize (x, y, d) {
   return grid
 }
 
-function computeImageGrid (id) {
+async function computeImageGrid (id) {
   const placeholderCanvas = document.createElement('canvas')
   const context = placeholderCanvas.getContext('2d')
 
   placeholderCanvas.height = CANVAS_SIZE
   placeholderCanvas.width = CANVAS_SIZE
-  return new Promise(function (resolve, reject) {
+  const resp = await window.fetch(`closest-points/${id}.json`)
+  const data = await resp.json()
+  return data.ClosestPoints
+  /*return new Promise(function (resolve, reject) {
     const baseImage = new window.Image()
     // baseImage.src = `scrape/downloaded/${img.name.replace(/\//g, '_')}`
     baseImage.src = `squared-images/${id}.jpeg`
@@ -288,7 +299,7 @@ function computeImageGrid (id) {
       placeholderCanvas.remove()
       resolve(resultingGrid)
     }
-  })
+  })*/
 }
 
 function getCacheKey (d, x, y) {

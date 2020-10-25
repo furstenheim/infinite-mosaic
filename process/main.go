@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/kyroy/kdtree/points"
 	"golang.org/x/image/draw"
 	"image"
 	"image/color"
@@ -14,17 +15,20 @@ import (
 	"path/filepath"
 	"regexp"
 	"strings"
+	"github.com/kyroy/kdtree"
 )
 
 const IMAGES_PATH = "../scrape/downloaded"
 const OUTPUT_PATH = "output.json"
 var idRegex = regexp.MustCompile(`iif_2_(.*)_full`)
+const CANVAS_SIZE = 1280
 var sizes = []int{5, 10, 20, 40, 80, 160, 320}
 var sprites = make([]draw.Image, len(sizes))
 var side int
 func main () {
 	var i int
 	var j int
+	var k int
 	exportedImages := []ExportedImage{}
 	filepath.Walk(IMAGES_PATH, func(path string, info os.FileInfo, err error) error {
 		j++
@@ -48,11 +52,13 @@ func main () {
 		sprites[i] = image.NewRGBA(image.Rect(0, 0, size* side, size * side))
 	}
 
+	indexPoints := []kdtree.Point{}
+
 	walkError := filepath.Walk(IMAGES_PATH, func(path string, info os.FileInfo, err error) error {
-		/*if i > 1000 {
+/*		if i > 10 {
 			return nil
-		}
-*/
+		}*/
+
 
 		if i % 100 == 0 {
 			log.Println(i, "th file")
@@ -76,6 +82,8 @@ func main () {
 			}
 			exportedImages = append(exportedImages, exportedImage)
 			i++
+			// use len(exportedImages) instead of len(exportedImages) - 1 becaus we'll later unshift the array in the browser
+			indexPoints = append(indexPoints, points.NewPoint([]float64{float64(jpg.Avg.R), float64(jpg.Avg.G), float64(jpg.Avg.B)}, len(exportedImages)))
 		}
 		return nil
 	})
@@ -95,6 +103,43 @@ func main () {
 
 	for i, sprite := range sprites {
 		writeImage(sprite, fmt.Sprintf("../squared-images/sprite%d.jpeg", i))
+	}
+
+	tree := kdtree.New(indexPoints)
+
+	walkErrorCompute := filepath.Walk(IMAGES_PATH, func(path string, info os.FileInfo, err error) error {
+/*		if k > 10 {
+			return nil
+		}*/
+
+		if k % 100 == 0 {
+			log.Println(i, "th file Compute")
+			log.Println("Name ", info.Name(), i)
+		}
+		if err != nil {
+			return err
+		}
+
+		matched, regexErr := regexp.MatchString(`.jpg$`, path)
+		if regexErr != nil {
+			return regexErr
+		}
+		if matched {
+			k++
+			closerPoints := computeCloserPoints(tree, path, i)
+			// log.Println("closer points", closerPoints)
+			closerPointsFile, outputPointsErr := os.Create("../closest-points/" + closerPoints.Id + ".json")
+			if outputPointsErr != nil {
+				log.Fatal(outputPointsErr)
+			}
+			defer closerPointsFile.Close()
+			encoder := json.NewEncoder(closerPointsFile)
+			encoder.Encode(closerPoints)
+		}
+		return nil
+	})
+	if walkErrorCompute != nil {
+		log.Fatal(walkErrorCompute)
 	}
 }
 
@@ -116,6 +161,11 @@ func writeImage (img image.Image, path string) {
 type ProcessedImage struct {
     Avg color.RGBA
     Frame Frame
+    Id string
+}
+
+type ProcessedPixels struct {
+    ClosestPoints []int
     Id string
 }
 
@@ -156,6 +206,47 @@ func processJPG (path string, i int) ProcessedImage {
 		Avg:avg,
 		Id: imgId,
 		Frame: frame,
+	}
+}
+
+func computeCloserPoints (tree *kdtree.KDTree, path string, i int) ProcessedPixels {
+	imgfile, openErr := os.Open(path)
+	if openErr != nil {
+		log.Fatal(openErr)
+	}
+	defer imgfile.Close()
+	img, _, decodeErr := image.Decode(imgfile)
+	if decodeErr != nil {
+		log.Fatal(decodeErr, " file ", path)
+	}
+	frame := frameFromRect(img.Bounds())
+	subImage := img.(interface {
+		SubImage(r image.Rectangle) image.Image
+	}).SubImage(image.Rect(frame.MinX, frame.MinY, frame.MaxX, frame.MaxY))
+
+	matchString := idRegex.FindSubmatch([]byte(path))
+	imgId := string(matchString[1])
+
+
+	reducedImage := image.NewRGBA(image.Rect(0, 0, CANVAS_SIZE / sizes[0], CANVAS_SIZE / sizes[0]))
+
+	draw.CatmullRom.Scale(reducedImage, reducedImage.Bounds(), subImage, subImage.Bounds(), draw.Over, nil)
+	// writeImage(reducedImage, "closest-points/" + imgId + ".jpeg")
+	computedPoints := []int{}
+
+	for y := reducedImage.Bounds().Min.Y; y < reducedImage.Bounds().Max.Y; y++{
+		for x := reducedImage.Bounds().Min.X; x < reducedImage.Bounds().Max.X; x++{
+			pixel := reducedImage.At(x, y)
+			r1, g1, b1, _ := pixel.RGBA()
+			closestPoints := tree.KNN(points.NewPoint([]float64{float64(r1 / 257), float64(g1 / 257), float64(b1 / 257)}, nil), 1)
+			id := closestPoints[0].(*points.Point).Data.(int)
+			computedPoints = append(computedPoints, id)
+		}
+	}
+
+	return ProcessedPixels{
+		ClosestPoints: computedPoints,
+		Id:            imgId,
 	}
 }
 
