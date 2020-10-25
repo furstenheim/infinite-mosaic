@@ -1,7 +1,4 @@
 import './main.scss'
-import L, { bounds, LatLng, LatLngBounds } from 'leaflet'
-import 'leaflet/dist/leaflet.css'
-import './CanvasLayer'
 import _ from 'lodash'
 import LRU from 'lru-cache'
 /**
@@ -9,7 +6,6 @@ import LRU from 'lru-cache'
  */
 import processed from './process/output.json'
 import 'regenerator-runtime/runtime'
-const MOSAIC_ID = 'mosaic-holder'
 const LOADING_CONTENT = 'loading-content'
 const d3 = require('d3')
 const MAP_SIZE = 1280
@@ -72,7 +68,6 @@ async function main () {
   const context = hiddenCanvas.getContext('2d')
   const width = canvas.property('width')
   const height = canvas.property('height')
-  const transform = d3.zoomIdentity
   const zoomBehaviour = d3.zoom().scaleExtent([1, Infinity]).on('zoom', render)
   canvas
     .call(zoomBehaviour)
@@ -116,7 +111,6 @@ async function main () {
     const floatYCoordinateInAbsoluteGrid = (boundCoordinates.n / MIN_TILE_SIZE) * getSide(depth - 1)
     const xInAbsoluteGrid = parseInt(floatXCoordinateInAbsoluteGrid)
     const yInAbsoluteGrid = parseInt(floatYCoordinateInAbsoluteGrid)
-
 
     // Prevent errors on the negative coordinates
     let xInRelativeGrid = (xInAbsoluteGrid + CANVAS_SIZE) % CANVAS_SIZE
@@ -188,7 +182,7 @@ async function main () {
             currentGrid = await computeAndMemoize(xInParentGrid, yInParentGrid, depth - 1)
           }
           changeGrid = false
-          if (drawZoom === tile2Sprite.length - 1) {
+          if (drawZoom % (tile2Sprite.length) === tile2Sprite.length - 1) {
             console.log('preocomputing', currentXInGrid, currentYInGrid)
             computeAndMemoize(currentXInGrid, currentYInGrid, depth)
             computeAndMemoize(currentXInGrid + 1, currentYInGrid, depth)
@@ -238,6 +232,9 @@ async function main () {
   }
 }
 
+function getRandomNumber (min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
 
 async function computeAndMemoize (x, y, d) {
   const key = getCacheKey(d, x, y)
@@ -246,12 +243,11 @@ async function computeAndMemoize (x, y, d) {
     return cachedBestImages[key]
   }
   if (d === -1) {
-    const id = '0b0e79d8-b6f0-0235-2486-3464dc73d695'
+    // const id = '0b0e79d8-b6f0-0235-2486-3464dc73d695'
+    const id = processed.ExportedImages[getRandomNumber(1, processed.ExportedImages.length)].id
     const grid = await computeImageGrid(id)
     cachedBestImages[key] = grid
     return grid
-    // return _.findIndex(processed.ExportedImages, {id: '0b0e79d8-b6f0-0235-2486-3464dc73d695'})
-//     return getRandomNumber(1, processed.ExportedImages.length)
   }
 
   const clippedX = x - x % CANVAS_SIZE
@@ -265,41 +261,14 @@ async function computeAndMemoize (x, y, d) {
 }
 
 async function computeImageGrid (id) {
-  const placeholderCanvas = document.createElement('canvas')
-  const context = placeholderCanvas.getContext('2d')
-
-  placeholderCanvas.height = CANVAS_SIZE
-  placeholderCanvas.width = CANVAS_SIZE
+  const cachedGrid = tilesCache.get(id)
+  if (cachedGrid) {
+    return cachedGrid
+  }
   const resp = await window.fetch(`closest-points/${id}.json`)
   const data = await resp.json()
+  tilesCache.set(id, data.ClosestPoints)
   return data.ClosestPoints
-  /*return new Promise(function (resolve, reject) {
-    const baseImage = new window.Image()
-    // baseImage.src = `scrape/downloaded/${img.name.replace(/\//g, '_')}`
-    baseImage.src = `squared-images/${id}.jpeg`
-    baseImage.crossOrigin = 'Anonymous'
-    baseImage.onload = function () {
-      context.drawImage(baseImage, 0, 0, CANVAS_SIZE, CANVAS_SIZE)
-      const imageData = context.getImageData(0, 0, CANVAS_SIZE, CANVAS_SIZE)
-      let canvasIndex = 0
-      let runningIndex = 0
-      const resultingGrid = new Uint16Array(CANVAS_SIZE * CANVAS_SIZE)
-      for (let i = 0; i < CANVAS_SIZE; i++) {
-        for (let j = 0; j < CANVAS_SIZE; j++) {
-          const r = imageData.data[canvasIndex]
-          const g = imageData.data[canvasIndex + 1]
-          const b = imageData.data[canvasIndex + 2]
-          canvasIndex += 4
-          const { index: imageIndex } = findMin(r, g, b)
-          resultingGrid[runningIndex] = imageIndex
-          runningIndex++
-        }
-      }
-
-      placeholderCanvas.remove()
-      resolve(resultingGrid)
-    }
-  })*/
 }
 
 function getCacheKey (d, x, y) {
@@ -315,32 +284,4 @@ function getSide (depth) {
 }
 const sideCache = {
 
-}
-/**
- *
- * @param r
- * @param g
- * @param b
- * @returns {{index: number, image: ProcessedImage}}
- */
-function findMin (r, g, b) {
-  let minDistance = Infinity
-  let minPicture
-  let processedImage
-  let minIndex = -1
-  for (let i = 1; i < processed.ExportedImages.length; i++) {
-    processedImage = processed.ExportedImages[i]
-    const distance = (processedImage.avg.R - r) ** 2 + (processedImage.avg.G - g) ** 2 + (processedImage.avg.B - b) ** 2
-    if (distance < minDistance) {
-      minPicture = processedImage
-      minDistance = distance
-      minIndex = i
-    }
-  }
-  return { index: minIndex, image: minPicture }
-}
-
-function getTileSize (zoom) {
-  const sizes = [10, 20, 40, 80, 160, 320, 640]
-  return sizes[zoom % 7]
 }
