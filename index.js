@@ -1,6 +1,7 @@
 import './main.scss'
 import _ from 'lodash'
 import LRU from 'lru-cache'
+import Decimal from 'decimal.js'
 /**
  * @type {{ExportedImages: Array<ProcessedImage>}}
  */
@@ -8,12 +9,15 @@ import processed from './process/output.json'
 import 'regenerator-runtime/runtime'
 const LOADING_CONTENT = 'loading-content'
 const d3 = require('d3')
+require('d3-zoom')
 const MAP_SIZE = 1280
 // const TILE_SIZE = 10
 const TILE_SIZE = 5
 const MIN_TILE_SIZE = 5
+const MIN_TILE_SIZE_DECIMAL = new Decimal(MIN_TILE_SIZE)
 const CANVAS_SIZE = MAP_SIZE / TILE_SIZE
-console.log = () => {}
+const CANVAS_SIZE_DECIMAL = new Decimal(MAP_SIZE / TILE_SIZE)
+// console.log = () => {}
 main()
 let sprites = []
 const SIDE = processed.Side
@@ -40,6 +44,10 @@ let currentExecution = 0
  * frame: {"minX":number,"minY":number,"maxX":number,"maxY":number},
  * name: string, id: string}} ProcessedImage
  */
+const TWO = new Decimal(2)
+const ONE = new Decimal(1)
+const ZERO = new Decimal(0)
+const TILE_2_SPRITE_LENGTH = new Decimal(tile2Sprite.length)
 async function main () {
   processed.ExportedImages.unshift(null)
 
@@ -68,70 +76,80 @@ async function main () {
   const context = hiddenCanvas.getContext('2d')
   const width = canvas.property('width')
   const height = canvas.property('height')
-  const zoomBehaviour = d3.zoom().scaleExtent([1, Infinity]).on('zoom', render)
+  const zoomBehaviour = d3.zoom().scaleExtent([ONE, new Decimal(Infinity)]).on('zoom', render)
+
   canvas
     .call(zoomBehaviour)
 
-  function getVisibleArea (t) {
-    var l = t.invert([0, 0])
-    var r = t.invert([width, height])
 
-    return { w: l[0], n: l[1], e: r[0], s: r[1] }
+  function getVisibleArea (t) {
+    // ¿t_x / k), t_y / k ?
+    var l = t.invert([ZERO, ZERO])
+
+    return { w: l[0], n: l[1] }
   }
+
   function render (event) {
     const transform = d3.zoomTransform(this)
+
+    console.log('transform', transform)
+
     console.log('render', event, transform)
     console.log('Visible area', getVisibleArea(event.transform))
     console.log(width, height)
-    const drawZoom = parseInt(Math.log2(transform.k))
+    const logOfK = transform.k.log(TWO)
+
+    const drawZoom = logOfK.floor()
+
     console.log('drawZoom', drawZoom, 'k', transform.k)
-    const depth = (drawZoom - drawZoom % tile2Sprite.length) / tile2Sprite.length
-    const boundCoordinates = getVisibleArea(event.transform)
+    const depth = parseInt(drawZoom.sub(drawZoom.mod(TILE_2_SPRITE_LENGTH)).div(TILE_2_SPRITE_LENGTH).toNumber())
+    const boundCoordinates = getVisibleArea(transform)
+    console.log('Visible area new', boundCoordinates)
     currentExecution++
-    d3Mosaic(depth, drawZoom, Math.log2(transform.k) - drawZoom + 1, boundCoordinates)
+    d3Mosaic(depth, drawZoom, logOfK.sub(drawZoom).toNumber() + 1, boundCoordinates)
   }
 
-  const initialDepth = 0
-  const initialZoom = 0
+  const initialDepth = ZERO
+  const initialZoom = ZERO
   const initialCoordinates = {
-    w: 0, n: 0, s: h, e: w
+    w: ZERO, n: ZERO
   }
 
   d3Mosaic(initialDepth, initialZoom, 1, initialCoordinates)
 
   async function d3Mosaic (depth, drawZoom, scaleFactor, boundCoordinates) {
-    const spriteConfig = tile2Sprite[drawZoom % (tile2Sprite.length)]
+    const spriteConfig = tile2Sprite[drawZoom.mod(TILE_2_SPRITE_LENGTH).toNumber()]
     const tileSize = spriteConfig.size
+    const tileSizeDecimal = new Decimal(spriteConfig.size)
 
     /*
      * The absolute grid would be if the indexes of all the images for our depth where laid together in the same
      * grid
      */
-    const floatXCoordinateInAbsoluteGrid = (boundCoordinates.w / MIN_TILE_SIZE) * getSide(depth - 1)
-    const floatYCoordinateInAbsoluteGrid = (boundCoordinates.n / MIN_TILE_SIZE) * getSide(depth - 1)
-    const xInAbsoluteGrid = parseInt(floatXCoordinateInAbsoluteGrid)
-    const yInAbsoluteGrid = parseInt(floatYCoordinateInAbsoluteGrid)
+    const floatXCoordinateInAbsoluteGrid = boundCoordinates.w.div(MIN_TILE_SIZE_DECIMAL).mul(getSide(depth - 1))
+    const floatYCoordinateInAbsoluteGrid = boundCoordinates.n.div(MIN_TILE_SIZE_DECIMAL).mul(getSide(depth - 1))
+    const xInAbsoluteGrid = floatXCoordinateInAbsoluteGrid.floor()
+    const yInAbsoluteGrid = floatYCoordinateInAbsoluteGrid.floor()
 
     // Prevent errors on the negative coordinates
-    let xInRelativeGrid = (xInAbsoluteGrid + CANVAS_SIZE) % CANVAS_SIZE
-    let yInRelativeGrid = (yInAbsoluteGrid + CANVAS_SIZE) % CANVAS_SIZE
+    const initialXInRelativeGridDecimal = xInAbsoluteGrid.add(CANVAS_SIZE_DECIMAL).mod(CANVAS_SIZE)
+    let xInRelativeGrid = initialXInRelativeGridDecimal.toNumber()
+    const initialYInRelativeGridDecimal = yInAbsoluteGrid.add(CANVAS_SIZE_DECIMAL).mod(CANVAS_SIZE)
+    let yInRelativeGrid = initialYInRelativeGridDecimal.toNumber()
 
-    let xInParentGrid = (xInAbsoluteGrid - xInRelativeGrid) / CANVAS_SIZE
-    let yInParentGrid = (yInAbsoluteGrid - yInRelativeGrid) / CANVAS_SIZE
+    let xInParentGrid = xInAbsoluteGrid.sub(initialXInRelativeGridDecimal).div(CANVAS_SIZE_DECIMAL)
+    let yInParentGrid = yInAbsoluteGrid.sub(initialYInRelativeGridDecimal).div(CANVAS_SIZE_DECIMAL)
 
     let currentGrid = null
     let changeGrid = true
     let toAvoidPaiting = false
 
-    const maxXInGrid = parseInt((width / MIN_TILE_SIZE) * getSide(depth - 1))
-    const maxYInGrid = parseInt((height / MIN_TILE_SIZE) * getSide(depth - 1))
+    const maxXInGrid = new Decimal(parseInt((width / MIN_TILE_SIZE))).mul(getSide(depth - 1))
+    const maxYInGrid = new Decimal(parseInt((height / MIN_TILE_SIZE))).mul(getSide(depth - 1))
 
     console.log('depth', depth)
     console.log('xInGrid', xInAbsoluteGrid, 'yInGrid', yInAbsoluteGrid)
 
-    // const deltaY = deltaYBase - deltaYBase % 4
-    // let canvasIndex = 0
-    // const context = canvas.getContext('2d')
     let remainingImages = 0
     let renderingDone
     const finishedRenderingPromise = new Promise(function (resolve) {
@@ -140,10 +158,10 @@ async function main () {
     const thisExecution = currentExecution
     for (let j = 0; j < height / tileSize + 1; j++, yInRelativeGrid++) {
       for (let i = 0; i < width / tileSize + 1; i++, xInRelativeGrid++) {
-        const currentXInGrid = xInAbsoluteGrid + i
-        const currentYInGrid = yInAbsoluteGrid + j
+        const currentXInGrid = xInAbsoluteGrid.add(i)
+        const currentYInGrid = yInAbsoluteGrid.add(j)
 
-        if (currentXInGrid >= maxXInGrid || currentYInGrid >= maxYInGrid || currentXInGrid < 0 || currentYInGrid < 0) {
+        if (currentXInGrid.greaterThanOrEqualTo(maxXInGrid) || currentYInGrid.greaterThanOrEqualTo(maxYInGrid) || currentXInGrid.lessThan(ZERO) || currentYInGrid.lessThan(ZERO)) {
           context.fillStyle = 'black'
           context.fillRect(i * tileSize, j * tileSize, tileSize, tileSize)
           toAvoidPaiting = true
@@ -152,19 +170,19 @@ async function main () {
         if (yInRelativeGrid >= CANVAS_SIZE) {
           changeGrid = true
           yInRelativeGrid = yInRelativeGrid % CANVAS_SIZE
-          yInParentGrid++
+          yInParentGrid = yInParentGrid.add(ONE)
         }
 
         if (xInRelativeGrid < 0) {
           changeGrid = true
           xInRelativeGrid += CANVAS_SIZE
-          xInParentGrid--
+          xInParentGrid = xInParentGrid.sub(ONE)
         }
 
         if (xInRelativeGrid >= CANVAS_SIZE) {
           changeGrid = true
           xInRelativeGrid = xInRelativeGrid % CANVAS_SIZE
-          xInParentGrid++
+          xInParentGrid = xInParentGrid.add(ONE)
         }
 
         if (toAvoidPaiting) {
@@ -185,9 +203,9 @@ async function main () {
           if (drawZoom % (tile2Sprite.length) === tile2Sprite.length - 1) {
             console.log('preocomputing', currentXInGrid, currentYInGrid)
             computeAndMemoize(currentXInGrid, currentYInGrid, depth)
-            computeAndMemoize(currentXInGrid + 1, currentYInGrid, depth)
-            computeAndMemoize(currentXInGrid, currentYInGrid + 1, depth)
-            computeAndMemoize(currentXInGrid + 1, currentYInGrid + 1, depth)
+            computeAndMemoize(currentXInGrid.add(ONE), currentYInGrid, depth)
+            computeAndMemoize(currentXInGrid, currentYInGrid.add(ONE), depth)
+            computeAndMemoize(currentXInGrid.add(ONE), currentYInGrid.add(ONE), depth)
           }
         }
 
@@ -227,7 +245,8 @@ async function main () {
       await finishedRenderingPromise
     }
     if (thisExecution === currentExecution) {
-      displayedContext.drawImage(context.canvas, (floatXCoordinateInAbsoluteGrid - xInAbsoluteGrid) * tileSize, (floatYCoordinateInAbsoluteGrid - yInAbsoluteGrid) * tileSize, width / scaleFactor, height / scaleFactor, 0, 0, width, height)
+      displayedContext.drawImage(context.canvas, floatXCoordinateInAbsoluteGrid.sub(xInAbsoluteGrid).mul(tileSizeDecimal).toNumber(), floatYCoordinateInAbsoluteGrid.sub(yInAbsoluteGrid).mul(tileSizeDecimal).toNumber(), width / scaleFactor, height / scaleFactor, 0, 0, width, height)
+      // displayedContext.drawImage(context.canvas, 0, 0, 2 * width / scaleFactor, 2 * height, 0, 0, width, height)
     }
   }
 }
@@ -236,6 +255,13 @@ function getRandomNumber (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
+/**
+ *
+ * @param {Decimal} x
+ * @param {Decimal} y
+ * @param d
+ * @returns {Promise<any>}
+ */
 async function computeAndMemoize (x, y, d) {
   const key = getCacheKey(d, x, y)
   // TODO should compute the grid
@@ -250,12 +276,12 @@ async function computeAndMemoize (x, y, d) {
     return grid
   }
 
-  const clippedX = x - x % CANVAS_SIZE
-  const x0 = (clippedX) / CANVAS_SIZE
-  const clippedY = (y - y % CANVAS_SIZE)
-  const y0 = clippedY / CANVAS_SIZE
+  const clippedX = x.sub(x.mod(CANVAS_SIZE_DECIMAL))
+  const x0 = clippedX.div(CANVAS_SIZE_DECIMAL)
+  const clippedY = y.sub(y.mod(CANVAS_SIZE_DECIMAL))
+  const y0 = clippedY.div(CANVAS_SIZE_DECIMAL)
   const parentGrid = await computeAndMemoize(x0, y0, d - 1)
-  const grid = await computeImageGrid(processed.ExportedImages[parentGrid[x % CANVAS_SIZE + CANVAS_SIZE * (y % CANVAS_SIZE)]].id)
+  const grid = await computeImageGrid(processed.ExportedImages[parentGrid[x.mod(CANVAS_SIZE_DECIMAL).add(CANVAS_SIZE_DECIMAL.mul(y.mod(CANVAS_SIZE_DECIMAL)))]].id)
   cachedBestImages[key] = grid
   return grid
 }
@@ -271,15 +297,22 @@ async function computeImageGrid (id) {
   return data.ClosestPoints
 }
 
+/**
+ *
+ * @param d
+ * @param {Decimal} x
+ * @param {Decimal} y
+ * @returns {string}
+ */
 function getCacheKey (d, x, y) {
-  return `${d},${x},${y}`
+  return `${d},${x.toString()},${y.toString()}`
 }
 
 function getSide (depth) {
   if (sideCache[depth]) {
     return sideCache[depth]
   }
-  sideCache[depth] = CANVAS_SIZE ** (depth + 1)
+  sideCache[depth] = new Decimal(CANVAS_SIZE ** (depth + 1))
   return sideCache[depth]
 }
 const sideCache = {
