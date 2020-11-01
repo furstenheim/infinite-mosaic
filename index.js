@@ -63,12 +63,13 @@ async function main () {
 
   document.getElementById(LOADING_CONTENT).remove()
   const canvas = d3.select('canvas')
+  const canvasNode = canvas.node()
   var w = MAP_SIZE
   var h = MAP_SIZE
 
   canvas.property('width', w)
   canvas.property('height', h)
-  const displayedContext = canvas.node().getContext('2d')
+  const displayedContext = canvasNode.getContext('2d')
   const hiddenCanvas = document.createElement('canvas')
   // Make hidden canvas bigger since we might need to get a subportion
   hiddenCanvas.width = w * 2
@@ -101,12 +102,12 @@ async function main () {
 
     const drawZoom = logOfK.floor()
 
-    console.log('drawZoom', drawZoom, 'k', transform.k)
+    console.log('drawZoom', drawZoom.toString(), 'k', transform.k)
     const depth = parseInt(drawZoom.sub(drawZoom.mod(TILE_2_SPRITE_LENGTH)).div(TILE_2_SPRITE_LENGTH).toNumber())
     const boundCoordinates = getVisibleArea(transform)
     console.log('Visible area new', boundCoordinates)
     currentExecution++
-    d3Mosaic(depth, drawZoom, logOfK.sub(drawZoom).toNumber() + 1, boundCoordinates)
+    d3Mosaic(depth, drawZoom, 2 ** (logOfK.sub(drawZoom).toNumber()), boundCoordinates)
   }
 
   const initialDepth = ZERO
@@ -156,8 +157,10 @@ async function main () {
       renderingDone = resolve
     })
     const thisExecution = currentExecution
-    for (let j = 0; j < height / tileSize + 1; j++, yInRelativeGrid++) {
-      for (let i = 0; i < width / tileSize + 1; i++, xInRelativeGrid++) {
+    const heightIterations = height / tileSize + 1
+    const widthIterations = width / tileSize + 1
+    for (let j = 0; j < heightIterations; j++, yInRelativeGrid++) {
+      for (let i = 0; i < widthIterations; i++, xInRelativeGrid++) {
         const currentXInGrid = xInAbsoluteGrid.add(i)
         const currentYInGrid = yInAbsoluteGrid.add(j)
 
@@ -246,7 +249,7 @@ async function main () {
     }
     if (thisExecution === currentExecution) {
       displayedContext.drawImage(context.canvas, floatXCoordinateInAbsoluteGrid.sub(xInAbsoluteGrid).mul(tileSizeDecimal).toNumber(), floatYCoordinateInAbsoluteGrid.sub(yInAbsoluteGrid).mul(tileSizeDecimal).toNumber(), width / scaleFactor, height / scaleFactor, 0, 0, width, height)
-      // displayedContext.drawImage(context.canvas, 0, 0, 2 * width / scaleFactor, 2 * height, 0, 0, width, height)
+      // displayedContext.drawImage(context.canvas, 0, 0, 2 * width, 2 * height, 0, 0, width, height)
     }
   }
 }
