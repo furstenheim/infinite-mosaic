@@ -83,31 +83,34 @@ async function main () {
     .call(zoomBehaviour)
 
 
+  // Returns coordinates of visible area in original pixels
   function getVisibleArea (t) {
-    // ¿t_x / k), t_y / k ?
+    // Zero zero of the canvas to coordinates in the image
     var l = t.invert([ZERO, ZERO])
+    var l2 = t.invert([new Decimal(width), new Decimal(height)])
 
-    return { w: l[0], n: l[1] }
+    return { w: l[0], n: l[1], e: l2[0], s: l2[1] }
   }
 
   function render (event) {
-    const transform = d3.zoomTransform(this)
+    const transform = event.transform
+//      const transform = d3.zoomTransform(this)
 
     console.log('transform', transform)
 
     console.log('render', event, transform)
-    console.log('Visible area', getVisibleArea(event.transform))
+   // N console.log('Visible area', getVisibleArea(event.transform))
     console.log(width, height)
     const logOfK = transform.k.log(TWO)
 
     const drawZoom = logOfK.floor()
 
     console.log('drawZoom', drawZoom.toString(), 'k', transform.k)
-    const depth = parseInt(drawZoom.sub(drawZoom.mod(TILE_2_SPRITE_LENGTH)).div(TILE_2_SPRITE_LENGTH).toNumber())
+    const depth = parseInt(drawZoom.divToInt(TILE_2_SPRITE_LENGTH).toNumber())
     const boundCoordinates = getVisibleArea(transform)
     console.log('Visible area new', boundCoordinates)
     currentExecution++
-    d3Mosaic(depth, drawZoom, 2 ** (logOfK.sub(drawZoom).toNumber()), boundCoordinates)
+    d3Mosaic(depth, drawZoom, TWO.pow(logOfK.sub(drawZoom)), transform.k, transform.x, transform.y)
   }
 
   const initialDepth = ZERO
@@ -116,19 +119,35 @@ async function main () {
     w: ZERO, n: ZERO
   }
 
-  d3Mosaic(initialDepth, initialZoom, 1, initialCoordinates)
+  d3Mosaic(initialDepth, initialZoom, ONE, ONE, ZERO, ZERO)
 
-  async function d3Mosaic (depth, drawZoom, scaleFactor, boundCoordinates) {
+  async function d3Mosaic (depth, drawZoom, scaleFactor, currentZoom, transformX, transformY) {
     const spriteConfig = tile2Sprite[drawZoom.mod(TILE_2_SPRITE_LENGTH).toNumber()]
     const tileSize = spriteConfig.size
     const tileSizeDecimal = new Decimal(spriteConfig.size)
 
     /*
      * The absolute grid would be if the indexes of all the images for our depth where laid together in the same
-     * grid
+     * grid.
+     *
+     * A) TransformX is in the K coordinates
+     * B) Negate the coordinates since this is the offset of the origin
+     * D) && E) calculate in which fraction of the initial tiles the coordinate is
+     * C) take into account that each of the initial tiles is split into getSide(depth -1)
+     *
+     * Order (which is commutative) is changed to avoid floating precission errors
      */
-    const floatXCoordinateInAbsoluteGrid = boundCoordinates.w.div(MIN_TILE_SIZE_DECIMAL).mul(getSide(depth - 1))
-    const floatYCoordinateInAbsoluteGrid = boundCoordinates.n.div(MIN_TILE_SIZE_DECIMAL).mul(getSide(depth - 1))
+    const floatXCoordinateInAbsoluteGrid = transformX // A)
+      .neg() // B)
+      .mul(getSide(depth - 1)) // C)
+      .div(MIN_TILE_SIZE_DECIMAL) // D)
+      .div(currentZoom) // E)
+    const floatYCoordinateInAbsoluteGrid = transformY
+      .neg()
+      .mul(getSide(depth - 1))
+      .div(MIN_TILE_SIZE_DECIMAL)
+      .div(currentZoom)
+
     const xInAbsoluteGrid = floatXCoordinateInAbsoluteGrid.floor()
     const yInAbsoluteGrid = floatYCoordinateInAbsoluteGrid.floor()
 
@@ -138,8 +157,8 @@ async function main () {
     const initialYInRelativeGridDecimal = yInAbsoluteGrid.add(CANVAS_SIZE_DECIMAL).mod(CANVAS_SIZE)
     let yInRelativeGrid = initialYInRelativeGridDecimal.toNumber()
 
-    let xInParentGrid = xInAbsoluteGrid.sub(initialXInRelativeGridDecimal).div(CANVAS_SIZE_DECIMAL)
-    let yInParentGrid = yInAbsoluteGrid.sub(initialYInRelativeGridDecimal).div(CANVAS_SIZE_DECIMAL)
+    let xInParentGrid = xInAbsoluteGrid.divToInt(CANVAS_SIZE_DECIMAL)
+    let yInParentGrid = yInAbsoluteGrid.divToInt(CANVAS_SIZE_DECIMAL)
 
     let currentGrid = null
     let changeGrid = true
@@ -248,7 +267,7 @@ async function main () {
       await finishedRenderingPromise
     }
     if (thisExecution === currentExecution) {
-      displayedContext.drawImage(context.canvas, floatXCoordinateInAbsoluteGrid.sub(xInAbsoluteGrid).mul(tileSizeDecimal).toNumber(), floatYCoordinateInAbsoluteGrid.sub(yInAbsoluteGrid).mul(tileSizeDecimal).toNumber(), width / scaleFactor, height / scaleFactor, 0, 0, width, height)
+      displayedContext.drawImage(context.canvas, floatXCoordinateInAbsoluteGrid.sub(xInAbsoluteGrid).mul(tileSizeDecimal).toNumber(), floatYCoordinateInAbsoluteGrid.sub(yInAbsoluteGrid).mul(tileSizeDecimal).toNumber(), width / scaleFactor.toNumber(), height / scaleFactor.toNumber(), 0, 0, width, height)
       // displayedContext.drawImage(context.canvas, 0, 0, 2 * width, 2 * height, 0, 0, width, height)
     }
   }
@@ -311,6 +330,11 @@ function getCacheKey (d, x, y) {
   return `${d},${x.toString()},${y.toString()}`
 }
 
+/**
+ * number of tiles at depth. For depth 0 there are CANVAS_SIZE tiles
+ * @param depth
+ * @returns {*}
+ */
 function getSide (depth) {
   if (sideCache[depth]) {
     return sideCache[depth]
