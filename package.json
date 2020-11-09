@@ -12,14 +12,14 @@
     "@types/decimal.js": "^7.4.0",
     "@types/puppeteer": "^3.0.1",
     "d3": "^6.1.1",
-    "decimal.js": "^10.2.1",
     "lru-cache": "^6.0.0",
     "nodemon": "^2.0.4",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.5.0",
     "puppeteer": "^5.2.1",
     "puppeteer-autoscroll-down": "^0.1.6",
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "small-decimal": "^1.0.0"
   },
   "browserslist": [
     "last 1 Chrome version"

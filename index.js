@@ -1,7 +1,7 @@
 import './main.scss'
 import _ from 'lodash'
 import LRU from 'lru-cache'
-import Decimal from 'decimal.js'
+import {Decimal} from 'small-decimal'
 /**
  * @type {{ExportedImages: Array<ProcessedImage>}}
  */
@@ -77,7 +77,7 @@ async function main () {
   const context = hiddenCanvas.getContext('2d')
   const width = canvas.property('width')
   const height = canvas.property('height')
-  const zoomBehaviour = d3.zoom().scaleExtent([ONE, new Decimal(Infinity)]).on('zoom', render)
+  const zoomBehaviour = d3.zoom().scaleExtent([ONE, new Decimal(2 ** 63)]).constrain((transform) => transform).on('zoom', render)
 
   canvas
     .call(zoomBehaviour)
@@ -86,10 +86,10 @@ async function main () {
   // Returns coordinates of visible area in original pixels
   function getVisibleArea (t) {
     // Zero zero of the canvas to coordinates in the image
-    var l = t.invert([ZERO, ZERO])
-    var l2 = t.invert([new Decimal(width), new Decimal(height)])
+    // var l = t.invert([ZERO, ZERO])
+    // var l2 = t.invert([new Decimal(width), new Decimal(height)])
 
-    return { w: l[0], n: l[1], e: l2[0], s: l2[1] }
+    return { w: t.x.neg(), n: t.y.neg() }
   }
 
   function render (event) {
@@ -101,16 +101,16 @@ async function main () {
     console.log('render', event, transform)
    // N console.log('Visible area', getVisibleArea(event.transform))
     console.log(width, height)
-    const logOfK = transform.k.log(TWO)
 
-    const drawZoom = logOfK.floor()
+    const drawZoom = transform.k.floorLog2()
 
     console.log('drawZoom', drawZoom.toString(), 'k', transform.k)
     const depth = parseInt(drawZoom.divToInt(TILE_2_SPRITE_LENGTH).toNumber())
     const boundCoordinates = getVisibleArea(transform)
     console.log('Visible area new', boundCoordinates)
     currentExecution++
-    d3Mosaic(depth, drawZoom, TWO.pow(logOfK.sub(drawZoom)), transform.k, transform.x, transform.y)
+    const scaleFactor = transform.k.div(transform.k.floorToPowOf2())
+    d3Mosaic(depth, drawZoom, scaleFactor, transform.k, transform.x, transform.y)
   }
 
   const initialDepth = ZERO
@@ -152,9 +152,9 @@ async function main () {
     const yInAbsoluteGrid = floatYCoordinateInAbsoluteGrid.floor()
 
     // Prevent errors on the negative coordinates
-    const initialXInRelativeGridDecimal = xInAbsoluteGrid.add(CANVAS_SIZE_DECIMAL).mod(CANVAS_SIZE)
+    const initialXInRelativeGridDecimal = xInAbsoluteGrid.add(CANVAS_SIZE_DECIMAL).mod(CANVAS_SIZE_DECIMAL)
     let xInRelativeGrid = initialXInRelativeGridDecimal.toNumber()
-    const initialYInRelativeGridDecimal = yInAbsoluteGrid.add(CANVAS_SIZE_DECIMAL).mod(CANVAS_SIZE)
+    const initialYInRelativeGridDecimal = yInAbsoluteGrid.add(CANVAS_SIZE_DECIMAL).mod(CANVAS_SIZE_DECIMAL)
     let yInRelativeGrid = initialYInRelativeGridDecimal.toNumber()
 
     let xInParentGrid = xInAbsoluteGrid.divToInt(CANVAS_SIZE_DECIMAL)
@@ -180,8 +180,8 @@ async function main () {
     const widthIterations = width / tileSize + 1
     for (let j = 0; j < heightIterations; j++, yInRelativeGrid++) {
       for (let i = 0; i < widthIterations; i++, xInRelativeGrid++) {
-        const currentXInGrid = xInAbsoluteGrid.add(i)
-        const currentYInGrid = yInAbsoluteGrid.add(j)
+        const currentXInGrid = xInAbsoluteGrid.add(new Decimal(i))
+        const currentYInGrid = yInAbsoluteGrid.add(new Decimal(j))
 
         if (currentXInGrid.greaterThanOrEqualTo(maxXInGrid) || currentYInGrid.greaterThanOrEqualTo(maxYInGrid) || currentXInGrid.lessThan(ZERO) || currentYInGrid.lessThan(ZERO)) {
           context.fillStyle = 'black'
@@ -284,6 +284,7 @@ function getRandomNumber (min, max) {
  * @param d
  * @returns {Promise<any>}
  */
+let baseId = ''
 async function computeAndMemoize (x, y, d) {
   const key = getCacheKey(d, x, y)
   // TODO should compute the grid
@@ -292,7 +293,8 @@ async function computeAndMemoize (x, y, d) {
   }
   if (d === -1) {
     // const id = '0b0e79d8-b6f0-0235-2486-3464dc73d695'
-    const id = processed.ExportedImages[getRandomNumber(1, processed.ExportedImages.length)].id
+    const id = baseId || processed.ExportedImages[getRandomNumber(1, processed.ExportedImages.length)].id
+    baseId = id
     const grid = await computeImageGrid(id)
     cachedBestImages[key] = grid
     return grid
