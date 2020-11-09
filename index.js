@@ -341,7 +341,12 @@ function getSide (depth) {
   if (sideCache[depth]) {
     return sideCache[depth]
   }
-  sideCache[depth] = new Decimal(CANVAS_SIZE ** (depth + 1))
+  if (depth < 2) {
+    sideCache[depth] = new Decimal(CANVAS_SIZE ** (depth + 1))
+  } else {
+    sideCache[depth] = sideCache[depth - 1].mul(CANVAS_SIZE_DECIMAL)
+  }
+
   return sideCache[depth]
 }
 const sideCache = {
