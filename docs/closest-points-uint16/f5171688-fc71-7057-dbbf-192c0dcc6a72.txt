@@ -1,0 +1,713 @@
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD∑	DDDDDDDDDDDDDDDDDDDDDDD∑	DD°°DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD∑	∑	DDDDDDD∑	DDDDDDDDL
+o∑	DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD∑	°DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD≈∑	∑	L
+D∑	°DDD°€ª∑	ÚhDDDDDÚ?†î6ù	]DDDDDDDDD∑	∑	DDDDDDDDDDDD°DDDDDDDDÕ7
+Ò
+DDDDD∑	Ê?DDÚ∑	DDD(Â	∑	Ú°DDDDDDDDDDD∑	DDDDDDDDÚÚ∑	DDDDDDL
+¯Z	D°ÚDDDDDDDDDD 
+°DDD°D°Õ°DDDDDDDDDDDDD≈ÕDDDD∑	∑	∑	D∑	DDDDDDDDDDDDÚÚDDDDDDDDDDDDDDDDDD°
+°DDDDDDDDDDDDDDDD∑	Ú∑	DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDNÕ[O
+m Ü
+L
+íÑDD°≠ÌÒcféDDDDDÑÌÌÌÌÌrDDDDDDD∑	L
+O
+ÚDDDDL
+	
+ÚÚ°^’€DDDDDDDiŸîàÚDD∑	≈ù	Ì~óyQ €DDD€Â ≠Õ∑	DDD° ∑	DD_íNDDDD∑	ùr=Ü
+ÑDDDDDD∑	’~ÂI
+CL
+DDDDDD∑	ÚÊîÒíã°D”L
+l/
+DDDDDDDDDD°DD~í	DDDD∑	ù	Ú€ÚDDDDDDDDDÚ ãÕDDDDDDDDDDDDDD∑	Ú_(ãm ≈DDDDDDDDDDDDDDD
+}HøDÚ∑	DDDDDÚÚDDDDDDDDDÚøDDDDùã°DD°°DDDDÒ~ÌÌ~ÌÌ€	DDù˜⁄ '&Ò@DDDDDTÒÌÒÒ~B
+ây	∑	DDÚ†∞'. DDDDL⁄ ÌÕ rÜ
+ DDDDDD
+à ~lD∑	DÌÌÌÌ~Ò∑	DDDùQ ÌÌÌÌDDDÂ~8Ú€~ÌúDDÚùÚÚÒÒÌ~DDD∑	°°ùfÌÌ&˘DDDDDÕŸ	~ÌÌÌ °¨=@(:ÚDDDDDDDD°~€€~$
+ N”D°ó≠Ÿ	H
+DDDDD∑	€XL
+Ì&ãDDDDDDD∑	°°∑	DDÚ}è ˜⁄ Ì& DDDDDDDDDDDDD∑		&ÌÌdm U_DDÚD∑	+∞lDDDDDD¸L
+ÊÌ=ÚDDCÌe≈Dë 	°∑	DDiÌÌ¨AÌ9D∑	Úm €	∂=∞&lDDD∑	DÕ˝
+Ì⁄ îÜ
+~ÌÌÀZ	=ëÚÌ~&yDDDD(Q ÌÌÌÌÌ°DÚÚDD	Ü
+fDŸÌ˘°pÑ~Ì⁄ ÒVÒ&°DDD∑	ÁÌÌÌÌ=DDD(ÌÌQ  ÌÀãD°uÌV «ÌÌÌÌ˜(Ú	¯≠íJ«~ÌÒpDDDDD(ÌÌÒÒÌÜ
+_ÚzÕi~ÌÚD_°DDDDœÌÒ&ÌÕÌ…DíÜ
+îÌÕ°”DD°≤Ì~ ÌÌÒr	DDDDDD∑	§∂[$DDÕÌÌÌÌÌ∞∑	DDDDD°	L
+∑	∑	DD`9Ì~ÀÌÌQ ED∑	óıD'Ì/∑	DDDD	ÌQ ∞~Ì˜
+DníÌÀT¿˜[D∑	≈ÌÕDãÓ	˜&]zduÚÜ
+Q  ~v Õùz^⁄
+Ì~¿Ô Ò&ÀÀ&ÌÌ⁄ ˜9Ò&}Õ
+°DŸ⁄ CQ î&ÌŸ	Ú°Ló…A~ÌÌ˜ÌC$
+ÌÌ~ $
+7
+ ÌâDDhßôî9ÌÂ	∑	°°?~ÌÌÌÒâÚÑIfÌÌ~ÌÌÒÒÌ~(ÌÌÌÌÌÌ~ÒÌÀ	Ú _}&Ì(f&ÌÌÑN’iî~ÌÌ7
+úÕòDDDDÜ
+ÌÌÕÒ	Ü
+ÌÌÆÚ.p~ÌÌZ	ÒJDD°¿ÌÌÒÒÒ~ë DDDDDD´¿Ì9Ó	DDDoÌ~íû	Ìî€DDDD°?pÖ6DD°ÌAÚCÌÚÚDD¡
+fo≠Ì`DDDDD ÌÌ~Ô ÒÌ€DDDQ Ìî~ÌÌÒñ'Òy	ÒîÒÒ~ÌÌ~Ü
+Ì~~~ÒÌ~ÒÌÌ~≈ ¿Ô ⁄ ~Ÿ4ÚÓ	(9~~(À &ÌÌ~~’~C0Cfz}óÒÌÌÌ'~&Ÿ'ÌÌ˜(~'ó$
+=~= y&ÌÒX¯ÀÌî¯J~ÌÌÒÌÌ V˜~ÒÌ~ÒÒÒÌÌÌÌÌÒ~ÒÌÌÒÒÌ~ î~ÌÌÌÂ	ù	ÀÒÌ~îÜ
+ ˜ÌÒÌÀÒÒ°I°DfÌ«Ò	†™ Ü
+ÒÜ
+p’d(~Ì&Ü
+°D∑	¸Ì~&ÒÌ?D°L
+ÚL
+I«r	$
+'Ì Õ°Ú≤Ì∞ÕX~Àò∑		`r¿˜9ó”Ú€∞Ü
+?DCÌ†€@◊/ ÌÒÌÌ˘ l°D∑	DXÒÕ}@~˜q47
+Q Ì~Òf~ÌÌÌÒ˝€bÌ&î Q r &ÒÌÒÒ~ÀÌÌ~˜~À˝
+îVÊDD4&~iZ ó∞?Q ˜~ÌÒ&»rÒÜ
+~ÌÌÌÒÒ&&Àç◊ç/ ~Ò˜ÒÌ≈†Ì†	b9fÌÒÒÜ
+À~ÌÌÌÌÌÌÌÒÒÌÌÌ~ÒÌÌÌÌíÁ⁄ ÌÌÒÒ~~&~ÌÒ9~~~ÒÌÌÌÌÌÌÒÀ(ÒÌÌ~~ÌÒ~~ÒÒÌÒÌ˜ÏÌèö	ÌiÚÏHÀ~ÌÌ&À~~~~&ÒÖXO
+âÒﬂΩ &~¯€rf?ÌÌ&~ÌÒÖí∞⁄ ~c4À&⁄
+mÒÌ9ÌÌÌ9î ~Ìz‡˝Ì∞0N~ÌÒÒ~~ÌÌÌí	Õ≤Êm Ò£ rÒ9îÌÌÌÌÌÌ%≠Ì&<6√&9~zÌ¸DÌ9ë
+/ ´zf&ÀÊ/œ îQÕîoD°yÎ“n¿~Àç	DZ	À'≠ëª°¡
+Ì˜˝è
+ﬂõ `ôiÜ
+ÌâD◊Úf√ÌôÅ	'Ì˜Ò~~/ ¡
+¿ÌÌÌÌÌÌ~Q ÒÒuQ⁄ ÒÌÌÌÒÒÌ~≠’Q Ì~~Ì I
+Ÿ	i&VJí8∞ÌÒ~&&~~Ì~~9⁄ &~~~ÒÌÌÒÌÒÌÌÀÌÌÌÌÌÌ†°&ÀÒ~(&ÌÌ~~~ÌÒ~~ÌÌ~~éT~Ì⁄ ~ÌÒÌÌ~~~À~~&~~~~ õÔ ÌÕ~Ì9⁄ Ì~À~Ò9~ÌÌÌ~	ÿ'ÌiÊJ~⁄ 2⁄ #óf~ÌÌQ ~ÌÌÌ( ÌüÒÌÒQ fîÒîÎ	#	ÚÁ˝Ò√∏∞ÌøD¿ [
+C≥
+˚[ÿ˚ë
+9’ ¸àÎÎøÚO
+«E¯¿∞ ükD\Ü
+U∑	Dy∑	&è
+yDyQ~
+f#˝Ó
+∑	†Ø†ç	◊#⁄ ãÌ´5}†5(“ …À~ÒÀ~Ò?øù	$
+ Úo$
+ÌÒ~ÒÒÒQ I
+Ÿ&~~ÌÌî==ùùã˘7
+˘Ì~kâe9Hœî⁄ Ü
+ ~Ì&Z ¿~CC'99&ÌÒÌÌ˜'Ì~~~¿Q Ò~~~~ ~~~~?~~ÖÑ∞⁄ &Ì&ñ À⁄ &¿ó∞ ÒÌ~ó~íØ~&~~Ÿ˘C˝ Î	ÑÕÒ~ÒÀÈ~†Då	9ÌÒ'ÌŸÏé D0ãÜ
+ÌÒÜ
+'ÌÌô˚[
+ﬂHÒ…(°	ÒÒ€ DD
+O.%ê,.®
+4ùÆ xú‡ú Ç°æ ∂˝[m ˝?.r	m¿Îg'~À~~Q rÜ
+íDy'y	DDDDü ‚
+ DD	 Ï◊ÿÑ/ 'Ú=èÑÆÒÒ
+ D°ü *Dùm⁄
+râÌÜ
+lÚX	oÚí	ÌÒÒ~ÒÌ~Z ~À(ÌÀ~Ì~Ÿ	°X~ÌÌÌÌ~ÑDDZ	Ü
+îÜ
+&Ì~ŸÀ˜Z ø^sn »òÛn óÚí	Ò Q pE'ÕÔ ~Ÿ≈ ~À~~∞L∞ÌÀÎ3 rÒXD4Lú&Ìfí?~m°¸~~~O
+«îc°≈ ~~&ﬁ°DDÚ°D∑	%~ÒÌÒÌÒëDå/ &ÌÌÒ≠ ÚDDDíÒàc«&´Ú\E¿DDDD†˜˜¡
+	DDVÅG√˝“¨í≈ ∞"ò%?D∑	ãU• QN”mHHh
+îÌ~À C¿ó&’DDDD°°DDyô√	
+ ≥
+åt
+˜˝~?&Ì&Ì9Ü
+=ñÕèÚDDDDD´ÌD´€DõÌÒîE°k}9ÌÌ:u~À~ÌH˘4ŒÒ⁄ ∞î~Ì'î&Ì°8&Ì~Ü
+~&&~8œm nU	ùD°∑	DN(DíÒ˜9H.HÆ¿?~rÕz¿	~&L
+DyN—D∑	DDŸ	~Hi e„L
+B	j
+fÔ ÀsÑâ€O 3û	&¿D°DDDD(∞Ì~~~Ì(\Dy	†«∞Q ∞Ò	ó?⁄$Ú9Ü
+ó*° ùD°DD9x∑	DD°∞â ⁄ à∑	Ú°Ü
+ÈêÚ_=	Ü
+Ü
+¨~~DD€Tz 9ù	¸yDDrû	Ü
+{LÒ'''3⁄
+ / º P—DDD°h°Æ˜£ çõ √b+&ÌÀ~íŸ&⁄ ~~Ì'9Ì4ãù	°Dyà
+DÃ %,Ÿi ØVÌ~â$
+Ñ€€o9Ìf	Ú°rQ ~ 9ŒDDDL
+ Ò&ÌÌ	4Ú€À	ÕÌÌÌ&&Ì&(&~~~Ûòîµ
+ù_€_°°ÚÂ	H/ üÎÜ
+?À .⁄ Ü
+∂ Õ ÌÚDDÚDD∑	D€¿î∞m≈ j
+ j
+îîCŸŸ°T≈  Q eV @D∑	D°uÌ~Ô î~Ì~’Îæ ŸâHQ Ü
+Q CHÌ∞U	ÕfÒØ∑	DD°DDDDQì∑	DD2Ÿ±Áxè
+fS DDD°Ÿ	H¨L⁄ ~=≈~&⁄ Ì QøDDDÚæ îO
+∂S «~úpÒÅ	DÚÆ `
+ ÚD∑	©
+ê8=/ [
+ÌôÕ&Ü
+î~~ù	(9 ‚
+Ì˜◊ZÀÏ
+°^DDxfÔ Ò9~ÒÒÌA$í~ÒÑDoÚ°rÌQpÀÚ/§è Ì~Ì∞FÚ°DçÌ&Ü
+îÜ
+~Ì~~Ò&iœ^ââ6’ ⁄€$Ú=DuI
+JÜ
+Ü
+ ÌÒÌ~~Ì?~Ì9ÌŸÕQ Àù	€?D°°°D∑	U	⁄ Ü
+ØÚmñ Ì´	j
+&&∞&&Æi À˜ Î˜Ìõ °°DEfÌ(r≈ ~ÌÌ⁄ ^õ Ò~ Â	iÒ«rÒÒ?Õî&
+*0Ú°°°D*´ÚDD∆∞~t
+Æ.9˜W∂ñÚDD“ióg∞ÌÌÌÒÀÌ~Q ?ç	D°ïR/ $<`\ê ÌÜ
+N(fø*∑	ìÅ“«â´SS ã=/é §ÌÌ˝ç^/ Ì#Uf5Sè
+ôÜ
+~Ï
+˜2¿ C‰
+hF°Q ≠™ ≈ ~~~ÒÌÌÌV Ì~=m s7
+Dm ÌÜ
+ Ò˘ O
+Ì&Q &~ÌuÚ=ãÓ
+0CÌÜ
+ &~&Ò~î~ÒãDL
+	?h∑	€DãÓ	Ÿ	ÀV.Ü
+Ì9≠&Ò~&˝˜ÌŸVÀ9Òí	˜Ò¿ó⁄ 5Då(D∑	ÕÒC™  ∫Ô &?Q ÎõÔ ~~~O 4Ò`è
+ÅDùîÌ&Q &ÌÌ å\íô~®
+D€¨$
+&~Ü
+Ü
+?øùè ~$
+†oâÚD°ÅDD
+ÕVD°C˝†*@S Àç	yQ Ì&ÌÌÌÒ~Ì9'Ì&#Ÿ%E4lóÑ’õ ±ø±4é Ò~Ï§ã9V
+*∏\“ÒŸÏ∂ 9'ÒÒôÒ&Ìﬂ˜è
+
+è
+^ ˚/ è
+UåW6• S œ™CDQ	43 ﬁ{Ü
+Ò~œ˘ î~Ì&~&~Ì~=ÏÌÌÌÌ~ÒÌÌ~&~~¯Ú^EÚ ÀÒfV~Ü
+JÜ
+Ì Ô Ìó?ú$ à
+D8pÚrÀó[œÌ~~&Q ⁄ &ñ Ì~Ì 8∞~ÀÜ
+&~À¨&˜Ó
+Ú4≠∑	€Ò	⁄ 'H„ÖÀ3Øj
+´	CDÓ	Ü
+~Ì °D˘?ÒÌë
+Ú?ó~Ò~ÌÒ~&◊DD ( ùÚÑ ÒÌÒ9Ò%Ú°Q ÒÌ#
+V
+LÚ°´	D°æ	fœDD	‚
+D†ôzÀÆÌÌ9(~&ÈÌÌÌÌÒÜ
+HL/ √ba§©<ç
+·Ú ﬁÌÒÀs7 Ä x
+Î	ç±<Ò ⁄ ~Ò⁄  ≠Ã 9ﬁê BÅè
+Ω	ôä‚
+√	äõ °´—Æ åøH`r⁄ Ì⁄ ~~ÌóD_∂À99~Ì⁄ ÌÒ9ÌÌÌÒÌÌÌÌÌÒÌÀ7
+_ı∑	òÀ~¯
+¿ÀuÀÌ~&~Ü
+Ÿ˜@Ú‡6[&í	˝
+Q ÀH&~~(~Ò??~~?Ÿ_Œ~¿&ÌI
+ÒÌ’⁄ $
+5ÈÕm àíCmÛCÜ
+CÎ‡â~JD°˘  ~⁄ Ç∑	DL'ë
+˚%ÌÌîÕ~ÌCœ°DDe ô U	zÒÌÌÌÌÌÌ¨O
+H#Ò bÒîÓ
+èL˝Q°“√b†°DÚ'S ç	œ≠ùô⁄ &Ìî™ Lç⁄ ÌÒ9ÌÒ9À• è
+˝˝bÕ68µHª…˜Ì' ,"∂çãU œf(Ì r√ÁÏ^‘Wb≠Æ  [
+è
+Î	DıØ D‚
+[
+“.∫	DÚDD9<Ì~ ~gÌ~oD°ë ˝
+ÀÒ&œ€'ÌÌ&VŒpÒÌ~~ÌÌÌÌí	œÌõ ]Z	&üÑŸîp~ÌÌÌÒ&(ÒÌ$
+8H˝
+¨Ü
+fÜ
+&~&i⁄ À ÕHQ fiÌ~V†“ @y• ÌœfÌ&Ì~È&~Ï^i/~∞Ü
+øë Ò ° Ñù	Õ~ÊDDD¿ Ì&îÌQÂ	~Ìó∑	DDDü WV~ÌÌÌ?~
+&ÌÌ&î~Ò⁄ S Õ~ÕD?ÕßÌÜ
+L¬ ähhè
+ÈíÓ
+D%ÌÌÔ `DDÓ
+Ì'DDŸ	ÒÌÒU	 E«ôõ &f3
+õ Àõ .∞ÖÌÜ
+√	j	Ì&îÜ
+⁄ Ì˜'ôÕìÎ	ÅÌë
+Ò`eúÌ ú Ì—	D°D∑	DDS
+	2°T?w√	√« ?gDV ÌÌÕ§ÚX&ÒpDLÒÌ˜ÚL[Ì~im ⁄ ÌÌ9⁄ ÒÌÌÀÕ9⁄ îÀ∞ ÌÌÌÌÒ9Ò~üfÜ
+Ü
+zîŸp~'~À˜.(i˜ÒÀ ó˝ÒÒîô⁄ ˜f’˜~Ì$
+Ÿ'Q ßèÌ%°`
+r$
+Cí	4«~ÀÂ	V ¿~.ÒH°DD°/ Ò$
+îÌzXÌ EDDD°O ~ÌÌÌoD«ÌÒ~À˝	í ÒÌâDDDDD‚ I“°°üôo(ˆ˝Ÿç‹ù=ÌÒoÚD	&Ì9ùD°fÌ&=D∑	r\ßÒ˝L/ ##Ì⁄Ûœ?≠CÜ
+õÌÌÒ  Ò˜õ ◊†	ì√	Ω	Ò%ê R ª%ú KyDDDDDDDDDQ	i¡
+õ Ì`	zXÌÌÚiC&ÌÜ
+?ÎíÌÒÎ≤ÀÌÌ$
+DÚ$
+ÌÌôÚD’ ÌÒ~~&9Ò~Ò&'~Cî~f∞~ÌÜ
+ÕÒÕfÌQ &Ì$
+ãÜ
+⁄ f⁄ C∞&Ò˜ÀÌ&$
+È⁄ ã[Å	'`˝Ì˝ô‹_â”DDÀ	Ò˜î0L
+&CCäC&ÒÒÌiÜ
+.f⁄ ÑÚD⁄#(iÌQ 	€	Ì˜XyDD
+Ü
+ÌÌÒÌ~V ^[~Ì~'Ÿf“EÒÒ»DD∑	€ç
+∞¿N
+ Ó
+ô'^^‘⁄ ﬂWS ⁄ 9~ÎÜ
+≠V ÌÒÌ˜øú9ÌÌ«DDDDªÌõ}·†j	ç	. ≈í	(I
+V(î⁄ Hb9Ü	≠˝ =P‘Q	[
+K39yDDDDDDDDDF¡
+%% Ò¸Dù Ì~ë €{D«~ÌÌÌ˜9~î ÌÌÌ~¸∑	ÖÌÌÜ
+Î	D€&ÌÌÕã}≠¨Ì~˝9Q ˝
+˜&ÀV†&Ì$
+è Ì:«Òb&Ìî?Ìm °i&∞9Ü
+iŸ(&Q &Ì˚DÜDD€`j##√°yÚy”r°/ ÒQ X°i ó9~~ÌÌÌÌÌÌ~.«Ü
+&¨§∞&ß∑	o9ÌÒ	⁄ Ò˜êæ	ŸÌÌÒÒÒ~ÒÒ~ÒÌ~9Ì°Å	Ò?°DDD7
+%…Q ≠é *˝Ì	Úå$
+“†	OÜ
+Ì~~ÌÌÌÜ
+⁄ Ü
+H⁄ ÌÌ&ÌÒ ’°DDDëÌÌ@XCº ^à	.;∑	ó=ÚHVfﬁ=ãOHÜ
+ 	DÚoÒò†`ÌrD°°DDDDDDD” √ è
+ˆ^À	DÓ
+ÌÒ≠Ú^Õ °fÌŸ ~Ü
+Ü
+9Ì9ÌÌÌ~V ÒÌÌDDL&ÌÌ˝D°°°Â	~~˜˜&~~ C⁄ $
+ãbÌ&í˜Ò(˜~~îÒÁÕ≠Ì~&¿f&∞@?Ì⁄ r°à
+Ú°à
+DDE˝Ò?Êœ±ç/ ÀU	 fU’ 5¯ ÌÌÌÒ~Q %îÌÒ˜îÀ≠Ñ¯Ìr	DX~~ &ÌÌÌ˜ÀÌÌ~~ÒÌÌÌÌÌÒÌ9ÀÜ
+9	Ìö	°DDD°
+¿«L
+¬	⁄ 	DDF”5ﬁ9ÌÌÌ&ü~ÌÌÀÂÑÌÌ~&~ˇ DDDL
+Dç	Ì'Rör“å	>∫	y8ìU≈ Ñü êôÒ h°DDÑ`o‘e
+9ªD	y	DDDDDDDmÌ\ä,œ⁄ Ì~ÚJ˝
+ÚÂ	Q ~úÌÌf~ÌÒÌÌÌÌÌÌÒÒÌ9®
+ÌÒO
+L
+(D°≠Ì9~Ü
+[ÀüÌúD[ÒÊÕÌ¨À˜HpÌ(√99Ì&€DüÌ/ D°\fyÚDDÌÒ&$
+‘# ˜%õ fÀfv~ÌÌ~fílD$Q ÌÌÌ~ Â	DD†ÌAD ?ÌÌÌÌÌÒÌÌÌÒ~~ÌÌîJ Ò~Ì~Ÿ’å	9ÌãDDDDDé fâD^ÿë
+
+DDDÅ	ÌÒÌÌÌÒ⁄r@îÌ~(∑	Ü
+˝Ò ü&:∑	ùr@‹2ôÚ4íg ‚%ë
+ÚNÃ  $ﬂÏ/£ ≠DDDDåè
+è
+è
+°Ì≠—ò,∑	DDDDDDQ ÌâDÚÆÁ†õ $
+ ÒÖ~ÌÎÌÌ~~øD}íÜ
+ÒÌÌÌ~H®
+˜ÌÀ}`ÌÌÌÌ~Úùv o_€¿Ì9p=pif(9˚rCÜ
+Ip⁄ 4ó˝? ∞ÒÌôÅ	yÀ	/ ÒœÚÚÜ
+Ì°Úy“yÚ°°°†#∞È`ü9¿∂ø• ü• 9ÌÌÌÌÌÌ NÓ
+DDyÌÌÒÌ9¯»EzŸ	}Q ~~ÒÌÌÌÌÌÌ~~ÒÌQ òD¯~ÌÌÌ9'%ÌÌ»DD∑	DD**~∞0D/ ÈC?9∑	%ÌÌÌÒÌÒã(”HÌ~Ñ€ÚôK/ Ú$
+8o’ Ø™x‚˚
+h,‚Ë:ﬁx	 &é Ì&°Î	∑	DDD,’y	 `[
+&Ñh∑	DDDDDîÌ∑	DDDD∑	Ô?íÒ~À~Ò⁄ ~ÌÒ~DDE~ÌÌÌÌH∑	DÊÌÜ
+ÚÅ	Ì9ÒÌÒ€Xí	`Ó	˘ îÌîù¸~~ÈÌ~˜⁄ ˜ Q Ü
+f.Ü
+∞îÌ Ò	È
+DDD∂Ì˝“&Òôõ ÆÚ?hÚÚDyì ˝ o¡
+U‘°D∂ÌÌÌÒÌÒ~ÒÌ9≠∑	DDªÌÌÌÌÌÒ9~∞ Ì~Ü
+~~ÒÌÌÌÌÌÌÌÒÌÌ∞Ò]D~ÌÌÌ#Åü#õ ÒQ _°ü DDDØ Ü
+Òæ DDœ¬	/ 4Ü
+Ì~˜†	bÌÌÜ
+fÒÌÌÌ—Dë⁄ <£ fé ¬^ñ[≠∞^ë
+`µDD	ÚÜ†´¬¬íœ‘	DD∑	D∑	S√	’\DlôÌ√	SÚDDDDDíÌ
+D°hà
+€cü⁄ Ò~~~v O
+ÀÌ	o Ÿ	ÌÌÌÌÌQ €∑	Ÿ	ÌÀlåÕ…s~Ì~û	 rîŸÒiùÑ~Òf´U	ÒÌQ 'Ì (~&~ÒQ ∞Ÿ	°∞0“0∑	?$
+⁄ &~∞Ü
+ÒÌÜ
+ÌÌ_DÚD*Ò9˜¿õ õ `ë
+‡µ/ ÌÌÌbÒ Ì~ˇ AÒÌÒÊ@fÌ⁄ &ÌÒÒÌÌÌÌÌ~~ÌÌÌÌÌÌÌÌ~ÒÒÒÒ~ÒÒ~ÌÌÌÒz@£oß$
+9ÏŸç
+∑	DDDS'jrD
+ `¬	Ò	±
+f~Ì˜â°%ÌÒÒÌ(é Ò[
+x`°wΩ	¬xS Ñ±`∞	R~P:jD°D°DD∑	DDDDÅDw&ﬂ&œFhÏ’^o<G°DÜqˆÈo°DDDDDcÌóÚ¸Ïœ~
+Ü
+ÌÌ~ÒÌÒ Z	
+Ò~&Ì ÌÌÌÌÒÌŒ~Ì~¸y‡DL
+ÌÀ⁄ ÌÌ9~#ŸÜ
+fâbÌfED”Hlóë ?Ò&~ÌH
+ÚÚÚÜ
+
+ “D*%ÌÕÊÀ	∞îÒÌÌ⁄DÚrÁQ ÒQ ñ¿ ˆ ÕÌ~ÌÌz_AÌÌ°D“ÌÌÌ˜9ÌÀã}~Ì~¨ÀÌÒ~ÒÒÌÌÌÌf⁄ Ì ∞~ÌÌÌÌÌÌ~ÒÒ~z[
+¡
+˜∞ÌÌDDDDç¿í2@‚
+ÌA	ç	◊Ì~DD°@M	~~€E_D°DÎ	õ Q	°∑	ÚÚÚD°P‘:w≈	$Ä ÎDDDDDD“ëﬁi∫	ßdô√Ñ\’é µ^‘HÙF“ õ '%∑	DDDDD	ü◊E.zDO
+HÌÒ~~Ì~~Ò∞â&ÌÌÌÒÌÌÒ«VÌÌÌÌÌf^_l
+ Z Ì˜˜À~Ì~⁄ &~ÒÀ˜Ì∞ÚD_lyD	°D’ `f˜Ìfè2fˆÜÕ	°D`Ì&S °0Î	‡jÌ1	Q ⁄ Ô ùDDDD m ~ÒÌÌPÕD†Ì˜DDÚÜ
+Ì r	Ü
+ÌVD∑	ÚÌ lD4pÒÒÒ~ÒÌ~C4Q Ì#Õ&ÒÒÒÒ~&À~ÌÌÒô˛ Ï°Ñè
+üÒ√∞Ú°DyÜ
+Ìz	ÌÁDDÌÒÚDÚDÑÌ&qÊDD°D˝Òˇ
+Ú∑	DDDDß A‘ÌΩaDDDDDUﬁÚ°°\«Ω	;
+D\ŸÎ	Ñõ Ã p• 9ÿ°DDDDDD°• Ü
+Å%Øı¿⁄ ÌÒ⁄ EQ mù	ÌÌ&~~˜~~ÒÒi°uÌÒÒÀ~õ  ãùD¸~~ÆñH#Ÿ#Ì (îÜ
+m lDhÆ0ÚDıôÀ(⁄ ~Ì Úy“yyiÌÌÆDD∑	å	Ò¿`≠ô&Ò∑	DDFùrÑ%9ÌbDDDù~⁄ ÚDâ~~¸T9Ì?DDDÌ9+XZ	Z ~ÌÌÌ~~Q ^DÑÌÌÌÒ~Ò~~~~ﬂH~Ì~iÆDD°DÏ	 îﬂ†;DDÕ?o[˜i$
+ùÚŸ~Ì8≈3
+@&ÌÒ~ÀDD=Ÿ«Ì9œ\°DD?Å%Åæ] @–-f@∑	?
+°ºQ		ß
+ bQ	<D*∑	DDDy√	[
+8 9’;ÚDDDDDDDÎ	Ì%íêÚQ ~~Òe î∑	LÌQ bÌ∞¸z∂~~JDÂ	Â	H~ófî∑	ÕU	ù/~~/DDy	ç	€h«ÌŸfÜ
+Q ¯«^yÆ∑	°Ì®
+ã$
+Ì’∑	∑	°â““DŸÌüñ∞±
+íÌí?
+ r˝Ì√óÜ		Êõ éî~Ò9}¸DDÌ≠@ ÌÀùL
+Ì~à¨~ÌÌ ŒÀÌÌ˜Ñ ÌÒr°_î∞œÒÌÌÌÀœ(~f ~Òôm 5◊
+ Fhê/ &_°ÄÆ√rDà
+Å	r<˝ÂbfÌ~DÌÌÌ$
+&Ì~}’.ë«Uöè'√	¿ à
+å¸ ÌQ	‡]DÚËB≈	kå	… ≥
+ò`i7 %Ω	t	çŸDDDDS ÌÈ~ÌNÚÚDDDDDDDDj…´…Ú˝
+⁄ ⁄ ÒÊÚ	ùr	ŸÊÀÌîrD≈Ì~uÆVyiÌî ÀãdÌîÜ
+~Ì~ŸyÚ°∑	 Ñü&˝⁄ '9Ì&&ÚoÕÚyœÌòDVÌè ≈”GÚ∑	y“Ú°D0∞ÌÕf⁄ &ÒDDD´ ü….f~üÂ	⁄ ÌÌ⁄ i~Õ‹CÌÌÌÌÌ ≈Dv ÌÌÌÌÌÀ8l≈o∞Ìí	Dm ÌÌŸ] ≠°y&ÌÌÌ «ÒÒÒÌCH'Ì9S ≠≠c#Ì0D∑	ÚíÌ¸DDDDD ˜ŸŸ	i~~~ÌÒÊÕ§ÀÌ~ ÆD∑	°DD∏Ò ~
+ c[
+[
+Cxò%q4ÚDqD#ÁDdK3 Aòﬂ<º `ÚD
+ÌÌÒÌÜ
+Ó
+DD∑	DDùöÓ
+ŸHP˚Ä(⁄ Ìf≠TÕI?ÀÚ€ô~ÌhDg~~~~Ò ÌÌÌÌ~'À, Q ~Ò∞XÕ[f&Ì¿&9Q ÌÌÌÒrL
+D@Ü
+Ü
+Ì3
+Áœ~Ò√'åDhy∑	D_HÌî&Ì t
+˘°∑	∑	*É;	Ì∞~∞¸œ~ÌÌÒ~ÌÌÒ99 / 9Ì˜Ÿ	D∑	4ÌÒÒÌrDDDD ÌŸù/ÌÌÒÒ €Dç	#À ~Ì&9ÒÌÌ~[
+⁄ 'ÈÒ Ò ÌÌS DDDDÚ+DÚNoÀ	l~9ÚÑ&˜ÒÌDDÚÕÌÒÑDDDDDDÚê¸&¿9⁄ V
+°à
+æ	;H˝∏Î	h¸˝`≠ˆä`Öº [
+úËb<@	^‘ÙD@ÒÌ9ÌÌÌADD	m °ãÊ%ôº
+ °´Ì˜ ⁄	«°Ú˜ÌÕL
+€ÑÌ⁄ ø€RÌÌÌÌ&’Xí?ÌÌ~/∑	 oÌ~zÑr⁄ ~~À⁄ Ò'fM	’ z&ÌóÆÅ	√~9Ì~~~~~ÒÌÒC
+ Då=f~Ìb$
+°DÚÚDDDo9C%í°Q ÌÒÌÌÌ Ü
+ÌÌÌ níí'8ç	Dç	'Ì⁄ V∞r°íãÂ	ÌÌÀ$
+AŒÒÌ⁄ 7
+°AÕõ ó˜ÌÌ~⁄ Ì⁄ @Å	#ﬂÀÕ9˜~Ìô§Ó
+€ÚD°DDfﬁ¯
+Q ∞€m Ü
+~ÌÌ∞X≈H~ÌÌ8DDD°∑	DDDyıë
+&@DDDDD;‘√	PCU†fQ °Ú±
+<…¿° ªDåæ òQÄ fÌ(⁄Â	~Ìf€D%ÒH#˜µ’0DÚÜ
+ÌU	DVÔ iíÀÒ≠°D(~ÌÕˇŸ~~ÒÌî°DDqÌÌÌ$
+Õ°Úù	Ü
+&~&Ü
+~ÌÜ
+†Ñ#˜'hL}∞⁄ i∞~Ü
+˜9ÒÌ~&Ü
+ü~jÌÌrDÚf⁄ ÌÌÌ&è0DÚ°D
+ ∑	D%Ü
+Ûî’ ∞~ÒÌÌ9ù8&Ì~m D(ù°ﬂØ F⁄ fi~p'Ì 9Ì˜NDZ	Ü
+Ì∞$zÌÜ
+,@CÕ~À(Ê°D?⁄œ·Ÿ&Ü
+õ ’œU	 AD°˜◊ÚbÂ	}i«/@~ÌÌÌ~ÌÌÌ=ããDDÚDDD°ADÒ	Ò	DDDDDDy?†À=ü†Ò	~çµÎ	,`%%`W%
+ l’‚
+å	xÒÌ¯DDÜ
+Ì“b/Áà
+°ßä
+@üÌÒ DÌÌÌÒÒÒè  °.~&Ì&î~ÒÌ~Z §ú.ÌÌÕÛÕùœ´L
+LœÌÒ~ Õ∞ùÚ(	Ì⁄ $
+#~H$
+ÌÌ˜†=˜îÀ&Q Ü
+˝#!Ò¿∂ªÒÌÌÌÌÌ&ÚDÚ€Dµô,ı<Ü
+Ïø~ÒÌÌÌ~ùDDt
+ÌÒh∑	DÚDrÌ HQ	˜˝Ü
+$
+∞ ?&∞°ØÌÒiloÌ˜AV&≠Ú∑	ÕNÜ
+'$
+√	6DDDåôõ ˝5óCÌH$êf⁄ œõ 8Äí	hÏU	ÒÒ&~Ì~ÒÌ2ÚÕEª√æ	DD°U	Ì˜hâ DDDDDD	@â9ÎÊi	°°ô≠†√bﬂ£cô °e
+~Ì8°DîÒ‡Ê˜ìÏ
+ì\°DÚ/ ^ﬂÌ~DÌÌgiÌÒ~à∑	Ü
+Ì˜~~~~ÌÌÒÌÌ&9ÌÌîL
+»%,Cr	 ÚŸ	∞À~@¯ND∑	œz#ÌÒÒÒ	ÑÒQ L
+1	ÀÜ
+˜~˜î Î	∞#ÒÒ#'ÌÌ3
+¸îÌÌ]DÚU	í‡õ '&'fCó“?ÌÌ H&ÌÜ
+˘ 'èÌÌœÁ?ÚDøÌQ	 2#Ü	^˘ C°h'$
+ ÌÌÌ˜ÒÌÒ&&@DDDDåo‘√z[¿ _€CS ˝œ√	Hü?ó√	óÀÜ
+Ñ°°Ú	Ó
+ßÌÌÒ ¸⁄ ÀêzÕ ÌÀ˜Ì ÚDæ	≠ÌÌÌ9Ü
+@DDD∑	DDÚ»ßQ $
+RE?^< 5°⁄ßHbª<í0DyB~&°L~Ì'†	˚thD∑	Ó
+`ÿ…´†´~Ìè
+ÌÕ°N&~ÒÌÑQ Ì&Ò~⁄ ~À~ÒÒÌÌÌÌÌ?°«~∞Ò~d°O
+Q À~Ü
+Q Ñ∑	€	€°’Ü
+Å	è˜ªD	~í	d~Ò$
+9ÒÀ¡
+ÈÈ◊ÀÒÌÒ
+DZ	Ò~êª9f&Ì~&Ü
+⁄ Î%®
+fÌ~Z	 &ÌÌ~ÒÌÌõ å	 %ãíÌ/ày	DDà
+C$
+ÕDâQ ÌÀ/8ÌÌÌÌ¨+Ò&”°DÚm füo$
+√cœå	ãô˝ø/ ≠√	DD
+È à
+DÓ
+√*°DDD_EÌ'D@S DÌÌ~ÒÌÌîDœ'Ò~QQ ÌÒ4°D_Al^∞Ò	Â	Û†î†	Ï
+ëO
+¸íœ⁄ y¯=D∑	D≈Ô ÌC˜ÒÀzH˝_?D°oÑå	√	&Ú€∆	⁄ ÌÌ≈D¸~~&˜Ò~Ò/}(Ò&îÌÌÒ˜Q Ì¨í˜f~ÌÌÌÌD3 ÌÒÌÌÌZ ?($ D⁄ÆÚÌÕ˘iÌÌ&Ì l
+Ò~~Ü
+ÌÌ2DêÒÌô°D=ÌÀ˜&˝Ü
+Ì~HL(í
+ ;Q Ì~∑	DDHÌÒÌÒÀí¿ à
+	ÒÌ‚
+r∑	 =≠ôÒÎà
+DD≠Ì°D≠õ f2D Òb=¸$JÜ
+Ìô≠`‘ôj[
+ôÒf·ﬂ2?8˜°Dœ#Ú«´m €ÚD°∑	àÌÌ¸DÚDÚ~Ì∞^Â	ÌÜ
+Ú=ÌÌD ÀÌ~˘ DDù⁄ f®
+∞¿hÊ4e¿€DO
+&9ÒÌÌ⁄ V∞	2ÅÚÚÔ ÒÌÌî==ci_DF2èA“	Î	DÚyÌÌùD˜Ì~ÌrÜ
+~~øD§z∞ÌÌ~ÌQ ¯Œ°°iÌÌ&~ÌÌŸÚ}ÌÒ&~ÌÒó0ÚÚ $]ÀÌ&&ÌQ ŸQ &D ÀÌŸ	S˝(D°Ì~°€~Ì#$îÒÒ 6 ÚD€Ò	Rs Ü
+Ì~∑	D?§Q  Ì⁄ f∏D°D∑	 Ì˝?ç⁄ ÌÌÌÜ
+ÌÚD≠Ì˜ç	D≈€°ùÚ∑	†=f⁄ íó∞ÌÜ
+C?¿ Å	îﬂ˜∞C/ ’ ˝˜Ò	îfÿ∞N°( 'C%˜• …=LL
+Rœ⁄ &vùD…&Ì DÚVÌ˝
+V ~Ì˜€DÆÌ~ÁD°í˜~U	ıÚîH/îs œó9ÌÌÌ~p~ÌÌQ ÀÌ«~ÀQ ~(°Df⁄rãÏÜ
+¸u'DD?_,‚
+Ü
+~∑	€ÌÒÒÒ⁄ î&Ì.lDÚ€m ¸QÌ~$
+€DŸ	~Ìiùoà~~Q  Ìí€¯~ÌVÚ° ≈íÕîÕ˜Ì2(?€izÜ
+ ~~ÚD€D0DPÒÌHîÒÌfDU	ÌŸ”DDÕ1	
+≠ iîÒÌÒZ	qZ ú ~Ì⁄ ⁄  °D°DåÌ&#ÌÌ9S AÕÌ&±±˜ DDDDDD
+rÚU	Ò~~Q m DDDD⁄EÚây%U	≠ß5⁄ Ü
+  
+ Î	∑	ùÚ0ãH^Àfspë fÌÌÜ
+Ò $
+Ü
+Ì&°D.Ì≈m⁄ Ì(ŒpÌ~˘ ¯VC’==ÚˇbiQ ⁄ ~ÌÌQ î~CÍùV CÀÌÌÌÌÌ~î(&ÀN(√íC8ù	X[8Ú
+ Á• ü`í∑	NÌÒÜ
+ÀÌîÒÌ~ó¸∑	ÚN∞ÌÌÌ@L
+∞ÌÌ∞°D_VÌÌÌÌ¯D≈?Ìf^°ù	HÅ~~Ü
+U		Ÿ	'≠íù?Ü
+ÌÌÒÌ~+iê
+õ ÀÌÜ
+Ô Ì~Òî… Ì?DD	Åi⁄ ~ÎL
+LÒÌÌÀ∞~ ÒÌÌÌÌ~lDDDà
+%ÌÌßÂ°°âìé ˝ﬂjÌ°D*æ	 
+Åˇ í	Ü
+ÀÌÌFcÚ°Ú∑	DDD$ﬁÅ€	ı	ÌZ	DDDDD
+DDÚhh˜R∞ ¿Ü
+íHÌÌÒ9~~gÖ~~ÖÚ°«~ÌÌ~ÒÌ~ÌÌQ XÆ°L
+NVu#ÌÌÌÌ& &~óŸ	≤ÆVÒÒ~ÌÌ~~~Ò~~˜kyzÌŸ °Bîà†	U	∂xõ Cê⁄	@~ÌÒÆv hâ¯~Ì9Ÿà.ŸÒ~~ÌÒí€	∞ÌÌJD(9Ò$
+$
+ÌŸoV &ÌÒf~î~îÀü~Õê≠f&~˜(ÒÌÌÒÌÌÒÌ&îÌÌÌÌLâ~Ò~«Ò9DD¿ Së
+9Ìé 3 Êr∞œÌÌÒÌÌÜ
+oV~ÌÒê D°∑	°è
+&?oD°DDÚ9œ
+ Ò%DDDà'	ûÁÀ z ∂¯Víü“$
+ DÚ0Dı&Àﬁ@~H°D∑	∑	DDD∑	DDDD0“ó%¿¿.í	è ~è &~~Ì~~~⁄ {DDl~ÌÀQ ~ÌÀÌÌÌ˜fŸŸœŸ~ÌÒÒ Ÿ~ÌÌÒ~&Ô Ü
+(~~À&fî~~~ÌÌÌ⁄ Dù8ÕDDœﬁíXº/ Ÿs"˝¿~Ì(3 ´(´Dn&Ì˜~Ì~ÒÒv.~ÌÒŸQ ~Ì⁄ VÌ~CÌÒ&~ÌÌÌÒÒ& f$
+˜~& ÀfÀÌÌÌÌ~ºâ9ÌÒÌÌÌÌÌ9DD Ì~∞Øî ''&˝Ì˜ÿîÒÒÜ	=ÌÌÌÌÌè DDiÌÌDn
+UÛQ ë ?D°°Dy	#ÌÚ∑	ü&S∑	DDÌ#fDz?JgààC• Ò/ Ü	Å“°Áf~&ÆÚÌD∑	DDDDDDDDDDŸ	íipEÁ3 í uC/ óÀÌÌ~ r	ëâÜ
+ÌÌÒ ffziÒÌÌÌÌÌÌÒ/ ◊†¨œ⁄ ÌÌÌÌÌÌÌÒî H^I&ÌÌÌÒÌÒ~†DDDÚè
+%‹∑	◊#ÕÚyÆÒÒÌCÚ€ìoìÚùóÌÒ~Òè}(ÒÌÒÒ~ÒÌÒÌÌ˜≤≤¿~ÌÌÌÌÒÒÌ~ÑÚAÜ
+~ÌÌÌ&~Ò~ÒÌçóî~~ÌÌÌÌÌÀ[4VÌÌÒJr	~&~ÒÒÌ&ÕîíÑÆ∑	F~'ÒÌÌ&H.˝
+ÌÌ<D.Ì&ÌÚD°°DD
+9.D‹Ò~• Ú* ÒH“∞	Ï€i h'∞i““#fLÀôzC@Ìb°°DDDDDDDDDD	v~…D°°L
+«Ò U	$
+ÌfãfÌ~~Ò~⁄ ÌÌ~ ÒÜ
+_ÕQ ~
+ÊÏ.Q È˜⁄ üÿ?Ár4XÜ
+9Ò9Ü
+ÀÑ@˝
+ÀZ °Úóî&ÒÌ~~Ìü«∂ÆÀÌP“ãDÜ	üüDDÌÒîÛroë oì,ùD7
+ÌÀQ ÌÌŸ$
+Ü
+À~~~ÒÌÌÌÌÒÌÜ
+TD6ÀÌ~&À~ÌÌÒÒ“Ú≠ÌÌÒ˜ÀÌÌÒ~ÌÌCQ(~ÌÒÒÒÒ~~ÌÒÀ~Ì~ÌààÌÀÌ4	S 99Ò	yDDD	 (ÌÌ~ÌÌÌÌÌ~/√~ÌÌ~Õ†Ú°DD î=D∂ÌÜ
+bQ ÌÌ‡Úz¨M	àm?/ÒiÚèÌQ ≠/i~ÌÈõ ı%fŸÜ
+óÕDy∑	D∑	∑	DDDDú[	Å	DÚD°` ~/ S ØöiiÌ~~Ì~⁄ U vD€∞'ó?ç	S .	S ¡
+√äDyõ Ú(Ø“=Hi@NóÎ∂I“$
+ÆJ~Ì¯V ~ÌŸ≠ 
+ 	^L 	∆^ÒÅDDÀÌí°ù∫∫∫ìë q°~~∞:%Â	9⁄ &Ò$
+˝
+ÌÌ~~ÌÌÌ~í@r~ÌÌV3  Ì⁄ Ì9Ü
+ÒÌ~Ò˜Ÿ&~ÌÌÌ~ÒÌÌÒÒ~Ì&“∞ÌÒÌÌÌÒÒÀ~H([*DÚÿÌyDDDDC⁄ Ì˜œÌÌÌÌ&f9ÌÌÌÌ ÌÌ√D°°DD
+ ''	“Ì°
+#Ò“≠∞îÀ'∞Ì~~ŸÜ
+œi6íî~HiÊô⁄ ÒŸH//ÒŸ	â⁄Ú°E0DD
+(Ñfc5Å	¸ym z9?◊æ	@í¿HÌzÏÀ~/«^ßDÚ∂9Q hL
+¡
+fÊë
+`è
+åÓ
+Æ(»˘}4@ã’≠∞ “Ó	¿“S EóîÌÓ	°ÀÌ\°°DD#¸"*«ÌÚÚDD.Ìf4ë oØzzXL
+ÌÒ=DD¸˜Ì'⁄ ã°Ñ~˜~Ì~ÌÌÒÒÒÌÌÌÜ
+~bÌî&ÌÌÒ '9.8ﬁ((ÒÌÌÌÒÒf˜~Ì#†	î‹~ÌÌ~~Ì˜L
+D°DDÌED∑	Dñ~Òí_• ÌÌ~p€Õ¸~ÌQ ÚúÌÀ=DDDy	Æ€Ò&Ì Dâ[
+Ì⁄ÚŸÒ˜èèf8∞¿¸#~~Ü
+˜⁄Òœ¿óôÌÕQ ¨®
+$
+« lCÆDDA˜»#iíàîÌœ@†• Ì9 ó’◊ ⁄ [
+.S D° í°Ú(¡
+≠Ê˝†}≠	Ò	°5H^8è†	ãÅ#Å	ö	Ì@D(ÌÁDDDD,Ÿâ€†/ıU	¿Ì'În€mŸg 4óÌ~Ÿ“A.Ü
+ÒhÕo»=HÌ&~9~~ÌÌÌÀ∞È˜Q ⁄ ~Ü
+Hf&9`√Ò$
+h˜⁄ àâ~~&?Ü
+Ì∞«Ü
+ÌzÖ9€D~ÌÌ&⁄ Ì9ùD°“DDÈÌﬂDD	~Ì9°D“ÌÌ9€DD°†	ÌíD«ÌÒH(DDÅ~fQ &$
+ãÑA	f~' «ÁÁ≠%íŸ	œ7
+≠i~ÌU	  ˜ó“Å%Õ ®
+˘í	}€Â.Ó	ùÚ Ì	“U	ØÜ
+∞&CSå	ÿ  / ôÒíz?Æ”ôÌV
+5/ §DÚœ≠Ê_%C«W√	è
+S Ü
+È“ß[}5’ è“ Afõ ‡”À	˝‹Ó
+Ü
+Ì$ù&Ì&0DE†“¨3 DÚ† ⁄ 'ÌQÌ~~T8Cñ fÒzÌÌ&'Ò~~ÌQ à
+’ 9Q ˜Ì' ˜&Ì⁄ ~€&#ÒîŸ	¿#˜ô&Ìõ Ó
+_Ì'@è9bŸb≠(&Ü
+$
+œÌ∞∑	@˜Ì9ÀÌ~\Dà
+DµÒj	òDÌ¯ıDDÚÜ
+ÌÌQ ‹°ã(Ì~f&ÌÒÌÀ  ÀüîîãDD?$
+Ì(Æ˝ÒŸÁŸŸçÒÊ≠%†“4Ò	 Ü
+.Q ~&Õ$
+&?Ÿ	[ù	àígQ ﬂd¸ÆîÌ^†hå`è
+ôCå	çÿ`p´'Æè
+$
+DÚ …ÌÙ
+ëDÚˆë
+¿f◊“ Aö	b∏ÚµP¿b°yA%W$
+9ÅÑ[≠ £ @Ï
+⁄ Aã~ÌDiÌﬁÎ	°D
+&†Ÿ	N°⁄ “ ≠íÌ~ÌC' ~Ô ÀÒ~ÒÌÌÌÌü&Ì~C(Ì~~⁄ &i˜&ÌÜ
+«˜˜/~˜ç	úîÜ
+ ô&&ÕóØ&ÌS ? f$
+c ~î?ÒÌÚD ÌÒí~Ìã°DDWÒÌf$
+Ì~DÚ}y	í(ÌÌÌ~˜⁄ ~~ÌÌÌÒ9ÒÌÌÌÌ&˜˜?“ ‹”D5˝~i(W≠Ò 0.ÌîÜ
+ M	í&ónÆö	ÒîŸ(ÌÀÜ
+Ì~]~~ÒÌÜ
+î~ﬂ†˝†°D∑	Fh≠ô&rDÚTx⁄ óÈD!'	`ﬂ`rDÆ~
+ﬂ˜ªÀç(#ç	DDı` DDD?◊2«UQ
+b≠Æ/ ŸıÌÌrÀÌüDy	õ ß«íãÚ©
+©§«y	å~˘Ì~ÒÌ~ÀÀ⁄ ~~~Ì&9&A&Ü
+&Ì˜Ü
+Ü
+~~ &Õö≠À’9$
+4&$òÜ
+=è'˜ô~ÒÒî?fô⁄ ô8HíÌ9ô/ üfÌ2*~ÌÅ_ÒÈDD		üÌ⁄ Ì±
+_$
+ÌÒN≈Ò⁄ ~è írÌÌÌ9ÒÌÌÒÒ#å	Å	Î	Æ2ˆèÕÒ⁄ À¯üf: Ì~b fÑ6∑	=?
+ Á° •  îÑÏ9˜Q Ó	ÑÕ9îΩ i˜ó¨¿¨ÌÒÒõ ﬂåDÜrß,œ8Ò`D∆∂	Q	#ø&DDpè
+∏iiç
+ÚÀofãíÀcU	Ì_DDı/ ÁDDDD∑	DßÑ
+ [⁄ ê∑	E°»óÒÌÒVè pN9¨à¿”ëb˜Ú∑	å`Ì¸V Ì~~~~~~í.9ÌÒCã≠∞Q ~#ÊµÚ$˜Ò9Ì⁄ ~m DWÌ9(⁄ %D}Ì@q⁄ †?ÌÀ9ÌA∑	i`⁄ ÌŸÅ&Ò/#Q	Ì∞è
+√Ìo*&ÌF_ÒÒ(õ ó4°9?°DO
+ÌÒ€∑	ÒÌ:°Úy5ÌÒÒÌÌÌÌÌÌ#€DDDD°°n
+ÒÌ~ ÀÌi€Â	Ì˝
+Ÿ	&Ÿ≈°*
+ \y	ÚD∑	yÀQ 
+&Ì∞í	~ Ì~~~Ö∞~Ì˜ﬂ¡
+Q	˝se Åç
+`’¡
+ëç
+òÌ^Ñè
+Ü	Ó
+CÑÿN’tÆ 	êçÿ• iè’ü[zç	DDÆChDDDDDDŸ	Ü
+ö	Ü	Cô °DDDDDni'~°lÚ=:àXA‹ èDDÚÚÌH®
+&~ÌÌÌÒ}qÕÌ~Ì$
+°N8îÒÖDD°«~ÌŸÌ∑	ù~Ò˜Ü
+’ D:ÌQ í⁄ 8Dﬁ~«…?Æh∑	Ê`&ÌfÒ#ííôÌÌ~⁄ Ìôª~ÌÑœÌ~œ °A~∞°D∑	DÕÌ6˝Ì¨∑	DDÚÀÒí~ÌÌÌÌÌÒÌ∞€D°°°D∑	L
+«îÌî}Ó	 ÌÌ≠€	íí∑	Úã∏2ÚD°°∑	°DÚ…~[Ê’f z~¿®
+ÒﬂœÌ¿4ó^∏í¿Ñ°ßº5å¡
+ÈﬂΩ	˝^é &Fb4†• ≠“˜õ (“’ / ÕÁß◊à¯
+˜èDDD°Êõ EDDDDDÚ@∞ÌÚ°DDDÚDD°V ÌÒÚDDDDîiù	~≤∑	íXJÌr0Ì¨4ÌÌ~~ÒÀ’∞Ì~H.Ó	Ú°°&Ò¨“√(&ÌÜ
+&~m Lœf⁄ Ò&˜Úœ~ÒÌÌ®
+DAÌÕrD∑	Dc[
+\D∏ C9ô%ç	Ï⁄ ÌU’ôÅ&ÌÌ~ÌÌÌDù~Ì“DDDDùÌÕ∞ÒÀL
+D°D_Ìd˘Ì~Ü
+ÌÌ˜Q 9Ì¡
+∑	DDDDDD°ŒÌf¯=CIJÌœH”ë Akç	Ó
+°ÚÚ°∑	D°∑	y$
+Q «Ñ]7
+q¸,V `Æ7
+°ùDH¬ë
+&B
+D**°°œÌ¡
+¡
+õ ßÆ ∑	CÌ&• Ò∂D2…$
+%⁄  °Å	£ ¯
+†	Ÿ~îlÚ5PÜ
+ÌcFÆÚ€ŸNDù¡
+ÒıDÚ≠9eúâœ~'eÚDèîÊ˜˜ÌZ qÒ~ÎÜ
+Ìî¿CÌ~ŸÜ
+À&ÌÒ¯oãNoN≈ÌÀQ ~Ò(((⁄ Ò ®
+$
+Ü
+⁄ ~Ü
+&	}À⁄ ¯óÌJDV Ì9ı°DÓ
+ÈˆDÚ°DÒ&hDbÌ ∑	œ_2⁄ ÌÌÌó?Õ Ü
+ÌQ Ö∑	°,øîÌíí~IDDD¸Ì∞rfØÚroL
+8Ò~Ì«DDD°ããr~ îÌ¨°¸~⁄ ¿&˜Ö`^@o°°Ú°∑	°°D°T≤î~~ ∞írrpó Ü
+f~fCÌÌi=DDDDD∞Ò	°?êÌDDÚèÜ
+~≠CÓ
+Dù=°œÌÕ∑	DO
+~ÒÀ˝
+HÀÜ
+ÌÌ&'9~ÕbÒÒÌ9ÒÌi‹&Ò⁄ ~Ò~Ò⁄ ÒÌÒÒÜ
+9'ÌÌæ	óÌ&†’ V ~ÀÒÒ&ÒÒ~~Q¸6úë ÚC˜~~ÌÒÕ¿$
+&ÒQ fÀÌ~«J&⁄ ≠∞Òî_“Ìz¸[Ìi0°Dæ ⁄ ÁDyFÚ*^~Å	ôÌ°DÚDDÎ	ÒÌ~ÚÚ¸∑	¯Ì⁄ ¨ŸÀ~Ìf°ÚQ ~ÚD∑	™ ÌÒÒC™ úÚDDùÀÌÌ&∞¨Â[~~Ì~r	3 ˝
+frﬂ IV C~C€∑	∑	°°°°D°DDDÚr	H~Ü
+@ ~i∞ù	ë ¿~Ü
+⁄ Ú¨Ì$
+°oÚ\DDr‹Ò	ÌÒö	• ~%?à
+%ÀÌfﬂ´Ü
+ç	D Ü
+ÌHçbÒÌ~QHÌÌÒ~]â}≠⁄ Ìü#$
+˜ÒÕÕÌÂ	∑	/ Ì⁄ ˜&3 Ö C~ÌfÌQ ¨CQ %≈%f∑	”Ì'°Úî≠=&&⁄ ~ÒÒÒÂ	O
+ÌÀî	 m ÀÌ~ÒÚEqfÌÒ~~ÒJL
+úÌÒÌ~Ì°Ê9(iQ Ò'$DD√Òˆy°“%∑	‡~Ÿ∞~Ì~ÚT=DDD⁄ Ò€DÚ∑	°⁄	Ÿ~~f⁄ Ì~°DDhÌ⁄ ≈ XÕà~Ω «Ì~~j
+ØTc Q ∞~Ì~~⁄ ∞Q Q €øø€œÒ€I~3Î¿L
+DÚÕ∑	∑	DD7
+zùØí~ÒÌù	L
+QÜ
+ r	nÀ~&∞ÚØÌÒ¨ND Q 4¸~~~⁄ &ÒÌÌÌ~• f~~&~ÌÒ~ÒÌ ¨ÀÌÌÌÌÒŸÒ[D:Ì≈ L
+∑	øë 	J«ÚeŸío°∑	¯Ü
+(DÚ9°D«Ó	E/†√≠ÀœO
+°D∑	~íD Ì§D&Ü
+⁄ ÌÀ«⁄ &ÒÌóÊ&Ìi8	~ÌÌ~îÒp™ÕÌ~~~&∞Ú:˘ f~ÒÚD∑	&û	~i”Då˜Ì‚
+À	yQ Ü
+Úç	9ÌÀÌÌÌoŸ	⁄	Ú“Ò9ù iÊX∞D∑	ÀÜ
+À&îJDDv 8˘îÒÎ~&Ú° ÌÔ ~Q YÕ~⁄
+DΩ ~cHÜ
+T˘¿.RÖ(Dh~Q œHÔ îÔ 3 DÚ∫°°L
+¸ ~˜~&ÀÒ~ Õ9Ò~~~ÌÌÌ∞€ÌÌÀ~&~Ì~~Ìîî??î{L
+XÌ&:~Ì⁄ ﬂù	ÀÌÌÌÌÌÌ~ói	ÑX~≠D6ÒóD∑	°∑	LîZ	]ç	û¯
+=DDÚ⁄ €D\~£ °DD_â°DºS Ò• °DD_ÌÌ&Ìó€9~ÒÒ~&ÌÒÌÌÌ~~ÌÌ~Ì˜˜~~ÒÒ~Ò~Ò~ ˜~~~ÌÕ~ÌÒí	Ó
+»2U	Ì&Ò9íÚªiÒÌÜ
+8˝~Ì$
+.íÒÌÒ~œ Òzñ ~ÌÒ Û~â¿~gø˝
+f&ÌDDãrgë ú~~Q  ~J8ŸL
+h	Ì⁄ Ô ~~e°°ë T\
+~VCfQ ÀÒ∞≠Q ~~Ü
+˜~â,≤¿ù	(4Q Ò⁄ &Ò&Cœ  ~À9&«∞/4iÌÌ°ÌÜ
+∞~ÒÌÌ&ÒííÔ óO
+ÂDDÚÌ~:óÒÒC∂≈¯~Vm }íÅ0?õ ~ÌÒ9~Ì¿DDD∑	^L°Nl°L
+Õ∑	D?˜Ì~&ÌÀiL
+DDD∑	DD :O
+ÚDDD
+§Ü
+Ì∞°°Ú~~ÒÒ~ÒÒÒ~À(ÌÌ ~~äÌŸóÌÌÌÌÌÌ~ÒÌÌÒ&⁄ ⁄ ÌlVÌ~Ò˜ÌÌ⁄ '~~99⁄ ~Ì~Ì⁄ H~Ì&Ò~ÀÀ~~~Ò&Ò9ÀÌ~i Ô Ò≈ Tñ ~~~~&~À⁄ ~o´Ü
+À ⁄ Q ~ÌîÀÌÒÒ⁄ „?&~~~&& Ç~~ÒÒ~Ü
+&~⁄ ~~~À&Ü
+í À~&⁄ ~ÒÜ
+ù	îÌ ~móù	mÂ	Ú?p§¨AÚ°D€oÌD∑	Ò~7
+L
+
+¯QCÌ}∑	íQ ¿qD∑	I
+ÌÌÒÒÌÌÌ~/D€H=DL
+2≠DÚ#&ÌÒîHóoDDDD°ÚD°Ú∑	DDDDDX®
+O
+~˝
+ÕL
+∑	DDDDDDD°DDDDDDDÁŸ	°DDDÌÌÌÌÀ˜&9ÌbÎ'uÒ~€	T  ÌQ ¿s	  Q [óQ ~í&î]CÌÒÌÌÌÌÌÒ~⁄ ⁄ ÒÌÌ˜Î&Ì7
+X&~ÌÌÌÒîÀÌ⁄ ˜~ÒÒCΩ ∑	Ω ~ fÒ˜~ÌÌf˜Ì~~~îÒÒ~9~ŸC&V˜Ì~Ü
+&Ò ˜~Ì~ÒÌ~œÜ
+~eí	~9Õ ¿˜~&À~ÒÕî&~ÌÀgŸÎ~ÌoDL
+/í$
+°∑	∑	DDDVî~Ì.Q ÌÌL
+DD∑	«~DD∑	§Ñ≈DD€XŸ	Q u$
+ÌÌŸ]D°lÚDDN—°DDDNÌ@D∑	∑	DDDDDDDDDDDDDDDDD∑	D^∑	DDDDDDDDDDDDDDDDDDDDDDD˜Au(/Z	Ì~˜≠=»DÚCÌÀoV Ü
+À~ÒD°IŸ$
+ãD∑	Õã(/Ì~¨m Ü
+Ì9ií&Ì~ÒÌÌÒ&í€…9Ì¸˘ÀÌÌ¸I.í Ì∞óHóHT∑	°.ÒÜ
+?~ÌÑ€	ù	œ˜~~ÌÌ⁄ ~f∞ÌÒQ o¸Ì~iﬂ∞À∞CQ ÕÕÀÌÒ.o8Ì~8Ñ&~hë 3 Ö ÌÌÒÌŸÚ°Û~Ò~?≈ 3⁄ ùDDlpIÚ(ÚDDDDDLŸ	~ÌÌÌÀ⁄ ÂDDDD€∑	DDDDDDDDDD∑	°D(Ü
+m °L
+DDDDDD°DDDD∑	°DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD¨∑	∑	°∑	∑	ê∑	∑	DDDDrQ Ì~Ò~ ÌiD°˘ÊL
+DDDDDD€Q Ì~∞VÒÜ
+LD4Ü
+9pÑI
+Ÿ	L°D7
+ ÒÒÒ~ÌHÚD§y~®
+°ÑL∑	DD]À9 ÌÌoDDÚX=Ÿ	iø≤`N≤ÒÒÜ
+œÌ~}’Ÿ?∞zJ€í=ùD=~⁄ ∂∞Ì˜øDÚ”O
+u6€lÚDDDD≈~∞H¿â¸ÕDDDÚ°DDDDDDDD∑	Dl~= L_DDDD∑	DDDDDDDDDDDDDDD∑	DDDDDDDDD∑	°°DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDpL
+DDDDDDDDDDDDDÕ~ÌÌÀ_ °D°DDDDDDDDDùÌÌ&~ _DDã@ D∑	DDD∑	4è Ò~Q 9ÌQ  D∑	DDI
+òDÚ0°DDDD∞ÕL
+Ö˜∑	DDD°D∑	 DDDDDDDÚ &oCÌiÚDD ˘ è ^ÚDDD∑	DDD€®
+X à€∑	DD°°DDDDDDDDD@Ÿ¸≈Ú°°DDDDDDDDDDDDDDDDlDD∑	DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD∑	°∑	DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD4L
+DDDDDDDDDDDDD°ÑÑÒQ DDDDDDDDDDDDDDDD€~À’îÕDD°Ú∑	DDDDDDÚQ ~ (yú DDDDÚ°DDDDDDD°ò4DDÕDDDDDDDDDDDDDDDDÁ.n€	~H	DDD≈ÚDDDDDDDDD°øùD
+
+°∑	DDDDDDDDDDDDDÚTNÚDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD°∑	DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD°D°?°DDDDDDDDDDDDDDDDD_7
+L
+∑	∑	DDDDDDDDDDDDD€O
+ÚDD°DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD°JÁ°4lÕ∑	DDDDDDDDDDDDD∑	∑	DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD

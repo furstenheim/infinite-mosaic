@@ -315,10 +315,11 @@ async function computeImageGrid (id) {
   if (cachedGrid) {
     return cachedGrid
   }
-  const resp = await window.fetch(`closest-points/${id}.json`)
-  const data = await resp.json()
-  tilesCache.set(id, data.ClosestPoints)
-  return data.ClosestPoints
+  const resp = await window.fetch(`closest-points-uint16/${id}.txt`)
+  const data = await resp.arrayBuffer()
+  const array = new Uint16Array(data)
+  tilesCache.set(id, array)
+  return array
 }
 
 /**
