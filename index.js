@@ -5,7 +5,7 @@ import {Decimal} from 'small-decimal'
 /**
  * @type {{ExportedImages: Array<ProcessedImage>}}
  */
-import processed from './process/output.json'
+import processed from './process/output.slim.json'
 import 'regenerator-runtime/runtime'
 const LOADING_CONTENT = 'loading-content'
 const d3 = require('d3')
