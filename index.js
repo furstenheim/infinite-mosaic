@@ -17,6 +17,7 @@ const MIN_TILE_SIZE = 5
 const MIN_TILE_SIZE_DECIMAL = new Decimal(MIN_TILE_SIZE)
 const CANVAS_SIZE = MAP_SIZE / TILE_SIZE
 const CANVAS_SIZE_DECIMAL = new Decimal(MAP_SIZE / TILE_SIZE)
+const MAP_SIZE_DECIMAL = new Decimal(MAP_SIZE)
 // console.log = () => {}
 main()
 let sprites = []
@@ -48,6 +49,13 @@ const TWO = new Decimal(2)
 const ONE = new Decimal(1)
 const ZERO = new Decimal(0)
 const TILE_2_SPRITE_LENGTH = new Decimal(tile2Sprite.length)
+let globalK
+let globalX
+let globalY
+
+let suggestedK = null
+let suggestedX = null
+let suggestedY = null
 async function main () {
   processed.ExportedImages.unshift(null)
 
@@ -77,11 +85,13 @@ async function main () {
   const context = hiddenCanvas.getContext('2d')
   const width = canvas.property('width')
   const height = canvas.property('height')
-  const zoomBehaviour = d3.zoom().scaleExtent([ONE, new Decimal(2 ** 63)]).constrain((transform) => transform).on('zoom', render)
+  const zoomBehaviour = d3.zoom().scaleExtent([ONE, new Decimal(2 ** 63)]).constrain((transform) => transform)
+    .on('zoom', render)
+    // TODO cheap translation
+    .on('zoom-suggest', _.throttle(fastScale, 20))
 
   canvas
     .call(zoomBehaviour)
-
 
   // Returns coordinates of visible area in original pixels
   function getVisibleArea (t) {
@@ -92,8 +102,49 @@ async function main () {
     return { w: t.x.neg(), n: t.y.neg() }
   }
 
+  function fastScale (event) {
+    let previousX, previousY, previousK
+    if (suggestedK === null) {
+      previousK = globalK
+      previousX = globalX
+      previousY = globalY
+    } else {
+      previousK = suggestedK
+      previousX = suggestedX
+      previousY = suggestedY
+    }
+
+
+    const transform = event.transform
+
+    suggestedK = transform.k
+    suggestedX = transform.x
+    suggestedY = transform.y
+
+    const destX0 = transform.x.mul(previousK).sub(previousX.mul(transform.k)).div(previousK).toNumber()
+    const destY0 = transform.y.mul(previousK).sub(previousY.mul(transform.k)).div(previousK).toNumber()
+
+    const destX1 = transform.x.mul(previousK).sub(previousX.sub(MAP_SIZE_DECIMAL).mul(transform.k)).div(previousK).toNumber()
+    const destY1 = transform.y.mul(previousK).sub(previousY.sub(MAP_SIZE_DECIMAL).mul(transform.k)).div(previousK).toNumber()
+
+    console.log(destX0, destY0)
+    console.log(suggestedX, suggestedY)
+    displayedContext.drawImage(displayedContext.canvas, 0, 0, width, height, destX0, destY0, destX1 - destX0, destY1 - destY0)
+  }
+
   function render (event) {
     const transform = event.transform
+    if (transform.x.equals(globalX) && transform.y.equals(globalY) && transform.k.equals(globalK)) {
+      return
+    }
+
+    suggestedK = null
+
+    console.log('diff', transform.x.sub(globalX).toNumber(), transform.y.sub(globalY).toNumber())
+
+    globalK = transform.k
+    globalX = transform.x
+    globalY = transform.y
 //      const transform = d3.zoomTransform(this)
 
     console.log('transform', transform)
@@ -103,7 +154,6 @@ async function main () {
     console.log(width, height)
 
     const drawZoom = transform.k.floorLog2()
-
     console.log('drawZoom', drawZoom.toString(), 'k', transform.k)
     const depth = parseInt(drawZoom.divToInt(TILE_2_SPRITE_LENGTH).toNumber())
     const boundCoordinates = getVisibleArea(transform)
@@ -118,8 +168,10 @@ async function main () {
   const initialCoordinates = {
     w: ZERO, n: ZERO
   }
-
-  d3Mosaic(initialDepth, initialZoom, ONE, ONE, ZERO, ZERO)
+  globalK = ONE
+  globalX = ZERO
+  globalY = ZERO
+  d3Mosaic(initialDepth, initialZoom, ONE, globalK, globalX, globalY)
 
   async function d3Mosaic (depth, drawZoom, scaleFactor, currentZoom, transformX, transformY) {
     const spriteConfig = tile2Sprite[drawZoom.mod(TILE_2_SPRITE_LENGTH).toNumber()]
@@ -267,8 +319,10 @@ async function main () {
       await finishedRenderingPromise
     }
     if (thisExecution === currentExecution) {
-      displayedContext.drawImage(context.canvas, floatXCoordinateInAbsoluteGrid.sub(xInAbsoluteGrid).mul(tileSizeDecimal).toNumber(), floatYCoordinateInAbsoluteGrid.sub(yInAbsoluteGrid).mul(tileSizeDecimal).toNumber(), width / scaleFactor.toNumber(), height / scaleFactor.toNumber(), 0, 0, width, height)
+      console.log('start drawing')
+      displayedContext.drawImage(context.canvas, parseInt(floatXCoordinateInAbsoluteGrid.sub(xInAbsoluteGrid).mul(tileSizeDecimal).toNumber()), parseInt(floatYCoordinateInAbsoluteGrid.sub(yInAbsoluteGrid).mul(tileSizeDecimal).toNumber()), parseInt(width / scaleFactor.toNumber()), parseInt(height / scaleFactor.toNumber()), 0, 0, width, height)
       // displayedContext.drawImage(context.canvas, 0, 0, 2 * width, 2 * height, 0, 0, width, height)
+      console.log('end drawing')
     }
   }
 }

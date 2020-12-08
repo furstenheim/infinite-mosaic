@@ -126,15 +126,25 @@ func main () {
 		}
 		if matched {
 			k++
-			closerPoints := computeCloserPoints(tree, path, i)
-			// log.Println("closer points", closerPoints)
-			closerPointsFile, outputPointsErr := os.Create("../closest-points/" + closerPoints.Id + ".json")
+			// closerPointsSmall := computeCloserPoints(tree, path, i, sizes[0])
+			closerPointsMedium := computeCloserPoints(tree, path, i, sizes[1])
+			// log.Println("closer points", closerPointsSmall)
+			/*closerPointsFile, outputPointsErr := os.Create("../closest-points/" + closerPointsSmall.Id + ".json")
 			if outputPointsErr != nil {
 				log.Fatal(outputPointsErr)
 			}
 			defer closerPointsFile.Close()
 			encoder := json.NewEncoder(closerPointsFile)
-			encoder.Encode(closerPoints)
+			encoder.Encode(closerPointsSmall)
+*/
+			closerPointsMediumFile, outputPointsMediumErr := os.Create("../closest-points-medium/" + closerPointsMedium.Id + ".json")
+			if outputPointsMediumErr != nil {
+				log.Fatal(outputPointsMediumErr)
+			}
+			defer closerPointsMediumFile.Close()
+			encoderMedium := json.NewEncoder(closerPointsMediumFile)
+			encoderMedium.Encode(closerPointsMedium)
+
 		}
 		return nil
 	})
@@ -163,7 +173,6 @@ type ProcessedImage struct {
     Frame Frame
     Id string
 }
-
 type ProcessedPixels struct {
     ClosestPoints []int
     Id string
@@ -209,7 +218,7 @@ func processJPG (path string, i int) ProcessedImage {
 	}
 }
 
-func computeCloserPoints (tree *kdtree.KDTree, path string, i int) ProcessedPixels {
+func computeCloserPoints (tree *kdtree.KDTree, path string, i int, size int) ProcessedPixels {
 	imgfile, openErr := os.Open(path)
 	if openErr != nil {
 		log.Fatal(openErr)
@@ -228,7 +237,7 @@ func computeCloserPoints (tree *kdtree.KDTree, path string, i int) ProcessedPixe
 	imgId := string(matchString[1])
 
 
-	reducedImage := image.NewRGBA(image.Rect(0, 0, CANVAS_SIZE / sizes[0], CANVAS_SIZE / sizes[0]))
+	reducedImage := image.NewRGBA(image.Rect(0, 0, CANVAS_SIZE / size, CANVAS_SIZE / size))
 
 	draw.CatmullRom.Scale(reducedImage, reducedImage.Bounds(), subImage, subImage.Bounds(), draw.Over, nil)
 	// writeImage(reducedImage, "closest-points/" + imgId + ".jpeg")
