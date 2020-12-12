@@ -2234,10 +2234,10 @@ d3-transition@2:
     d3-interpolate "1 - 2"
     d3-timer "1 - 2"
 
-d3-zoom@2, "d3-zoom@npm:@furstenheim/d3-zoom@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@furstenheim/d3-zoom/-/d3-zoom-2.0.0.tgz#c58776da7119bf4d48501b6188ae33f316360628"
-  integrity sha512-MqSFH2CTcxizAlZMn4MTi3rnZ4kXVbjnjLBWBj5xhCy6jnTn/+Lv8hoZ5TNUomewQ9nmRh7Fg7Y6FIu2yhC7Ig==
+d3-zoom@2, "d3-zoom@npm:@furstenheim/d3-zoom@2.0.1", "d3-zoom@npm:@furstenheim/d3-zoom@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@furstenheim/d3-zoom/-/d3-zoom-2.0.1.tgz#223dbcc82452c10b2b11656ae08e57f94551a4ef"
+  integrity sha512-IxTG/oGaJjx1SXIPOEBGNjtkvBY6yPaHeWYHM0amBye7JI2wqwx7ykW4aK0JB+IS/rlc/fsCzk+h+cygejZi6A==
   dependencies:
     d3-dispatch "1 - 2"
     d3-drag "2"

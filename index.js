@@ -7,13 +7,20 @@ import {Decimal} from 'small-decimal'
  */
 import processed from './process/output.slim.json'
 import 'regenerator-runtime/runtime'
+
+const queryString = window.location.search
+const urlParams = new URLSearchParams(queryString)
+const isBig = urlParams.get('size') === 'big'
+const isAutoplay = !!urlParams.get('autoplay')
 const LOADING_CONTENT = 'loading-content'
 const d3 = require('d3')
 require('d3-zoom')
 const MAP_SIZE = 1280
 // const TILE_SIZE = 10
-const TILE_SIZE = 5
-const MIN_TILE_SIZE = 5
+const TILE_SIZE = isBig ? 5 : 10
+const MIN_TILE_SIZE = isBig ? 5 : 10
+
+const baseImageUrl = isBig ? 'closest-points-uint16' : 'closest-points-medium-uint16'
 const MIN_TILE_SIZE_DECIMAL = new Decimal(MIN_TILE_SIZE)
 const CANVAS_SIZE = MAP_SIZE / TILE_SIZE
 const CANVAS_SIZE_DECIMAL = new Decimal(MAP_SIZE / TILE_SIZE)
@@ -25,7 +32,6 @@ const SIDE = processed.Side
 const SPRITE = 'sprite'
 const DIRECT = 'direct'
 const tile2Sprite = [
-  { type: SPRITE, index: 0, size: 5 },
   { type: SPRITE, index: 1, size: 10 },
   { type: SPRITE, index: 2, size: 20 },
   { type: SPRITE, index: 3, size: 40 },
@@ -34,6 +40,9 @@ const tile2Sprite = [
   { type: DIRECT, size: 320 },
   { type: DIRECT, size: 640 }
 ]
+if (isBig) {
+  tile2Sprite.unshift({ type: SPRITE, index: 0, size: 5 })
+}
 const imagesCache = new LRU(200)
 const tilesCache = new LRU(200)
 
@@ -93,6 +102,17 @@ async function main () {
   canvas
     .call(zoomBehaviour)
 
+  if (isAutoplay) {
+    let i = 0
+    setInterval(function draw () {
+      i++
+      if (i % 5 === 0) {
+        zoomBehaviour.scaleBy(canvas, new Decimal(1))
+      } else {
+        zoomBehaviour.scaleBySuggest(canvas, new Decimal(1.1))
+      }
+    }, 100)
+  }
   // Returns coordinates of visible area in original pixels
   function getVisibleArea (t) {
     // Zero zero of the canvas to coordinates in the image
@@ -107,7 +127,7 @@ async function main () {
     const previousX = suggestedX
     const previousY = suggestedY
 
-    console.log('fast translate')
+    // console.log('fast translate')
 
     const transform = event.transform
 
@@ -122,9 +142,6 @@ async function main () {
     const destY1 = transform.y.mul(previousK).sub(previousY.sub(MAP_SIZE_DECIMAL).mul(transform.k)).div(previousK).toNumber()
 
     displayedContext.drawImage(displayedContext.canvas, 0, 0, width, height, destX0, destY0, destX1 - destX0, destY1 - destY0)
-    /*context.drawImage(displayedContext.canvas, 0, 0, width, height, destX0, destY0, destX1 - destX0, destY1 - destY0)
-    displayedContext.clearRect(0, 0, w, h)
-    displayedContext.drawImage(context.canvas, destX0, destY0, destX1 - destX0, destY1 - destY0, destX0, destY0, destX1 - destX0, destY1 - destY0)*/
   }
 
   function render (event) {
@@ -149,24 +166,24 @@ async function main () {
 
     displayedContext.drawImage(displayedContext.canvas, 0, 0, width, height, destX0, destY0, destX1 - destX0, destY1 - destY0)
 
-    console.log('diff', transform.x.sub(globalX).toNumber(), transform.y.sub(globalY).toNumber())
+    // console.log('diff', transform.x.sub(globalX).toNumber(), transform.y.sub(globalY).toNumber())
 
     globalK = transform.k
     globalX = transform.x
     globalY = transform.y
 //      const transform = d3.zoomTransform(this)
 
-    console.log('transform', transform)
+    // console.log('transform', transform)
 
-    console.log('render', event, transform)
-   // N console.log('Visible area', getVisibleArea(event.transform))
-    console.log(width, height)
+    // console.log('render', event, transform)
+   // N // console.log('Visible area', getVisibleArea(event.transform))
+    // console.log(width, height)
 
     const drawZoom = transform.k.floorLog2()
-    console.log('drawZoom', drawZoom.toString(), 'k', transform.k)
+    // console.log('drawZoom', drawZoom.toString(), 'k', transform.k)
     const depth = parseInt(drawZoom.divToInt(TILE_2_SPRITE_LENGTH).toNumber())
     const boundCoordinates = getVisibleArea(transform)
-    console.log('Visible area new', boundCoordinates)
+    // console.log('Visible area new', boundCoordinates)
     currentExecution++
     const scaleFactor = transform.k.div(transform.k.floorToPowOf2())
     d3Mosaic(depth, drawZoom, scaleFactor, transform.k, transform.x, transform.y)
@@ -231,8 +248,8 @@ async function main () {
     const maxXInGrid = new Decimal(parseInt((width / MIN_TILE_SIZE))).mul(getSide(depth - 1))
     const maxYInGrid = new Decimal(parseInt((height / MIN_TILE_SIZE))).mul(getSide(depth - 1))
 
-    console.log('depth', depth)
-    console.log('xInGrid', xInAbsoluteGrid, 'yInGrid', yInAbsoluteGrid)
+    // console.log('depth', depth)
+    // console.log('xInGrid', xInAbsoluteGrid, 'yInGrid', yInAbsoluteGrid)
 
     let remainingImages = 0
     let renderingDone
@@ -282,12 +299,12 @@ async function main () {
           if (candidateGrid) {
             currentGrid = candidateGrid
           } else {
-            console.log('accessing', xInParentGrid, yInParentGrid, depth - 1)
+            // console.log('accessing', xInParentGrid, yInParentGrid, depth - 1)
             currentGrid = await computeAndMemoize(xInParentGrid, yInParentGrid, depth - 1)
           }
           changeGrid = false
           if (drawZoom % (tile2Sprite.length) === tile2Sprite.length - 1) {
-            console.log('preocomputing', currentXInGrid, currentYInGrid)
+            // console.log('preocomputing', currentXInGrid, currentYInGrid)
             computeAndMemoize(currentXInGrid, currentYInGrid, depth)
             computeAndMemoize(currentXInGrid.add(ONE), currentYInGrid, depth)
             computeAndMemoize(currentXInGrid, currentYInGrid.add(ONE), depth)
@@ -331,10 +348,10 @@ async function main () {
       await finishedRenderingPromise
     }
     if (thisExecution === currentExecution) {
-      console.log('start drawing')
+      // console.log('start drawing')
       displayedContext.drawImage(context.canvas, parseInt(floatXCoordinateInAbsoluteGrid.sub(xInAbsoluteGrid).mul(tileSizeDecimal).toNumber()), parseInt(floatYCoordinateInAbsoluteGrid.sub(yInAbsoluteGrid).mul(tileSizeDecimal).toNumber()), parseInt(width / scaleFactor.toNumber()), parseInt(height / scaleFactor.toNumber()), 0, 0, width, height)
       // displayedContext.drawImage(context.canvas, 0, 0, 2 * width, 2 * height, 0, 0, width, height)
-      console.log('end drawing')
+      // console.log('end drawing')
     }
   }
 }
@@ -381,7 +398,7 @@ async function computeImageGrid (id) {
   if (cachedGrid) {
     return cachedGrid
   }
-  const resp = await window.fetch(`closest-points-uint16/${id}.txt`)
+  const resp = await window.fetch(`${baseImageUrl}/${id}.txt`)
   const data = await resp.arrayBuffer()
   const array = new Uint16Array(data)
   tilesCache.set(id, array)
