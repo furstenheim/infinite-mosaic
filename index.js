@@ -103,17 +103,11 @@ async function main () {
   }
 
   function fastScale (event) {
-    let previousX, previousY, previousK
-    if (suggestedK === null) {
-      previousK = globalK
-      previousX = globalX
-      previousY = globalY
-    } else {
-      previousK = suggestedK
-      previousX = suggestedX
-      previousY = suggestedY
-    }
+    const previousK = suggestedK
+    const previousX = suggestedX
+    const previousY = suggestedY
 
+    console.log('fast translate')
 
     const transform = event.transform
 
@@ -127,9 +121,10 @@ async function main () {
     const destX1 = transform.x.mul(previousK).sub(previousX.sub(MAP_SIZE_DECIMAL).mul(transform.k)).div(previousK).toNumber()
     const destY1 = transform.y.mul(previousK).sub(previousY.sub(MAP_SIZE_DECIMAL).mul(transform.k)).div(previousK).toNumber()
 
-    console.log(destX0, destY0)
-    console.log(suggestedX, suggestedY)
     displayedContext.drawImage(displayedContext.canvas, 0, 0, width, height, destX0, destY0, destX1 - destX0, destY1 - destY0)
+    /*context.drawImage(displayedContext.canvas, 0, 0, width, height, destX0, destY0, destX1 - destX0, destY1 - destY0)
+    displayedContext.clearRect(0, 0, w, h)
+    displayedContext.drawImage(context.canvas, destX0, destY0, destX1 - destX0, destY1 - destY0, destX0, destY0, destX1 - destX0, destY1 - destY0)*/
   }
 
   function render (event) {
@@ -138,7 +133,21 @@ async function main () {
       return
     }
 
-    suggestedK = null
+    const previousK = suggestedK
+    const previousX = suggestedX
+    const previousY = suggestedY
+
+    suggestedK = transform.k
+    suggestedX = transform.x
+    suggestedY = transform.y
+
+    const destX0 = transform.x.mul(previousK).sub(previousX.mul(transform.k)).div(previousK).toNumber()
+    const destY0 = transform.y.mul(previousK).sub(previousY.mul(transform.k)).div(previousK).toNumber()
+
+    const destX1 = transform.x.mul(previousK).sub(previousX.sub(MAP_SIZE_DECIMAL).mul(transform.k)).div(previousK).toNumber()
+    const destY1 = transform.y.mul(previousK).sub(previousY.sub(MAP_SIZE_DECIMAL).mul(transform.k)).div(previousK).toNumber()
+
+    displayedContext.drawImage(displayedContext.canvas, 0, 0, width, height, destX0, destY0, destX1 - destX0, destY1 - destY0)
 
     console.log('diff', transform.x.sub(globalX).toNumber(), transform.y.sub(globalY).toNumber())
 
@@ -171,6 +180,9 @@ async function main () {
   globalK = ONE
   globalX = ZERO
   globalY = ZERO
+  suggestedK = globalK
+  suggestedX = globalX
+  suggestedY = globalY
   d3Mosaic(initialDepth, initialZoom, ONE, globalK, globalX, globalY)
 
   async function d3Mosaic (depth, drawZoom, scaleFactor, currentZoom, transformX, transformY) {
