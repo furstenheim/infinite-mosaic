@@ -2,6 +2,7 @@ body  {
   // padding: 0;
   height: 100%;
   margin: 0;
+  background: black;
 }
 $mosaic-size:1280px;
 #app{
@@ -19,3 +20,59 @@ $mosaic-size:1280px;
   width: min(100vh, 100vw);
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.modal-window {
+  position: relative;
+  background-color: whitesmoke;
+  width: 50%;
+  margin: 10% auto;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.modal-window.small {
+  width: 30%;
+}
+
+.modal-window.large {
+  width: 75%;
+}
+
+.ok {
+  background-color: #4285f4;
+  color: white;
+  border: 0;
+  border-radius: .125rem;
+  white-space: normal;
+  font-size: 23px;
+}
+.ok:focus {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+}
+.ok:focus {
+  outline: 0;
+}
+
+.open {
+  display: block;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .github-fork-ribbon {
+    display: none;
+  }
+}

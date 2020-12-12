@@ -1,12 +1,19 @@
 import './main.scss'
 import _ from 'lodash'
 import LRU from 'lru-cache'
-import {Decimal} from 'small-decimal'
+import { Decimal } from 'small-decimal'
 /**
  * @type {{ExportedImages: Array<ProcessedImage>}}
  */
 import processed from './process/output.slim.json'
 import 'regenerator-runtime/runtime'
+
+document.addEventListener('click', function clickListener (e) {
+  var modal = document.querySelector('.modal.open')
+  modal.classList.remove('open')
+  e.preventDefault()
+  document.removeEventListener('click', clickListener)
+}, false)
 
 const queryString = window.location.search
 const urlParams = new URLSearchParams(queryString)
@@ -171,12 +178,12 @@ async function main () {
     globalK = transform.k
     globalX = transform.x
     globalY = transform.y
-//      const transform = d3.zoomTransform(this)
+    //      const transform = d3.zoomTransform(this)
 
     // console.log('transform', transform)
 
     // console.log('render', event, transform)
-   // N // console.log('Visible area', getVisibleArea(event.transform))
+    // N // console.log('Visible area', getVisibleArea(event.transform))
     // console.log(width, height)
 
     const drawZoom = transform.k.floorLog2()
