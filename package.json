@@ -14,6 +14,7 @@
     "@types/decimal.js": "^7.4.0",
     "@types/puppeteer": "^3.0.1",
     "d3": "^6.1.1",
+    "d3-zoom": "npm:@furstenheim/d3-zoom@^2.0.0",
     "lru-cache": "^6.0.0",
     "nodemon": "^2.0.4",
     "parcel-bundler": "^1.12.4",
@@ -21,9 +22,12 @@
     "puppeteer": "^5.2.1",
     "puppeteer-autoscroll-down": "^0.1.6",
     "sass": "^1.26.10",
-    "small-decimal": "^1.0.0"
+    "small-decimal": "1.0.2"
   },
   "browserslist": [
     "last 1 Chrome version"
-  ]
+  ],
+  "resolutions": {
+    "d3-zoom": "npm:@furstenheim/d3-zoom@^2.0.0"
+  }
 }

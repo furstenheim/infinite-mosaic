@@ -2234,16 +2234,18 @@ d3-transition@2:
     d3-interpolate "1 - 2"
     d3-timer "1 - 2"
 
-d3-zoom@2:
+d3-zoom@2, "d3-zoom@npm:@furstenheim/d3-zoom@^2.0.0":
   version "2.0.0"
-  resolved "https://registry.yarnpkg.com/d3-zoom/-/d3-zoom-2.0.0.tgz#f04d0afd05518becce879d04709c47ecd93fba54"
-  integrity sha512-fFg7aoaEm9/jf+qfstak0IYpnesZLiMX6GZvXtUSdv8RH2o4E2qeelgdU09eKS6wGuiGMfcnMI0nTIqWzRHGpw==
+  resolved "https://registry.yarnpkg.com/@furstenheim/d3-zoom/-/d3-zoom-2.0.0.tgz#c58776da7119bf4d48501b6188ae33f316360628"
+  integrity sha512-MqSFH2CTcxizAlZMn4MTi3rnZ4kXVbjnjLBWBj5xhCy6jnTn/+Lv8hoZ5TNUomewQ9nmRh7Fg7Y6FIu2yhC7Ig==
   dependencies:
     d3-dispatch "1 - 2"
     d3-drag "2"
     d3-interpolate "1 - 2"
     d3-selection "2"
     d3-transition "2"
+    nodemon "^2.0.4"
+    parcel "^1.12.4"
 
 d3@^6.1.1:
   version "6.1.1"
@@ -4382,6 +4384,71 @@ parcel-plugin-static-files-copy@^2.5.0:
     minimatch "3.0.4"
     path "0.12.7"
 
+parcel@^1.12.4:
+  version "1.12.4"
+  resolved "https://registry.yarnpkg.com/parcel/-/parcel-1.12.4.tgz#c8136085179c6382e632ca98126093e110be2ac5"
+  integrity sha512-qfc74e2/R4pCoU6L/ZZnK9k3iDS6ir4uHea0e9th9w52eehcAGf2ido/iABq9PBXdsIOe4NSY3oUm7Khe7+S3w==
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@babel/core" "^7.4.4"
+    "@babel/generator" "^7.4.4"
+    "@babel/parser" "^7.4.4"
+    "@babel/plugin-transform-flow-strip-types" "^7.4.4"
+    "@babel/plugin-transform-modules-commonjs" "^7.4.4"
+    "@babel/plugin-transform-react-jsx" "^7.0.0"
+    "@babel/preset-env" "^7.4.4"
+    "@babel/runtime" "^7.4.4"
+    "@babel/template" "^7.4.4"
+    "@babel/traverse" "^7.4.4"
+    "@babel/types" "^7.4.4"
+    "@iarna/toml" "^2.2.0"
+    "@parcel/fs" "^1.11.0"
+    "@parcel/logger" "^1.11.1"
+    "@parcel/utils" "^1.11.0"
+    "@parcel/watcher" "^1.12.1"
+    "@parcel/workers" "^1.11.0"
+    ansi-to-html "^0.6.4"
+    babylon-walk "^1.0.2"
+    browserslist "^4.1.0"
+    chalk "^2.1.0"
+    clone "^2.1.1"
+    command-exists "^1.2.6"
+    commander "^2.11.0"
+    core-js "^2.6.5"
+    cross-spawn "^6.0.4"
+    css-modules-loader-core "^1.1.0"
+    cssnano "^4.0.0"
+    deasync "^0.1.14"
+    dotenv "^5.0.0"
+    dotenv-expand "^5.1.0"
+    envinfo "^7.3.1"
+    fast-glob "^2.2.2"
+    filesize "^3.6.0"
+    get-port "^3.2.0"
+    htmlnano "^0.2.2"
+    is-glob "^4.0.0"
+    is-url "^1.2.2"
+    js-yaml "^3.10.0"
+    json5 "^1.0.1"
+    micromatch "^3.0.4"
+    mkdirp "^0.5.1"
+    node-forge "^0.7.1"
+    node-libs-browser "^2.0.0"
+    opn "^5.1.0"
+    postcss "^7.0.11"
+    postcss-value-parser "^3.3.1"
+    posthtml "^0.11.2"
+    posthtml-parser "^0.4.0"
+    posthtml-render "^1.1.3"
+    resolve "^1.4.0"
+    semver "^5.4.1"
+    serialize-to-js "^3.0.0"
+    serve-static "^1.12.4"
+    source-map "0.6.1"
+    terser "^3.7.3"
+    v8-compile-cache "^2.0.0"
+    ws "^5.1.1"
+
 parse-asn1@^5.0.0, parse-asn1@^5.1.5:
   version "5.1.5"
   resolved "https://registry.yarnpkg.com/parse-asn1/-/parse-asn1-5.1.5.tgz#003271343da58dc94cace494faef3d2147ecea0e"
@@ -5436,10 +5503,10 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
-small-decimal@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/small-decimal/-/small-decimal-1.0.1.tgz#f8e17af577ae70cf9f0dca6aab98c674267a3cbc"
-  integrity sha512-F6lysqONWvLvgNbDQyHe9UToMS8QgTpWYpKSwsi+73RBfdWXGtlAuDqnw1OvuxGZS7nk6J0Cr57J00k20Wm7Sw==
+small-decimal@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/small-decimal/-/small-decimal-1.0.2.tgz#9d7202967ef9457cab789470f2ab6c8cedf765c2"
+  integrity sha512-rjxqykb/Rewl7d+8O3/Qm6Z5t6QgtaYoUGSPEJ0pq2MyQtAkwyCCyIcX0KlE7iuXCZeVPh7giHchVMRsZVofvg==
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
