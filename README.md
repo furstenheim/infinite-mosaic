@@ -1,14 +1,20 @@
 ## Infinite tiling
 
+Infinite tiling of artworks from the Art Institute Chicago
+
+![](./readme.png)
+
+
 You can visit the website at:
 
 https://furstenheim.github.io/infinite-mosaic/
 
-It accepts two parameters, big mode and autoplay. Only recommended if you have a powerful server
+It accepts two parameters, big mode and autoplay. Only recommended if you have a powerful computer.
 
 ### Big layout
 
 256 x 256 tiling instead of 128 x 128
+
 http://localhost:1234/?size=big
 
 

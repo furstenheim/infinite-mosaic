@@ -8,11 +8,18 @@ import { Decimal } from 'small-decimal'
 import processed from './process/output.slim.json'
 import 'regenerator-runtime/runtime'
 
+if (document.cookie.includes('modal-removed-v1=ok')) {
+  var modal = document.querySelector('.modal.open')
+  modal.classList.remove('open')
+}
 document.addEventListener('click', function clickListener (e) {
   var modal = document.querySelector('.modal.open')
   modal.classList.remove('open')
   e.preventDefault()
   document.removeEventListener('click', clickListener)
+  if (e.target.type === 'submit') {
+    document.cookie = 'modal-removed-v1=ok'
+  }
 }, false)
 
 const queryString = window.location.search
