@@ -15,11 +15,11 @@ It accepts two parameters, big mode and autoplay. Only recommended if you have a
 
 256 x 256 tiling instead of 128 x 128
 
-http://localhost:1234/?size=big
+https://furstenheim.github.io/infinite-mosaic/?size=big
 
 
 ### Autoplay
-http://localhost:1234/?autoplay=true
+https://furstenheim.github.io/infinite-mosaic/?autoplay=true
 
 
 
